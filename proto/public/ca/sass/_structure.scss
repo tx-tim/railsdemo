@@ -1,0 +1,32 @@
+.tcl{
+  .page-hero{
+    background-color: $mainColor;
+  }
+
+  .page-headline-container{
+    margin-top: 122px;
+  }
+  .page-headline{
+    color: $white;
+  }
+
+  @include respondTo(smallScreen){
+    .page-headline-container{
+      margin-top: 30px;
+    }
+  }
+}
+
+.tcc{
+  .page-hero{
+    background-color: $mainColor;
+  }
+  .page-headline-container{
+    margin-top: 50px;
+  }
+  .page-headline{
+    color: red
+  }
+}
+
+
