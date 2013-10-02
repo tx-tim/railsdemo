@@ -1,0 +1,63 @@
+footer{
+	background-color: tint($footerColor, 5%);
+	padding-top:  1.4em;
+	position: relative;
+	color: shade($secondaryColor, 40%);
+
+	%footer-list{
+		h2{
+			font-size: 1em;
+			margin-top: 0;
+			padding-bottom: .4em;
+			color:  shade($white, 20%);
+			border-bottom: shade($secondaryColor, 80%) 1px solid;
+		}
+		
+		h3{
+			font-size: 1em;
+			margin-top: 0;
+			margin-bottom: 0;
+			padding-bottom: .4em;
+			color:  shade($white, 20%);
+		}
+
+		a{
+			color: shade($secondaryColor, 40%);
+		}
+	}
+	ul.link-list{
+		@extend %footer-list;
+		@include no-bullets;
+	}
+
+	div.brand-list-container{
+		background-color: $footerColor;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		text-align: center;
+	}
+
+	ul.brand-list{
+		@extend %footer-list;
+		@include inline-list;
+		li{
+			padding-right: 1.4em;
+		}
+	}
+
+	div.compliance{
+		background-color: $white;
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		text-align: center;
+	}
+
+	ul.compliance-list{
+		@extend %footer-list;
+		@include delimited-list("|");
+	}
+
+
+
+}

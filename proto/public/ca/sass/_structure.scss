@@ -1,31 +1,59 @@
-.tcl{
-  .page-hero{
-    background-color: $mainColor;
-  }
+@import "breadcrumbs";
 
-  .page-headline-container{
-    margin-top: 122px;
-  }
+%two-column{
+
+  //styles for the hero section
   .page-headline{
-    color: $white;
+    font-weight: normal;
   }
 
+  @include breadcrumbs;
+
+  //styles for the side-bar section
+  .side-bar{
+    margin-top: -112px;
+    
+    .side-bar-container{
+      @include border-radius(5px);
+      min-height: 500px;
+
+      .widget{
+        padding: $columnGutter/2;
+      }
+
+    }
+  }
+  
+  //responsive styles
   @include respondTo(smallScreen){
     .page-headline-container{
       margin-top: 30px;
     }
+
+    .side-bar{
+      margin-top: 0;
+
+      .side-bar-container{
+        min-height: 100px;
+      } 
+    }
+  }
+}
+
+
+.tcl{
+  @extend %two-column;
+
+  .page-headline-container{
+    margin-top: 122px;
   }
 }
 
 .tcc{
-  .page-hero{
-    background-color: $mainColor;
-  }
+  @extend %two-column;
+  
   .page-headline-container{
     margin-top: 50px;
-  }
-  .page-headline{
-    color: red
   }
 }
 

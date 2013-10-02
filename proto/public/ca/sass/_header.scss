@@ -3,7 +3,6 @@
 
 .header{
 	position: relative;
-	background-color: $mainColor;
 	.header-shade{
 		background-color: white;
 		@include opacity(.2);

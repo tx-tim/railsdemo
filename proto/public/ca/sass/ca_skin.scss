@@ -1,0 +1,57 @@
+@import "colors";
+
+body{
+  background-color: $caSecondaryColor;
+}
+
+.header, .page-hero{
+    background-color: $caPrimaryColor;
+}
+
+
+ul.breadcrumbs{
+  a, span { 
+    color: $caSecondaryColor;
+  }
+}
+
+
+.page-headline{
+  color: $white;
+  font-weight: normal;
+}
+
+
+.side-bar-container{
+  background-color: $white;
+
+  .widget{
+    h3{
+        color: $caAccentColor;
+    } 
+    h4, h5, h6{
+        @extend h3
+    }         
+    p{
+        color: $caBodyTxtColor;
+    } 
+    a{
+        color: $caPrimaryColor;
+    }
+  }
+}
+  
+.main-body{
+    h1{
+        color: $caPrimaryColor;
+    } 
+    h2, h3, h4, h5, h6{
+        @extend h1
+    }         
+    p{
+        color: $caBodyTxtColor;
+    } 
+    a{
+        color: $caPrimaryColor;
+    }
+}

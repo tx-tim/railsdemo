@@ -9,6 +9,9 @@
 // and uncommenting what you want below. You must uncomment the following if customizing
 
 @import "compass/css3";
+@import "compass/layout/sticky-footer";
+@import "compass/typography/lists";
+@import "compass/layout/stretching";
 @import "foundation/settings";
 @import "foundation/functions/all";
 
@@ -40,14 +43,16 @@
 @import "foundation/components/modules/buttons";
 @import "foundation/components/modules/mqueries";
 
-// @import "foundation/components/modules/tabs";
-// @import "foundation/components/modules/ui";
-//@import "foundation/components/modules/topbar";
-//@import "foundation/components/modules/navbar";
+@import "foundation/components/modules/tabs";
+//@import "foundation/components/modules/ui";
+// @import "foundation/components/modules/topbar";
+// @import "foundation/components/modules/navbar";
 // @import "foundation/components/modules/orbit";
 // @import "foundation/components/modules/reveal";
 // @import "foundation/components/modules/offcanvas";
 
 // Custom imports
+@include sticky-footer(300px);
 @import "header";
-@import "structure"
+@import "footer";
+@import "structure";
