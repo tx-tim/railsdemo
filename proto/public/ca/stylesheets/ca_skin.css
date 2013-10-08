@@ -35,16 +35,20 @@ ul.breadcrumbs a, ul.breadcrumbs span {
 .side-bar-container .widget a {
   color: #005daa;
 }
+/* line 41, ../sass/ca_skin.scss */
+.side-bar-container .widget .button {
+  color: white;
+}
 
-/* line 45, ../sass/ca_skin.scss */
+/* line 48, ../sass/ca_skin.scss */
 .main-body h1, .main-body h2, .main-body h3, .main-body h4, .main-body h5, .main-body h6 {
   color: #005daa;
 }
-/* line 51, ../sass/ca_skin.scss */
+/* line 54, ../sass/ca_skin.scss */
 .main-body p {
   color: #333333;
 }
-/* line 54, ../sass/ca_skin.scss */
+/* line 57, ../sass/ca_skin.scss */
 .main-body a {
   color: #005daa;
 }

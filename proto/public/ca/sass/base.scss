@@ -52,7 +52,14 @@
 // @import "foundation/components/modules/offcanvas";
 
 // Custom imports
-@include sticky-footer(300px);
+
+@include sticky-footer(350px);
+@include respondTo(smallScreen){
+	@include sticky-footer(750px);
+}
+	
 @import "header";
 @import "footer";
+@import "iconfont";
 @import "structure";
+@import "widgets";
