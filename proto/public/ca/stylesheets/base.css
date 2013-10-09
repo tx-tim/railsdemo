@@ -4238,17 +4238,17 @@ footer form.email-signup .panel input, footer form.email-signup .panel a {
 }
 
 @font-face {
-  font-family: 'icomoon';
-  src: url("../fonts/icomoon.eot");
-  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon.svg#icomoon") format("svg");
+  font-family: 'cafont';
+  src: url("../fonts/cafont.eot");
+  src: url("../fonts/cafont.eot?#iefix") format("embedded-opentype"), url("../fonts/cafont.woff") format("woff"), url("../fonts/cafont.ttf") format("truetype"), url("../fonts/cafont.svg#cafont") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
-/* line 13, ../sass/_iconfont.scss */
+/* line 13, ../sass/_cafont.scss */
 [data-icon]:before {
-  font-family: 'icomoon';
+  font-family: 'cafont';
   content: attr(data-icon);
   speak: none;
   font-weight: normal;
@@ -4265,9 +4265,9 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="icon-"] {
 */
-/* line 31, ../sass/_iconfont.scss */
-.icon-youtube, .icon-twitter, .icon-pinterest, .icon-google-plus, .icon-facebook, .icon-hamburger, .icon-hamburger2, .icon-diamonds, .icon-music, .icon-camera, .icon-headphones, .icon-credit, .icon-coin, .icon-cart, .icon-bookmark, .icon-heart, .icon-home, .icon-close, .icon-checkbox-checked, .icon-checkbox-unchecked, .icon-checkbox-partial, .icon-undo, .icon-redo, .icon-forward, .icon-reply, .icon-box-add, .icon-location, .icon-location-2, .icon-alarm, .icon-bell, .icon-spinner, .icon-user, .icon-users, .icon-key, .icon-pie, .icon-bars, .icon-home-2, .icon-spinner-2, .icon-print, .icon-phone, .icon-plus, .icon-radio-checked, .icon-radio-unchecked, .icon-arrow-right, .icon-arrow-down, .icon-checkmark, .icon-rocket {
-  font-family: 'icomoon';
+/* line 31, ../sass/_cafont.scss */
+.icon-location-17-icon, .icon-youtube, .icon-twitter, .icon-pinterest, .icon-google-plus, .icon-facebook, .icon-hamburger, .icon-hamburger2, .icon-diamonds, .icon-music, .icon-camera, .icon-headphones, .icon-credit, .icon-coin, .icon-cart, .icon-bookmark, .icon-heart, .icon-home, .icon-close, .icon-checkbox-checked, .icon-checkbox-unchecked, .icon-checkbox-partial, .icon-undo, .icon-redo, .icon-forward, .icon-reply, .icon-box-add, .icon-location, .icon-location-2, .icon-alarm, .icon-bell, .icon-spinner, .icon-user, .icon-users, .icon-key, .icon-pie, .icon-bars, .icon-home-2, .icon-spinner-2, .icon-print, .icon-phone, .icon-plus, .icon-radio-checked, .icon-radio-unchecked, .icon-arrow-right, .icon-arrow-down, .icon-checkmark, .icon-rocket, .icon-hamburger-2, .icon-hamburger2-2, .icon-arrow-down-2, .icon-arrow-right-2, .icon-tv, .icon-warning, .icon-rss-alt, .icon-moon-stroke, .icon-brush, .icon-target, .icon-bars-2, .icon-book-alt2, .icon-chat-alt-stroke, .icon-chat-alt-fill, .icon-bubbles, .icon-bubble, .icon-bubbles-2, .icon-bubbles-3, .icon-target-2, .icon-globe {
+  font-family: 'cafont';
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -4277,239 +4277,344 @@ you can use the generic selector below, but it's slower:
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 41, ../sass/_iconfont.scss */
+/* line 41, ../sass/_cafont.scss */
+.icon-location-17-icon:before {
+  content: "\e02f";
+}
+
+/* line 44, ../sass/_cafont.scss */
 .icon-youtube:before {
   content: "\e000";
 }
 
-/* line 44, ../sass/_iconfont.scss */
+/* line 47, ../sass/_cafont.scss */
 .icon-twitter:before {
   content: "\e001";
 }
 
-/* line 47, ../sass/_iconfont.scss */
+/* line 50, ../sass/_cafont.scss */
 .icon-pinterest:before {
   content: "\e002";
 }
 
-/* line 50, ../sass/_iconfont.scss */
+/* line 53, ../sass/_cafont.scss */
 .icon-google-plus:before {
   content: "\e003";
 }
 
-/* line 53, ../sass/_iconfont.scss */
+/* line 56, ../sass/_cafont.scss */
 .icon-facebook:before {
   content: "\e004";
 }
 
-/* line 56, ../sass/_iconfont.scss */
+/* line 59, ../sass/_cafont.scss */
 .icon-hamburger:before {
   content: "\e005";
 }
 
-/* line 59, ../sass/_iconfont.scss */
+/* line 62, ../sass/_cafont.scss */
 .icon-hamburger2:before {
   content: "\e006";
 }
 
-/* line 62, ../sass/_iconfont.scss */
+/* line 65, ../sass/_cafont.scss */
 .icon-diamonds:before {
   content: "\e007";
 }
 
-/* line 65, ../sass/_iconfont.scss */
+/* line 68, ../sass/_cafont.scss */
 .icon-music:before {
   content: "\e008";
 }
 
-/* line 68, ../sass/_iconfont.scss */
+/* line 71, ../sass/_cafont.scss */
 .icon-camera:before {
   content: "\e009";
 }
 
-/* line 71, ../sass/_iconfont.scss */
+/* line 74, ../sass/_cafont.scss */
 .icon-headphones:before {
   content: "\e00a";
 }
 
-/* line 74, ../sass/_iconfont.scss */
+/* line 77, ../sass/_cafont.scss */
 .icon-credit:before {
   content: "\e00b";
 }
 
-/* line 77, ../sass/_iconfont.scss */
+/* line 80, ../sass/_cafont.scss */
 .icon-coin:before {
   content: "\e00c";
 }
 
-/* line 80, ../sass/_iconfont.scss */
+/* line 83, ../sass/_cafont.scss */
 .icon-cart:before {
   content: "\e00d";
 }
 
-/* line 83, ../sass/_iconfont.scss */
+/* line 86, ../sass/_cafont.scss */
 .icon-bookmark:before {
   content: "\e00f";
 }
 
-/* line 86, ../sass/_iconfont.scss */
+/* line 89, ../sass/_cafont.scss */
 .icon-heart:before {
   content: "\e00e";
 }
 
-/* line 89, ../sass/_iconfont.scss */
+/* line 92, ../sass/_cafont.scss */
 .icon-home:before {
   content: "\e010";
 }
 
-/* line 92, ../sass/_iconfont.scss */
+/* line 95, ../sass/_cafont.scss */
 .icon-close:before {
   content: "\e011";
 }
 
-/* line 95, ../sass/_iconfont.scss */
+/* line 98, ../sass/_cafont.scss */
 .icon-checkbox-checked:before {
   content: "\e012";
 }
 
-/* line 98, ../sass/_iconfont.scss */
+/* line 101, ../sass/_cafont.scss */
 .icon-checkbox-unchecked:before {
   content: "\e013";
 }
 
-/* line 101, ../sass/_iconfont.scss */
+/* line 104, ../sass/_cafont.scss */
 .icon-checkbox-partial:before {
   content: "\e014";
 }
 
-/* line 104, ../sass/_iconfont.scss */
+/* line 107, ../sass/_cafont.scss */
 .icon-undo:before {
   content: "\e015";
 }
 
-/* line 107, ../sass/_iconfont.scss */
+/* line 110, ../sass/_cafont.scss */
 .icon-redo:before {
   content: "\e016";
 }
 
-/* line 110, ../sass/_iconfont.scss */
+/* line 113, ../sass/_cafont.scss */
 .icon-forward:before {
   content: "\e017";
 }
 
-/* line 113, ../sass/_iconfont.scss */
+/* line 116, ../sass/_cafont.scss */
 .icon-reply:before {
   content: "\e018";
 }
 
-/* line 116, ../sass/_iconfont.scss */
+/* line 119, ../sass/_cafont.scss */
 .icon-box-add:before {
   content: "\e01a";
 }
 
-/* line 119, ../sass/_iconfont.scss */
+/* line 122, ../sass/_cafont.scss */
 .icon-location:before {
   content: "\e019";
 }
 
-/* line 122, ../sass/_iconfont.scss */
+/* line 125, ../sass/_cafont.scss */
 .icon-location-2:before {
   content: "\e01b";
 }
 
-/* line 125, ../sass/_iconfont.scss */
+/* line 128, ../sass/_cafont.scss */
 .icon-alarm:before {
   content: "\e01c";
 }
 
-/* line 128, ../sass/_iconfont.scss */
+/* line 131, ../sass/_cafont.scss */
 .icon-bell:before {
   content: "\e01d";
 }
 
-/* line 131, ../sass/_iconfont.scss */
+/* line 134, ../sass/_cafont.scss */
 .icon-spinner:before {
   content: "\e01e";
 }
 
-/* line 134, ../sass/_iconfont.scss */
+/* line 137, ../sass/_cafont.scss */
 .icon-user:before {
   content: "\e01f";
 }
 
-/* line 137, ../sass/_iconfont.scss */
+/* line 140, ../sass/_cafont.scss */
 .icon-users:before {
   content: "\e020";
 }
 
-/* line 140, ../sass/_iconfont.scss */
+/* line 143, ../sass/_cafont.scss */
 .icon-key:before {
   content: "\e021";
 }
 
-/* line 143, ../sass/_iconfont.scss */
+/* line 146, ../sass/_cafont.scss */
 .icon-pie:before {
   content: "\e022";
 }
 
-/* line 146, ../sass/_iconfont.scss */
+/* line 149, ../sass/_cafont.scss */
 .icon-bars:before {
   content: "\e023";
 }
 
-/* line 149, ../sass/_iconfont.scss */
+/* line 152, ../sass/_cafont.scss */
 .icon-home-2:before {
   content: "\e024";
 }
 
-/* line 152, ../sass/_iconfont.scss */
+/* line 155, ../sass/_cafont.scss */
 .icon-spinner-2:before {
   content: "\e025";
 }
 
-/* line 155, ../sass/_iconfont.scss */
+/* line 158, ../sass/_cafont.scss */
 .icon-print:before {
   content: "\e026";
 }
 
-/* line 158, ../sass/_iconfont.scss */
+/* line 161, ../sass/_cafont.scss */
 .icon-phone:before {
   content: "\e027";
 }
 
-/* line 161, ../sass/_iconfont.scss */
+/* line 164, ../sass/_cafont.scss */
 .icon-plus:before {
   content: "\e028";
 }
 
-/* line 164, ../sass/_iconfont.scss */
+/* line 167, ../sass/_cafont.scss */
 .icon-radio-checked:before {
   content: "\e029";
 }
 
-/* line 167, ../sass/_iconfont.scss */
+/* line 170, ../sass/_cafont.scss */
 .icon-radio-unchecked:before {
   content: "\e02a";
 }
 
-/* line 170, ../sass/_iconfont.scss */
+/* line 173, ../sass/_cafont.scss */
 .icon-arrow-right:before {
   content: "\e02b";
 }
 
-/* line 173, ../sass/_iconfont.scss */
+/* line 176, ../sass/_cafont.scss */
 .icon-arrow-down:before {
   content: "\e02c";
 }
 
-/* line 176, ../sass/_iconfont.scss */
+/* line 179, ../sass/_cafont.scss */
 .icon-checkmark:before {
   content: "\e02d";
 }
 
-/* line 179, ../sass/_iconfont.scss */
+/* line 182, ../sass/_cafont.scss */
 .icon-rocket:before {
   content: "\e02e";
+}
+
+/* line 185, ../sass/_cafont.scss */
+.icon-hamburger-2:before {
+  content: "\e030";
+}
+
+/* line 188, ../sass/_cafont.scss */
+.icon-hamburger2-2:before {
+  content: "\e031";
+}
+
+/* line 191, ../sass/_cafont.scss */
+.icon-arrow-down-2:before {
+  content: "\e032";
+}
+
+/* line 194, ../sass/_cafont.scss */
+.icon-arrow-right-2:before {
+  content: "\e033";
+}
+
+/* line 197, ../sass/_cafont.scss */
+.icon-tv:before {
+  content: "\e034";
+}
+
+/* line 200, ../sass/_cafont.scss */
+.icon-warning:before {
+  content: "\e035";
+}
+
+/* line 203, ../sass/_cafont.scss */
+.icon-rss-alt:before {
+  content: "\e036";
+}
+
+/* line 206, ../sass/_cafont.scss */
+.icon-moon-stroke:before {
+  content: "\e037";
+}
+
+/* line 209, ../sass/_cafont.scss */
+.icon-brush:before {
+  content: "\e038";
+}
+
+/* line 212, ../sass/_cafont.scss */
+.icon-target:before {
+  content: "\e039";
+}
+
+/* line 215, ../sass/_cafont.scss */
+.icon-bars-2:before {
+  content: "\e03a";
+}
+
+/* line 218, ../sass/_cafont.scss */
+.icon-book-alt2:before {
+  content: "\e03b";
+}
+
+/* line 221, ../sass/_cafont.scss */
+.icon-chat-alt-stroke:before {
+  content: "\e03c";
+}
+
+/* line 224, ../sass/_cafont.scss */
+.icon-chat-alt-fill:before {
+  content: "\e03d";
+}
+
+/* line 227, ../sass/_cafont.scss */
+.icon-bubbles:before {
+  content: "\e03e";
+}
+
+/* line 230, ../sass/_cafont.scss */
+.icon-bubble:before {
+  content: "\e03f";
+}
+
+/* line 233, ../sass/_cafont.scss */
+.icon-bubbles-2:before {
+  content: "\e040";
+}
+
+/* line 236, ../sass/_cafont.scss */
+.icon-bubbles-3:before {
+  content: "\e041";
+}
+
+/* line 239, ../sass/_cafont.scss */
+.icon-target-2:before {
+  content: "\e042";
+}
+
+/* line 242, ../sass/_cafont.scss */
+.icon-globe:before {
+  content: "\e043";
 }
 
 /* line 6, ../sass/_structure.scss */
@@ -4615,7 +4720,11 @@ you can use the generic selector below, but it's slower:
   margin-top: 50px;
 }
 
-/* line 3, ../sass/_widgets.scss */
+/* line 4, ../sass/_widgets.scss */
+.side-bar .widget .widget-header .icon {
+  font-size: 24px;
+}
+/* line 8, ../sass/_widgets.scss */
 .side-bar .widget .widget-body {
   padding-bottom: 1em;
   border-bottom: 1px solid #e9e9e9;
