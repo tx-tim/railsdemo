@@ -1,9 +1,16 @@
 Proto::Application.routes.draw do
+  get "casham/index"
+  get "casham/tcl"
+  get "casham/tcc"
+  get "casham/ocl"
+  get "casham/ocp"
+  get "casham/localstore"
+  get "tim/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+  root 'tim#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
