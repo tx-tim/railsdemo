@@ -1,0 +1,26 @@
+@import "foundation/components/modules/topbar";
+// @import "foundation/components/modules/navbar";
+
+.header{
+	position: relative;
+	.header-shade{
+		background-color: white;
+		@include opacity(.2);
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+	.top-bar{
+		background-color: transparent;
+	}
+
+	@include respondTo(smallScreen){
+		background-color: $black;
+		.header-shade{
+			display: hidden;
+		}
+	}
+		
+}

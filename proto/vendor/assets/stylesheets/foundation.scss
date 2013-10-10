@@ -14,7 +14,9 @@
 
 @import "foundation/common/base";
 
-@import "foundation/components/grid", "foundation/components/modules/all";
+@import "foundation/components/grid";
+
+@import"foundation/components/modules/all";
 
 // Media Queries Overrides
 @import "foundation/components/modules/mqueries";

@@ -3,7 +3,7 @@ Proto::Application.routes.draw do
   get "casham/tcl"
   get "casham/tcc"
   get "casham/ocl"
-  get "casham/ocp"
+  get "casham/occ"
   get "casham/localstore"
   get "tim/index"
   # The priority is based upon order of creation: first created -> highest priority.
