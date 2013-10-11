@@ -13,10 +13,10 @@ class CashamController < ApplicationController
   end
 
   def ocl
-  	render layout: "two_column_landing"
+  	render layout: "two_column_content"
   end
 
   def occ
-  	render layout: "two_column_landing"
+  	render layout: "two_column_content"
   end
 end

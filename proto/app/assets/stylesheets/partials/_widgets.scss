@@ -2,9 +2,14 @@
 .side-bar {
 	.widget {
 		.widget-header{
+			position: relative;
 			.icon{
+				position: absolute;
+				top: -8px;
 				font-size: 32px;
-				padding-right: .2em;
+			}
+			.text{
+				padding-left: 2.4em;
 			}
 		}
 		.widget-body{

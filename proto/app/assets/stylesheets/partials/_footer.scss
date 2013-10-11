@@ -100,11 +100,7 @@ footer{
 		@include delimited-list("|");
 	}
 
-	//ul.social-links{
-//		@extend %footer-list;
-//		@include inline-list;
-//		margin-bottom: 1.4em;
-//	}
+
 
 	.social-links{
 		padding-bottom: 1em;
@@ -123,10 +119,6 @@ footer{
 
 			label{
 				padding-bottom: 1em;
-			}
-
-			input, a{
-				font-size: 90%;
 			}
 		}
 	}

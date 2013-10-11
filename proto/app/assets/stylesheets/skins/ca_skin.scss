@@ -37,10 +37,10 @@ ul.breadcrumbs{
         color: $caBodyTxtColor;
     } 
     a{
-        color: $caPrimaryColor;
+        color: $caAccentColor;
     }
 
-    @include button-color($caPrimaryColor, $white);
+    @include button-color($caAccentColor, $white);
 
   }
 }

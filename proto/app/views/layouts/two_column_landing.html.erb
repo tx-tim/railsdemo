@@ -10,7 +10,7 @@
   <body class="tcl">
     <div class="ca-root"> <!-- root element required for sticky footer -->
       
-      <%#= yield :header %>
+      <%= yield :header %>
       <%#= yield :hero %>
       
       <section class="page-hero">
@@ -40,7 +40,7 @@
         <aside class="four columns side-bar">
           <div class="side-bar-container">
 
-            <%#= yield :widget_store_locator %>
+            <%= yield :widget_store_locator %>
 
           </div>
         </aside> <!-- End Sidebar -->
@@ -50,10 +50,9 @@
         <main class="eight columns main-body" role="content"> <!-- Main Content -->
           <article>
             
-            <%#= yield :main_content %>
+            <%= yield :main_content %>
 
           </article>
-          <hr />
         </main><!-- End Main Content -->
       </section>
     
