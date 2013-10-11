@@ -1,4 +1,6 @@
-$footerAccentColor: $alertColor;
+$footerColor: #121D28;
+$footerAccentColor: #D0103A;
+
 
 footer{
 	background-color: tint($footerColor, 5%);
@@ -98,10 +100,17 @@ footer{
 		@include delimited-list("|");
 	}
 
-	ul.social-links{
-		@extend %footer-list;
-		@include inline-list;
-		margin-bottom: 1.4em;
+	//ul.social-links{
+//		@extend %footer-list;
+//		@include inline-list;
+//		margin-bottom: 1.4em;
+//	}
+
+	.social-links{
+		padding-bottom: 1em;
+		.link-list{
+			@include inline-list;
+		}
 	}
 
 	form.email-signup{

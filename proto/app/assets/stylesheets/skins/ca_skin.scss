@@ -1,4 +1,5 @@
-@import "../partials/colors";
+@import "skin_mixins";
+
 
 body{
   background-color: $caSecondaryColor;
@@ -38,9 +39,9 @@ ul.breadcrumbs{
     a{
         color: $caPrimaryColor;
     }
-    .button{
-        color: $white;
-    }
+
+    @include button-color($caPrimaryColor, $white);
+
   }
 }
   

@@ -1,13 +1,22 @@
+
 .side-bar {
 	.widget {
 		.widget-header{
 			.icon{
-				font-size: 24px;
+				font-size: 32px;
+				padding-right: .2em;
 			}
 		}
 		.widget-body{
 			padding-bottom: 1em;
 			border-bottom: 1px solid $secondaryColor;
+		}
+
+		@include button-structure;
+		
+		.button{
+			font-size: 13px;
+			padding: $btnBase ($btnBase + 2) ($btnBase + 2); 
 		}
 	}
 }

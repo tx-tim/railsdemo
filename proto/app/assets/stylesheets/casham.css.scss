@@ -6,8 +6,10 @@
 @import "compass/layout/sticky-footer";
 @import "compass/typography/lists";
 @import "compass/layout/stretching";
-@import "partials/colors";
+//@import "partials/colors";
 @import "partials/cafont";
+@import "partials/mixins";
+@import "partials/widgets";
 @import "partials/structure", "partials/header", "partials/footer";
 
 @include sticky-footer(350px, ".ca-root", ".ca-root-footer", ".footer");
