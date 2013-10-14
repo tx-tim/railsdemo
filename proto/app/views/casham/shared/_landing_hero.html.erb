@@ -1,6 +1,18 @@
 <section class="page-hero">
   <div class="row page-hero-container">
-    <div class="eight columns offset-by-four page-headline-container">
+    
+      
+    <% if cols == "eight" %>
+      
+      <div class="eight columns offset-by-four page-headline-container">
+    
+    <% else %>
+    
+      <div class="twelve columns page-headline-container">
+    
+    <% end %>
+
+
       <h1 class="page-headline">Cash America Headline</h1>
 
       <ul class="breadcrumbs">

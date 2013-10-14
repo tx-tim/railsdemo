@@ -1,3 +1,19 @@
+<% content_for :head do %>
+	<%= render "casham/shared/head" %>
+<% end %>
+
 <% content_for :header do %>
-	<h1>Coming Soon!</h1>
+	<%#= render "casham/shared/header" %>
+<% end %>
+
+<% content_for :hero do %>
+	<%= render "casham/shared/landing_hero", cols: "twelve"  %>
+<% end %>
+
+<% content_for :main_content do %>
+	<%#= render "casham/shared/main_content" %>
+<% end %>
+
+<% content_for :footer do %>
+	<%= render "casham/shared/footer" %>
 <% end %>

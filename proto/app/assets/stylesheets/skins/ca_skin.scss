@@ -1,5 +1,6 @@
 @import "skin_mixins";
-
+$footerColor: #121D28;
+$footerAccentColor: #D0103A;
 
 body{
   background-color: $caSecondaryColor;
@@ -58,4 +59,44 @@ ul.breadcrumbs{
     a{
         color: $caPrimaryColor;
     }
+}
+
+.footer{
+  background-color: tint($footerColor, 5%);
+
+  @include button-color($caAccentColor, $white);
+
+  h1, h2, h3{
+    color:  shade($white, 20%);
+  }
+
+  p, a, label, ul, span{
+    color: shade($caSecondaryColor, 40%);
+  }
+
+  %footer-list{
+    h2{
+      border-bottom: shade($caSecondaryColor, 80%) 1px solid;
+    }
+  }
+
+  ul.link-list{
+    @extend %footer-list;
+  }
+
+  section.brand-list-container{
+    background-color: $footerColor;
+  }
+
+  section.compliance{
+    background-color: $white;
+  }
+
+  form.email-signup{
+    background-color: tint($footerColor, 5%);
+    
+    .panel{
+      background-color: $footerColor;   
+    }
+  }
 }
