@@ -1,17 +1,19 @@
 @import "skin_mixins";
+$footerColor: #121D28;
+$footerAccentColor: #D0103A;
 
 body{
-  background-color: $caSecondaryColor;
+  background-color: $spSecondaryColor;
 }
 
 .header, .page-hero{
-    background-color: $caPrimaryColor;
+    background-color: $spPrimaryColor;
 }
 
 
 ul.breadcrumbs{
   a, span { 
-    color: $caSecondaryColor;
+    color: $spSecondaryColor;
   }
 }
 
@@ -27,54 +29,54 @@ ul.breadcrumbs{
 
   .widget{
     h3{
-        color: $caAccentColor;
+        color: $spAccentColor;
     } 
     h4, h5, h6{
         @extend h3
     }         
     p{
-        color: $caBodyTxtColor;
+        color: $spBodyTxtColor;
     } 
     a{
-        color: $caAccentColor;
+        color: $spAccentColor;
     }
 
-    @include button-color($caAccentColor, $white);
+    @include button-color($spAccentColor, $white);
 
   }
 }
   
 .main-body{
     h1{
-        color: $caPrimaryColor;
+        color: $spPrimaryColor;
     } 
     h2, h3, h4, h5, h6{
         @extend h1
     }         
     p{
-        color: $caBodyTxtColor;
+        color: $spBodyTxtColor;
     } 
     a{
-        color: $caPrimaryColor;
+        color: $spPrimaryColor;
     }
 }
 
 .footer{
-  background-color: tint($caFooterColor, 5%);
+  background-color: tint($footerColor, 5%);
 
-  @include button-color($caAccentColor, $white);
+  @include button-color($spAccentColor, $white);
 
   h1, h2, h3{
     color:  shade($white, 20%);
   }
 
   p, a, label, ul, span{
-    color: shade($caSecondaryColor, 40%);
+    color: shade($spSecondaryColor, 40%);
   }
 
   %footer-list{
     h2{
-      border-bottom: shade($caSecondaryColor, 80%) 1px solid;
+      border-bottom: shade($spSecondaryColor, 80%) 1px solid;
     }
   }
 
@@ -83,7 +85,7 @@ ul.breadcrumbs{
   }
 
   section.brand-list-container{
-    background-color: $caFooterColor;
+    background-color: $footerColor;
   }
 
   section.compliance{
@@ -91,10 +93,10 @@ ul.breadcrumbs{
   }
 
   form.email-signup{
-    background-color: tint($caFooterColor, 5%);
+    background-color: tint($footerColor, 5%);
     
     .panel{
-      background-color: $caFooterColor;   
+      background-color: $footerColor;   
     }
   }
 }

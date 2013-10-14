@@ -1,5 +1,6 @@
 Proto::Application.routes.draw do
   get "casham/index"
+  get "cashams", to: "casham#index"
   get "casham/tcl"
   get "casham/tcc"
   get "casham/ocl"

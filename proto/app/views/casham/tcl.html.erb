@@ -1,23 +1,23 @@
 <% content_for :head do %>
-	<%= render "casham/shared/head" %>
+	<%= render "casham/structure/head" %>
 <% end %>
 
 <% content_for :header do %>
-	<%#= render "casham/shared/header" %>
+	<%#= render "casham/structure/header" %>
 <% end %>
 
 <% content_for :hero do %>
-	<%= render "casham/shared/landing_hero", cols: "eight" %>
+	<%= render "casham/components/landing_hero", cols: "eight" %>
 <% end %>
 
 <% content_for :widget_store_locator do %>
-	<%= render "casham/shared/widget_store_locator" %>
+	<%= render "casham/components/widget_store_locator" %>
 <% end %>
 
 <% content_for :main_content do %>
-	<%#= render "casham/shared/main_content" %>
+	<%#= render "casham/components/main_content" %>
 <% end %>
 
 <% content_for :footer do %>
-	<%= render "casham/shared/footer" %>
+	<%= render "casham/structure/footer" %>
 <% end %>
