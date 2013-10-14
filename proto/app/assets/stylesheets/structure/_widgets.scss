@@ -1,16 +1,11 @@
 
 .side-bar {
-	.widget {
+	%widget {
+		p{
+			font-style: normal;
+		}
 		.widget-header{
 			position: relative;
-			.icon{
-				position: absolute;
-				top: -8px;
-				font-size: 32px;
-			}
-			.text{
-				padding-left: 2.4em;
-			}
 		}
 		.widget-body{
 			padding-bottom: 1em;
@@ -24,4 +19,24 @@
 			padding: $btnBase ($btnBase + 2) ($btnBase + 2); 
 		}
 	}
+	
+	.store-locator{
+		@extend %widget;
+		.icon{
+			position: absolute;
+			top: -8px;
+			font-size: 32px;
+		}
+		.text{
+			padding-left: 2.4em;
+		}
+	}
+
+	.list-widget{
+		@extend %widget;
+
+	}
+	
+
+
 }

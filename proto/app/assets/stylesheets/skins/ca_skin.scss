@@ -29,10 +29,10 @@ ul.breadcrumbs{
     h3{
         color: $caAccentColor;
     } 
-    h4, h5, h6{
+    h4, h5{
         @extend h3
     }         
-    p{
+    h6, p{
         color: $caBodyTxtColor;
     } 
     a{
