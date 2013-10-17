@@ -2,9 +2,10 @@
 // @import "foundation/components/modules/navbar";
 
 .header{
-	position: relative;
+	position: absolute;
+	background-color: transparent;
 	.header-shade{
-		background-color: white;
+		background-color: transparent;
 		@include opacity(.2);
 		position: absolute;
 		top: 0;

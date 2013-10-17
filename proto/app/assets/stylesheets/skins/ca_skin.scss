@@ -5,9 +5,14 @@ body{
 }
 
 .header, .page-hero{
-    background-color: $caPrimaryColor;
+    
 }
 
+.page-hero{
+  background: $caPrimaryColor;
+  background: image-url("dummy-hero.jpg") no-repeat center center;
+  background-size: cover;
+}
 
 ul.breadcrumbs{
   a, span { 
