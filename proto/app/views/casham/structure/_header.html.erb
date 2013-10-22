@@ -3,16 +3,22 @@
 
   <div class="row header-container">
     <div class="twelve columns">
-      <nav>
+      <nav class="top-bar">
         <ul>
-          <li>
-            <a href="<%= cashams_path %>">home</a>
-          </li>
-          <li>
-            <%= link_to "Store Locator", casham_store_locator_path(:search_class => "active")%>
-          </li>
+          <li class="name"><h1><a href="#">Title</a></h1></li>
+          <li class="toggle-topbar"><a href="#"></a></li>
         </ul>
+        <section>
+          <ul class="left">
+            <li><%= link_to "Home", cashams_path %></li>
+          </ul>
+
+          <ul class="right">
+            <li><%= link_to "Store Locator", casham_store_locator_path(:search_class => "active")%></li>
+          </ul>
+        </section>
       </nav>
+
 <% 
 =begin %>  
       
