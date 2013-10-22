@@ -19,4 +19,8 @@ class CashamController < ApplicationController
   def occ
   	render layout: "one_column_content"
   end
+
+  def store_locator
+    render layout: "one_column_content"
+  end
 end

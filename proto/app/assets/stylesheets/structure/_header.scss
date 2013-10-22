@@ -1,6 +1,10 @@
 .header{
 	position: absolute;
 	width: 100%;
+
+	.header-container{
+		min-height: 75px;
+	}
 	.header-shade{
 		background-color: white;
 		@include opacity(.2);
@@ -15,7 +19,10 @@
 	}
 
 	@include respondTo(smallScreen){
-		background-color: $black;
+		background-color: white;
+		.header-container{
+			min-height: 45px;
+		}
 		.header-shade{
 			display: hidden;
 		}

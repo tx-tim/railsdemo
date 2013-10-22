@@ -1,0 +1,105 @@
+<% content_for :head do %>
+	<%= render "casham/structure/head" %>
+<% end %>
+
+<% content_for :header do %>
+	<%= render "casham/structure/header" %>
+<% end %>
+
+<% content_for :hero do %>
+	<%= render "casham/components/landing_hero", cols: "twelve", headline_text: "Search Results" %>
+<% end %>
+
+
+<% content_for :main_content do %>
+
+	<article class="row collapse search-criteria">
+		<div class="six columns geocriteria">
+			<p>geo criteria form </p>
+			<div class="dropdown">dropdown</div>
+			<input type="text" class="zip-input">
+			<hr/>
+			<input type="text" class="street-input">
+
+
+			<form class="custom">
+
+			<!-- Custom Selects -->
+			<label for="customDropdown">Dropdown Label</label>
+			<select style="display:none;" id="customDropdown">
+			  <option SELECTED>This is a dropdown</option>
+			  <option>This is another option</option>
+			  <option>Look, a third option</option>
+			</select>
+			<div class="custom dropdown">
+			  <a href="#" class="current">
+			    This is a dropdown
+			  </a>
+			  <a href="#" class="selector"></a>
+			  <ul>
+			    <li>This is a dropdown</li>
+			    <li>This is another option</li>
+			    <li>Look, a third option</li>
+			  </ul>
+			</div>
+			
+				
+			  <!-- Custom Selects -->
+			  <label for="customDropdown">Dropdown Label</label>
+			  <select style="display:none;" id="customDropdown">
+			    <option SELECTED>This is a dropdown</option>
+			    <option>This is another option</option>
+			    <option>Look, a third option</option>
+			  </select>
+			  <div class="custom dropdown">
+			    <a href="#" class="current">
+			      This is a dropdown
+			    </a>
+			    <a href="#" class="selector"></a>
+			    <ul>
+			      <li>This is a dropdown</li>
+			      <li>This is another option</li>
+			      <li>Look, a third option</li>
+			    </ul>
+			  </div>
+			</form>
+
+		</div>
+		<div class="six columns service-filter">
+			<p>services list: exclusive or inclusive?</p>
+			<p>narrow by services and brand</p>
+		</div>
+	</article>
+
+	<article class="row collapse">
+		<div class="store-locator-search-results four columns">
+			<h4 class="">Results</h4>
+			<% for i in 1...7 %>
+				<div class="result-item">
+					<ul class="address">
+					    <li class="store">Brand - Store Name and / or Number</li>
+					    <li class="street">Street Addresss NW 7th</li>
+					    <li class="province">Ft Worth, Tx 75000</li>
+					    <li class="tel">Phone: <a href="tel:408-867-5309">408-867-5309</a></li>
+					    <li class="dir">
+					    	<span aria-hidden="true" data-icon="&#xe02f;" class="icon icon-location-17-icon"></span>
+					    	<a href="">Get Directions</a>
+					    </li>
+					    <li class="local-page">
+					    	<span aria-hidden="true" data-icon="&#xe043;" class="icon icon-globe"></span>
+					    	<a href="">View Store's Website</a>
+					    </li>
+					</ul>
+				</div>
+			<% end %>
+		</div>
+		<div class="results-map eight columns">
+			<img src="http://placehold.it/645x465">
+		</div>
+	</article>
+
+<% end %>
+
+<% content_for :footer do %>
+	<%= render "casham/structure/footer" %>
+<% end %>

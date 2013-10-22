@@ -3,9 +3,21 @@
 
   <div class="row header-container">
     <div class="twelve columns">
-      <nav class="top-bar">
+      <nav>
+        <ul>
+          <li>
+            <a href="<%= cashams_path %>">home</a>
+          </li>
+          <li>
+            <a href="<%= casham_store_locator_path%>">Store Locator</a>
+          </li>
+        </ul>
+      </nav>
 <% 
 =begin %>  
+      
+      <nav class="top-bar">
+
 
         <ul>
           <!-- Title Area -->
@@ -160,10 +172,11 @@
 
 
 
-<% 
-=end %>
+
 
       </nav>
+<% 
+=end %>
     </div>
   </div>
 </header>

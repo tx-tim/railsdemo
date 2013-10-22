@@ -1,3 +1,5 @@
+<% headline_text = "Cash America Headline" if local_assigns[:headline_text].nil? %>
+
 <section class="page-hero">
   <div class="row page-hero-container">
     
@@ -13,7 +15,7 @@
     <% end %>
 
 
-      <h1 class="page-headline">Cash America Headline</h1>
+      <h1 class="page-headline"><%= headline_text %></h1>
 
       <ul class="breadcrumbs">
         <li>
