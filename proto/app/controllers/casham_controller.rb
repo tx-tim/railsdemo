@@ -1,5 +1,6 @@
 class CashamController < ApplicationController
   layout false
+  before_action :get_params
 
   def index
   end
@@ -23,4 +24,11 @@ class CashamController < ApplicationController
   def store_locator
     render layout: "one_column_content"
   end
+
+  protected
+    def get_params
+
+        @search_class = params[:search_class]
+
+    end
 end

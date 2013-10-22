@@ -12,6 +12,5 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
 //= require jquery.foundation.forms.js
 //= require_tree .

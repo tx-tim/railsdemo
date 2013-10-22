@@ -62,6 +62,8 @@ ul.breadcrumbs{
     a{
         color: $caPrimaryColor;
     }
+
+    @include button-color($caPrimaryColor, $white);
 }
 
 .footer{

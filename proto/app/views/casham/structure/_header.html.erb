@@ -9,7 +9,7 @@
             <a href="<%= cashams_path %>">home</a>
           </li>
           <li>
-            <a href="<%= casham_store_locator_path%>">Store Locator</a>
+            <%= link_to "Store Locator", casham_store_locator_path(:search_class => "active")%>
           </li>
         </ul>
       </nav>

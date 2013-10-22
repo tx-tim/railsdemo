@@ -13,13 +13,10 @@
       <%= yield :header %>
       <%= yield :hero %>
       
-      <section class="row"> <!-- Main Page Content -->
+      <section class="page-container row"> <!-- Main Page Content -->
+      
+        <%= yield :main_content %>
 
-        <main class="twelve columns main-body" role="content"> <!-- Main Content -->
-            
-            <%= yield :main_content %>
-
-        </main><!-- End Main Content -->
       </section>
     
       <div class="ca-root-footer"></div>  <!-- Need this elementfor the sticky footer -->
