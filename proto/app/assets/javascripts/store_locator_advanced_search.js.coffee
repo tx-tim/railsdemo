@@ -1,7 +1,7 @@
 $ ->
   $el = $(".prog-disclosure")
 
-  $(".prog-disclosure .prog-disclosure-title").click ->
+  $(".store-locator-page .prog-disclosure .prog-disclosure-title").click ->
     $el.toggleClass "active"
 
   $("a[href*=#]:not([href=#])").click ->

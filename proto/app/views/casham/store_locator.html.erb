@@ -1,5 +1,5 @@
 <% content_for :head do %>
-    <%= render "casham/structure/head" %>
+    <%= render "casham/structure/head", css_files: "store_locator" %>
 <% end %>
 
 <% content_for :header do %>
@@ -12,7 +12,7 @@
 
 
 <% content_for :main_content do %>
-    <main class="twelve columns main-body" role="content"> <!-- Main Content -->
+    <main class="twelve columns main-body store-locator-page" role="content"> <!-- Main Content -->
     <section class="row collapse advanced-search-criteria">
         <div class="widget prog-disclosure <%= @search_class %>">
             <div class="prog-disclosure-title text-right">
