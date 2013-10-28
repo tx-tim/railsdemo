@@ -11,50 +11,12 @@
     <div class="ca-root"> <!-- root element required for sticky footer -->
       
       <%= yield :header %>
-      <%#= yield :hero %>
-      
-      <section class="page-hero">
-        <div class="row page-hero-container">
-          <div class="eight columns offset-by-four page-headline-container">
-            <h1 class="page-headline">Cash America Headline</h1>
+      <%= yield :hero %>
 
-            <ul class="breadcrumbs">
-              <li>
-                <a href="#">Example 1</a></li>
-              
-              <li>
-                <a href="#">Example 2</a></li>
-              
-              <li class="unavailable">
-                <a href="#">Example 3</a></li>
-              
-              <li class="current">
-                <a href="#">Here</a></li>
-            </ul>
-          </div>
-        </div>
-      </section>
+      <section class="page-container row"> <!-- Main Page Content and Sidebar -->
 
-      <section class="row"> <!-- Main Page Content and Sidebar -->
-        <!-- Sidebar -->
-        <aside class="four columns side-bar">
-          <div class="side-bar-container">
+        <%= yield :main_content %>
 
-            <%= yield :widget_store_locator %>
-
-          </div>
-        </aside> <!-- End Sidebar -->
-        
-
-        
-        <main class="eight columns main-body" role="content"> <!-- Main Content -->
-          <article>
-            
-            <%= yield :main_content %>
-
-          </article>
-          <hr />
-        </main><!-- End Main Content -->
       </section>
     
       <div class="ca-root-footer"></div>  <!-- Need this elementfor the sticky footer -->

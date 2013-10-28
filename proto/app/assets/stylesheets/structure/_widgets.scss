@@ -34,7 +34,6 @@
 
 	.list-widget{
 		@extend %widget;
-
 	}
 
 
@@ -50,6 +49,7 @@
 		}
 
 		.widget-body{
+			text-align: center;
 			p{
 				margin-bottom: 0;
 			}
@@ -60,6 +60,13 @@
 			font-size: .9em;
 		}
 
+	}
+
+	.list-widget{
+		@extend %widget;
+		.list-widget-item{
+			margin-bottom: 17px;
+		}
 	}
 
 

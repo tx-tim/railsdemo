@@ -1,14 +1,21 @@
-  <% css_files = ["Reset", "Layout", "casham", "skins/ca_skin"].map(&:inspect).join(', ') %>
+  <% 
+  
+  page_css ||= []
+  css_files = ["Reset", "Layout", "casham", "skins/ca_skin"].concat(page_css) 
+
+  %>
   <head>
     <meta charset="utf-8" />
     <!-- Set the viewport width to device width for mobile -->
     <meta name="viewport" content="width=device-width" />
     <title>Page Title</title>
     <!-- Included CSS Files -->
-    <%= stylesheet_link_tag "Reset", "Layout", "casham", "skins/ca_skin" %>
-    <%= stylesheet_link_tag "pages/store_locator" %>
+
+    <% css_files.each do |f| %>
+    	<%= stylesheet_link_tag f.to_s %>
+    <% end %>
+
+
     <%= javascript_include_tag "modernizr.foundation" %>
     <%= javascript_include_tag "application" %>
   </head>
-
-  

@@ -10,12 +10,31 @@
 	<%= render "casham/components/landing_hero", cols: "eight" %>
 <% end %>
 
-<% content_for :widget_store_locator do %>
-	<%= render "casham/components/widget_store_locator" %>
-<% end %>
-
 <% content_for :main_content do %>
-	<%#= render "casham/components/main_content" %>
+
+	<!-- Sidebar -->
+	<aside class="four columns side-bar tcc-page">
+		<div class="side-bar-container">
+
+	    <%= render "casham/components/widget_store_locator" %>
+	    <%= render "casham/components/widget_pr_highlights" %>
+	    <%= render "casham/components/widget_content_article" %>
+	    <%= render "casham/components/widget_service_spotlight" %>
+		</div>
+	</aside> <!-- End Sidebar -->
+	
+
+	
+	<main class="eight columns main-body tcc-page" role="content"> <!-- Main Content -->
+ 		
+	    <%= render "casham/components/widget_content_article" %>
+	    <%= render "casham/components/widget_service_spotlight" %>
+
+	    	    <%= render "casham/components/widget_store_locator" %>
+	    <%= render "casham/components/widget_pr_highlights" %>
+	    
+	</main><!-- End Main Content -->
+
 <% end %>
 
 <% content_for :footer do %>

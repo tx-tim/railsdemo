@@ -19,16 +19,19 @@
   //styles for the side-bar section
   .side-bar{
     margin-top: -112px;
-    
-    .side-bar-container{
-      @include border-radius(5px);
-      min-height: 500px;
+    @include border-radius(5px);
+    min-height: 500px;
+    background-color: #fff;
+
+    //.side-bar-container{
+      //@include border-radius(5px);
+      //min-height: 500px;
 
       .widget{
-        padding: $columnGutter/2;
+        //padding: $columnGutter/2;
       }
 
-    }
+    //}
   }
 
  

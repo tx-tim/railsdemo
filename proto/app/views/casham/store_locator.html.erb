@@ -1,5 +1,5 @@
 <% content_for :head do %>
-    <%= render "casham/structure/head", css_files: "store_locator" %>
+    <%= render "casham/structure/head", page_css: ["pages/store_locator"] %>
 <% end %>
 
 <% content_for :header do %>
@@ -13,133 +13,134 @@
 
 <% content_for :main_content do %>
     <main class="twelve columns main-body store-locator-page" role="content"> <!-- Main Content -->
-    <section class="row collapse advanced-search-criteria">
-        <div class="widget prog-disclosure <%= @search_class %>">
-            <div class="prog-disclosure-title text-right">
-                <h5>Advanced Search </h5>
-            </div>
-
-            <div class="prog-disclosure-content row collapse">
-                <form class="twelve columns custom">
-                    <fieldset class="four columns geocriteria">
-                        <legend>Search Within</legend>
-                        
-                        <div class="row collapse"><!-- Custom Selects -->
-                            <div class="five columns">
-                                <label for="customDropdown">Miles:</label>
-                                
-                                <select style="display:none;" id="customDropdown">
-                                    <option SELECTED>50</option>
-                                    <option>75</option>
-                                    <option>100</option>
-                                </select>
-
-                                <div class="custom dropdown">
-                                  <a href="#" class="current">50</a>
-                                  <a href="#" class="selector"></a>
-                                  <ul>
-                                    <li>50</li>
-                                    <li>75</li>
-                                    <li>100</li>
-                                  </ul>
-                                </div>
-                            </div>
-                        </div>
-                    
-                        <div class="row collapse">
-                            <div class="five columns">
-                                <label for="anchor-zip">Zip:</label>
-                                <input id="anchor-zip" type="text" class="zip-input">   
-                            </div>
-                        </div>
-
-                        <p>or</p>
-                        <hr/>
-
-                        <label for="anchor-streetAddress">Street Address</label>
-                        <input id="anchor-streetAddress"type="text" class="street-input">
-
-                        <label for="anchor-city">City</label>
-                        <input id="anchor-streetAddress"type="text" class="street-input">
-                    <!-- Custom Selects -->
-                        <div class="row collapse">
-                            <div class="three columns">
-                                <label for="customDropdown">State</label>
-                                <select style="display:none;" id="customDropdown">
-                                    <option SELECTED>Select State</option>
-                                    <option>Not gonna list</option>
-                                    <option>All the states here</option>
-                                </select>
-                                <div class="custom dropdown">
-                                    <a href="#" class="current">
-                                    Select State
-                                    </a>
-                                    <a href="#" class="selector"></a>
-                                    <ul>
-                                        <li>Select State</li>
-                                        <li>Not gonna list</li>
-                                        <li>All the states here</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </fieldset>
-
-                    <fieldset class="five offset-by-two columns service-filter">
-                        <legend>Services</legend>
-                        <!-- Custom Checkbox -->
-                        <div class="">
-                            <% for i in 1...12 %>
-                                <label for="checkbox1"><input type="checkbox" id="checkbox1" style="display: none;"><span class="custom checkbox"></span> Service Option</label>
-                            <% end %>
-                        </div>
-                    </fieldset> 
-
-                    <fieldset class="five offset-by-two columns service-filter">
-                        <legend>Brands</legend>
-                        <div class="">
-                            <% for i in 1...4 %>
-                                <label for="checkbox1"><input type="checkbox" id="checkbox1" style="display: none;"><span class="custom checkbox"></span> Brand Option</label>
-                            <% end %>
-                        </div>
-                    </fieldset> 
-
-                    <div class="twelve columns">
-                        <%= link_to "Search", {:anchor => "results"}, :class => "button radius" %>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </section>
-
-
-    <article class="row collapse">
-        <a name="results"></a>
-        <div class="store-locator-search-results four columns">
-            <h4 class="">Results</h4>
-            <% for i in 1...7 %>
-                <div class="result-item">
-                    <ul class="address">
-                        <li class="store">Brand - Store Name and / or Number</li>
-                        <li class="street">Street Addresss NW 7th</li>
-                        <li class="province">Ft Worth, Tx 75000</li>
-                        <li class="tel">Phone: <a href="tel:408-867-5309">408-867-5309</a></li>
-                        <li class="dir">
-                            <span aria-hidden="true" data-icon="&#xe02f;" class="icon icon-location-17-icon"></span>
-                            <a href="">Get Directions</a>
-                        </li>
-                        <li class="local-page">
-                            <span aria-hidden="true" data-icon="&#xe043;" class="icon icon-globe"></span>
-                            <a href="">View Store's Website</a>
-                        </li>
-                    </ul>
+        <section class="row advanced-search-criteria">
+            <%# @search_class determines the initial state of advanced search - active will open it %>
+            <div class="widget prog-disclosure <%= @search_class %> row">
+                <div class="prog-disclosure-title text-right">
+                    <h5>Advanced Search </h5>
                 </div>
-            <% end %>
-        </div>
-        <div class="results-map eight columns">
-            <img src="http://placehold.it/645x465">
-        </div>
-    </article>
+
+                <div class="prog-disclosure-content row collapse">
+                    <form class="twelve columns custom">
+                        <fieldset class="four columns geocriteria">
+                            <legend>Search Within</legend>
+                            
+                            <div class="row "><!-- Custom Selects -->
+                                <div class="five columns">
+                                    <label for="customDropdown">Miles:</label>
+                                    
+                                    <select style="display:none;" id="customDropdown">
+                                        <option SELECTED>50</option>
+                                        <option>75</option>
+                                        <option>100</option>
+                                    </select>
+
+                                    <div class="custom dropdown">
+                                      <a href="#" class="current">50</a>
+                                      <a href="#" class="selector"></a>
+                                      <ul>
+                                        <li>50</li>
+                                        <li>75</li>
+                                        <li>100</li>
+                                      </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="row ">
+                                <div class="five columns">
+                                    <label for="anchor-zip">Zip:</label>
+                                    <input id="anchor-zip" type="text" class="zip-input">   
+                                </div>
+                            </div>
+
+                            <p>or</p>
+                            <hr/>
+
+                            <label for="anchor-streetAddress">Street Address</label>
+                            <input id="anchor-streetAddress"type="text" class="street-input">
+
+                            <label for="anchor-city">City</label>
+                            <input id="anchor-streetAddress"type="text" class="street-input">
+                        <!-- Custom Selects -->
+                            <div class="row ">
+                                <div class="three columns">
+                                    <label for="customDropdown">State</label>
+                                    <select style="display:none;" id="customDropdown">
+                                        <option SELECTED>Select State</option>
+                                        <option>Not gonna list</option>
+                                        <option>All the states here</option>
+                                    </select>
+                                    <div class="custom dropdown">
+                                        <a href="#" class="current">
+                                        Select State
+                                        </a>
+                                        <a href="#" class="selector"></a>
+                                        <ul>
+                                            <li>Select State</li>
+                                            <li>Not gonna list</li>
+                                            <li>All the states here</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+
+                        <fieldset class="five offset-by-two columns service-filter">
+                            <legend>Services</legend>
+                            <!-- Custom Checkbox -->
+                            <div class="">
+                                <% for i in 1...12 %>
+                                    <label for="checkbox1"><input type="checkbox" id="checkbox1" style="display: none;"><span class="custom checkbox"></span> Service Option</label>
+                                <% end %>
+                            </div>
+                        </fieldset> 
+
+                        <fieldset class="five offset-by-two columns service-filter">
+                            <legend>Brands</legend>
+                            <div class="">
+                                <% for i in 1...4 %>
+                                    <label for="checkbox1"><input type="checkbox" id="checkbox1" style="display: none;"><span class="custom checkbox"></span> Brand Option</label>
+                                <% end %>
+                            </div>
+                        </fieldset> 
+
+                        <div class="twelve columns">
+                            <%= link_to "Search", {:anchor => "results"}, :class => "button radius" %>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+        <article class="row collapse">
+            <a name="results"></a>
+            <div class="store-locator-search-results four columns">
+                <h4 class="">Results</h4>
+                <% for i in 1...7 %>
+                    <div class="result-item">
+                        <ul class="address">
+                            <li class="store">Brand - Store Name and / or Number</li>
+                            <li class="street">Street Addresss NW 7th</li>
+                            <li class="province">Ft Worth, Tx 75000</li>
+                            <li class="tel">Phone: <a href="tel:408-867-5309">408-867-5309</a></li>
+                            <li class="dir">
+                                <span aria-hidden="true" data-icon="&#xe02f;" class="icon icon-location-17-icon"></span>
+                                <a href="">Get Directions</a>
+                            </li>
+                            <li class="local-page">
+                                <span aria-hidden="true" data-icon="&#xe043;" class="icon icon-globe"></span>
+                                <a href="">View Store's Website</a>
+                            </li>
+                        </ul>
+                    </div>
+                <% end %>
+            </div>
+            <div class="results-map eight columns">
+                <img src="http://placehold.it/645x465">
+            </div>
+        </article>
     </main><!-- End Main Content -->
 <% end %>
 
