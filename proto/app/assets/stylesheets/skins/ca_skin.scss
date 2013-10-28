@@ -63,6 +63,10 @@ ul.breadcrumbs{
         color: $caPrimaryColor;
     }
 
+    .toggle-widget{
+      border: 1px dotted $caPrimaryColor;
+    }
+    
     @include button-color($caPrimaryColor, $white);
 }
 

@@ -23,10 +23,15 @@
 		overflow-y: scroll;
 	}
 
-
+	.horizontal-options-divider{
+		hr{	
+			margin-top: 12px
+		}
+	}
+	
 	.prog-disclosure{
-		margin: 0 0 22px 0;
-		border-bottom: 1px solid $secondaryColor;
+		margin: 22px 0 22px 0;
+		@include border-radius(3px, 3px);
 
 		fieldset{
 			border: none;

@@ -15,7 +15,7 @@
     <main class="twelve columns main-body store-locator-page" role="content"> <!-- Main Content -->
         <section class="row advanced-search-criteria">
             <%# @search_class determines the initial state of advanced search - active will open it %>
-            <div class="widget prog-disclosure <%= @search_class %> row">
+            <div class="widget toggle-widget prog-disclosure <%= @search_class %> row">
                 <div class="prog-disclosure-title text-right">
                     <h5>Advanced Search </h5>
                 </div>
@@ -54,8 +54,12 @@
                                 </div>
                             </div>
 
-                            <p>or</p>
-                            <hr/>
+                            <div class="row horizontal-options-divider">
+                              <div class="one column"><p>or</p></div>
+                            <div class="eleven columns"><hr/></div>  
+                            </div>
+                            
+
 
                             <label for="anchor-streetAddress">Street Address</label>
                             <input id="anchor-streetAddress"type="text" class="street-input">
@@ -67,17 +71,17 @@
                                 <div class="three columns">
                                     <label for="customDropdown">State</label>
                                     <select style="display:none;" id="customDropdown">
-                                        <option SELECTED>Select State</option>
+                                        <option SELECTED>State</option>
                                         <option>Not gonna list</option>
                                         <option>All the states here</option>
                                     </select>
                                     <div class="custom dropdown">
                                         <a href="#" class="current">
-                                        Select State
+                                         State
                                         </a>
                                         <a href="#" class="selector"></a>
                                         <ul>
-                                            <li>Select State</li>
+                                            <li>State</li>
                                             <li>Not gonna list</li>
                                             <li>All the states here</li>
                                         </ul>
