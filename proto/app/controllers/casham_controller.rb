@@ -22,6 +22,8 @@ class CashamController < ApplicationController
   end
 
   def store_locator
+    @services = ["Pawn Loans", "Auto Equity Loan", "Cash Advance", "Preowned Merchandise", "Check Cashing", "Prepaid Debit Cards", "Money Orders", "Insurance", "Gold Purchase", "Money Transfer", "Income Tax" ]
+    @brands = ["Cash America", "SuperPawn", "Cashland", "Payday Advance"]
     render layout: "one_column_content"
   end
 

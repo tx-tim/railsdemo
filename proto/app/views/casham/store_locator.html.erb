@@ -94,8 +94,8 @@
                             <legend>Services</legend>
                             <!-- Custom Checkbox -->
                             <div class="">
-                                <% for i in 1...12 %>
-                                    <label for="checkbox1"><input type="checkbox" id="checkbox1" style="display: none;"><span class="custom checkbox"></span> Service Option</label>
+                                <% @services.each do |s| %>
+                                    <label for="checkbox1"><input type="checkbox" id="checkbox1" style="display: none;"><span class="custom checkbox"></span> <%= s %></label>
                                 <% end %>
                             </div>
                         </fieldset> 
@@ -103,8 +103,8 @@
                         <fieldset class="five offset-by-two columns service-filter">
                             <legend>Brands</legend>
                             <div class="">
-                                <% for i in 1...4 %>
-                                    <label for="checkbox1"><input type="checkbox" id="checkbox1" style="display: none;"><span class="custom checkbox"></span> Brand Option</label>
+                                <% @brands.each do |b| %>
+                                    <label for="checkbox1"><input type="checkbox" id="checkbox1" style="display: none;"><span class="custom checkbox"></span> <%= b %></label>
                                 <% end %>
                             </div>
                         </fieldset> 
