@@ -26,7 +26,7 @@
 	.results-map{
 		border: 1px solid $secondaryColor;
 	}
-	
+
 	.horizontal-options-divider{
 		hr{	
 			margin-top: 12px
@@ -72,6 +72,12 @@
 	    .prog-disclosure-content { 
 	    	display: none; 
 	    	padding: 15px; 
+	    }
+
+	    .short-field{
+	    	.inline-label{
+	    		padding-top: 12px;
+	    	}
 	    }
 
 	    &.active { 

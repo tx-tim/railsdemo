@@ -25,9 +25,9 @@
                         <fieldset class="four columns geocriteria">
                             <legend>Search Within</legend>
                             
-                            <div class="row "><!-- Custom Selects -->
+                            <div class="row short-field"><!-- Custom Selects -->
                                 <div class="five columns">
-                                    <label for="customDropdown">Miles:</label>
+                                    <!-- <label for="customDropdown">Miles:</label> -->
                                     
                                     <select style="display:none;" id="customDropdown">
                                         <option SELECTED>50</option>
@@ -45,12 +45,19 @@
                                       </ul>
                                     </div>
                                 </div>
+                                <div class="three columns end">
+                                    <label class="inline-label" for="customDropdown">Miles</label>
+                                </div>
                             </div>
-                        
-                            <div class="row ">
+                            
+                            <span>of</span>
+
+                            <div class="row short-field">
                                 <div class="five columns">
-                                    <label for="anchor-zip">Zip:</label>
-                                    <input id="anchor-zip" type="text" class="zip-input">   
+                                    <input id="anchor-zip" type="text" class="zip-input">
+                                </div>
+                                <div class="three columns end">
+                                    <label class="inline-label" for="customDropdown">Zip</label>
                                 </div>
                             </div>
 
