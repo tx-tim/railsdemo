@@ -40,13 +40,28 @@
 }
 
 .main-body{
-	.service_spotlight{
+	.widget{
+		h1, h2, h3, h4, h5, h6{
+		  font-size: ms(1);
+		}
+		@include button-structure;
+	}
+
+	.pr-highlights{
 		.widget-header{
 			text-align: center;
 			color: black;
 			border: 1px solid $secondaryColor;
 			padding: .4em inherit;
 		}
+	}
+
+	.financial-tools{
+		@extend .pr-highlights;
+	}
+	
+	.service_spotlight{
+		@extend .pr-highlights;
 
 		.widget-body{
 			text-align: center;
