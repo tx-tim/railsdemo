@@ -1,24 +1,30 @@
+%widget {
+	p{
+		font-style: normal;
+	}
+	.widget-header{
+		position: relative;
+	}
+	.widget-body{
+		padding-bottom: 1em;
+		border-bottom: 1px solid $secondaryColor;
+	}
 
-.side-bar {
-	%widget {
-		p{
-			font-style: normal;
-		}
-		.widget-header{
-			position: relative;
-		}
+	@include button-structure;
+	
+	.button{
+		font-size: 13px;
+		padding: $btnBase ($btnBase + 2) ($btnBase + 2); 
+	}
+
+	@include respondTo(smallScreen){
 		.widget-body{
-			padding-bottom: 1em;
-			border-bottom: 1px solid $secondaryColor;
-		}
-
-		@include button-structure;
-		
-		.button{
-			font-size: 13px;
-			padding: $btnBase ($btnBase + 2) ($btnBase + 2); 
+			text-align: center;
 		}
 	}
+}
+
+.side-bar {
 	
 	.store-locator{
 		@extend %widget;
@@ -32,7 +38,7 @@
 		}
 	}
 
-	.list-widget{
+	.widget{
 		@extend %widget;
 	}
 
@@ -41,10 +47,10 @@
 
 .main-body{
 	.widget{
+		@extend %widget;
 		h1, h2, h3, h4, h5, h6{
 		  font-size: ms(1);
 		}
-		@include button-structure;
 	}
 
 	.pr-highlights{
@@ -59,7 +65,7 @@
 	.financial-tools{
 		@extend .pr-highlights;
 	}
-	
+
 	.service_spotlight{
 		@extend .pr-highlights;
 
@@ -85,12 +91,4 @@
 			margin-bottom: 17px;
 		}
 	}
-
-
-	@include respondTo(smallScreen){
-		.widget-body{
-			text-align: center;
-		}
-	}
-
 }
