@@ -12,7 +12,7 @@
 
 
 <% content_for :main_content do %>
-    <main class="twelve columns main-body store-locator-page" role="content"> <!-- Main Content -->
+    <section class="twelve columns main-body store-locator-page" role="content"> <!-- Main Content -->
         <section class="row advanced-search-criteria">
             <%# @search_class determines the initial state of advanced search - active will open it %>
             <div class="widget toggle-widget prog-disclosure <%= @search_class %> row">
@@ -150,7 +150,7 @@
                 <%= image_tag "StoreLocatorBingMap.jpg" %>
             </div>
         </article>
-    </main><!-- End Main Content -->
+    </section><!-- End Main Content -->
 <% end %>
 
 <% content_for :footer do %>

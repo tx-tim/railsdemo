@@ -7,6 +7,7 @@ Proto::Application.routes.draw do
   get "casham/occ"
   get "casham/localstore"
   get "casham/store_locator"
+  get "casham/pawn_loans"
   get "tim/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

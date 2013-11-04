@@ -16,16 +16,13 @@
 		font-size: 13px;
 		padding: $btnBase ($btnBase + 2) ($btnBase + 2); 
 	}
-
-	@include respondTo(smallScreen){
-		.widget-body{
-			text-align: center;
-		}
-	}
 }
 
 .side-bar {
-	
+	.widget{
+		@extend %widget;
+	}
+
 	.store-locator{
 		@extend %widget;
 		.icon{
@@ -38,12 +35,15 @@
 		}
 	}
 
-	.widget{
-		@extend %widget;
+	.financial-tools{
+		.description{
+			display: none;
+		}
 	}
 
 
 }
+
 
 .main-body{
 	.widget{
@@ -51,6 +51,12 @@
 		h1, h2, h3, h4, h5, h6{
 		  font-size: ms(1);
 		}
+	}
+
+	.article-image-right{
+		float: right;
+		padding-left: 15px;
+		padding-bottom: 15px;
 	}
 
 	.pr-highlights{
@@ -64,6 +70,11 @@
 
 	.financial-tools{
 		@extend .pr-highlights;
+		@include respondTo(smallScreen){
+			.description{
+				display: none;
+			}
+		}
 	}
 
 	.service_spotlight{
@@ -83,6 +94,16 @@
 			color: $txtColor;
 		}
 
+	}
+
+	.features-widget{
+		@extend %widget;
+
+		@include respondTo(smallScreen){
+			.widget-body{
+				text-align: center;
+			}
+		}
 	}
 
 	.list-widget{

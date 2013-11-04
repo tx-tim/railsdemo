@@ -1,0 +1,112 @@
+<% content_for :head do %>
+    <%= render "casham/structure/head", page_css: ["pages/store_locator"] %>
+<% end %>
+
+<% content_for :header do %>
+    <%= render "casham/structure/header" %>
+<% end %>
+
+<% content_for :hero do %>
+    <%= render "casham/components/landing_hero", cols: "eight", headline_text: "Pawn Loans" %>
+<% end %>
+
+
+<% content_for :main_content do %>
+    <!-- Sidebar -->
+    <aside class="four columns side-bar pawn-loans-page">
+        <div class="side-bar-container">
+
+        <%= render "casham/components/widget_store_locator" %>
+        <%= render "casham/components/widget_pr_highlights" %>
+        <%= render "casham/components/widget_financial_planning" %>
+
+        </div>
+    </aside> <!-- End Sidebar -->
+
+
+
+    <section class="eight columns main-body pawn-loans-page" role="content"> <!-- Main Content -->
+            
+        <div class="widget content-article row">
+            <div class="twelve columns">
+                <h3>
+                    <a href="#">We Have Cash When it Counts</a>
+                </h3>
+            </div>
+
+            <div class="twelve columns">
+                <span class="article-image-right">
+                    <%= image_tag "pawn3.png" %>
+                </span>
+
+                <p>We are one of the largest pawnshop chain in America with over 600 pawnshops operating under the names Cash America Pawn and SuperPawn. But don't let our size scare you—it just means we have more money to loan! If you’re in need of a short-term loan, but have never gotten a pawn loan before, let us walk you through the process.
+                </p>
+            </div>
+        </div>
+
+        <div class="widget content-article row">
+            <div class="twelve columns">
+                <h3>
+                    <a href="#">It Really is as Easy as </a>
+                </h3>
+            </div>
+            <div class="">
+              <div class="eight columns">
+                <p>We use all the research tools we have at our disposal to determine an item’s value and get you the most money we can. This appraisal process for a pawn item varies depending on the type of item—for example, jewelry is evaluated differently than a DVD player—but every appraisal is done with the intent of getting you the money you need.
+                </p>
+              </div>
+
+              <div class="four columns">
+                <%= image_tag "pawn3.png" %>
+              </div>
+            </div>
+        </div>
+
+
+        <div class="widget content-article row">
+          <div class="twelve columns">
+            <h3>
+              <a href="#">How We Value Items</a>
+            </h3>
+          </div>
+            <div class="">
+              <div class="eight columns">
+                <p>We use all the research tools we have at our disposal to determine an item’s value and get you the most money we can. This appraisal process for a pawn item varies depending on the type of item—for example, jewelry is evaluated differently than a DVD player—but every appraisal is done with the intent of getting you the money you need.
+                </p>
+              </div>
+
+              <div class="four columns">
+                <%= image_tag "pawn3.png" %>
+              </div>
+            </div>
+        </div>
+
+        <div class="widget content-article row">
+            <div class="twelve columns">
+                <h3>
+                    <a href="#">How We Value Items</a>
+                </h3>
+            </div>
+
+            <div class="twelve columns">
+                <span class="article-image-right">
+                    <%= image_tag "pawn3.png" %>
+                </span>
+
+                <p>While your item is in pawn, you still own it. Your item is safely stored until you come back to pay your pawn loan in full and claim your merchandise. When you give us an item of collateral for pawn, we keep all accessories (remote controls, cables, etc.) with your item, and place it in our secure facility in an area designated by your pawn loan number. All Cash America shops are fully insured for the total loan value of the collateral we keep.</p>
+
+                <p>Our coworkers are professionals who are trained in all aspects of the pawn industry, including extensive education on the products we receive and sell. They are required to complete several continuing education courses each year, and attend additional educational courses each quarter as new products/services are implemented in our pawnshops. Cash America coworkers take pride in their work and it shows—from their consistent dress code to the way they greet customers and confidently handle pawn transactions—they are professionals who are ready to help.</p>
+
+                <p>Our pawnshops are routinely audited by an Internal Audit & Security Department, and work closely with local law enforcement officials.
+                </p>
+            </div>
+        </div>
+
+        <%= render "casham/components/widget_service_spotlight" %>
+
+    </section><!-- End Main Content -->
+<% end %>
+
+<% content_for :footer do %>
+    <%= render "casham/structure/footer" %>
+<% end %>

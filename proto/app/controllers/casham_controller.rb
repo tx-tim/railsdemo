@@ -27,6 +27,10 @@ class CashamController < ApplicationController
     render layout: "one_column_content"
   end
 
+  def pawn_loans
+    render layout: "two_column_content"
+  end
+
   protected
     def get_params
 

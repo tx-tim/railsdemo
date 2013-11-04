@@ -9,9 +9,15 @@ body{
 }
 
 .page-hero{
-  background: $caPrimaryColor;
-  background: image-url("dummy-hero.jpg") no-repeat center center;
-  background-size: cover;
+  background-color: $caPrimaryColor;
+
+  @include background(image-url("dummy-hero.jpg") no-repeat center center);
+  @include background-size(cover);
+}
+
+.lt-ie9 .page-hero{
+  background-image: none;
+  background-color: $caPrimaryColor;
 }
 
 ul.breadcrumbs{
