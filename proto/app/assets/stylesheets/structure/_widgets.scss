@@ -1,3 +1,7 @@
+// ========================
+// abstract widget classes
+// ========================
+
 %widget {
 	p{
 		font-style: normal;
@@ -18,13 +22,39 @@
 	}
 }
 
-.side-bar {
-	.widget{
-		@extend %widget;
+%main-body-widget{
+	@extend %widget;
+	h1, h2, h3, h4, h5, h6{
+	  font-size: ms(1);
 	}
+}
 
+%side-bar-widget{
+	@extend %widget;
+}
+
+%vertical-list-widget{
+	.list-widget-item{
+		margin-bottom: 17px;
+	}
+}
+
+%horizontal-list-widget{
+	@include respondTo(smallScreen){
+		.widget-header,
+		.widget-body{
+			text-align: center;
+		}
+	}
+}
+
+
+// ========================
+// store locator widget
+// ========================
+.side-bar{
 	.store-locator{
-		@extend %widget;
+		@extend %side-bar-widget;
 		.icon{
 			position: absolute;
 			top: -8px;
@@ -34,32 +64,56 @@
 			padding-left: 2.4em;
 		}
 	}
+}
 
+.main-body{
+	.store-locator{
+		@extend %main-body-widget;
+	}
+}
+
+
+// ========================
+// financial tools widget
+// ========================
+
+.side-bar{
 	.financial-tools{
+		@extend %side-bar-widget;
 		.description{
 			display: none;
 		}
 	}
+}
 
-
+.main-body{
+	.financial-tools{
+		@extend %main-body-widget;
+		@extend .pr-highlights;           //////////// REFACTOR
+		@include respondTo(smallScreen){
+			.description{
+				display: none;
+			}
+		}
+	}
 }
 
 
-.main-body{
-	.widget{
-		@extend %widget;
-		h1, h2, h3, h4, h5, h6{
-		  font-size: ms(1);
-		}
-	}
+// ========================
+// pr highlights widget
+// ========================
 
-	.article-image-right{
-		float: right;
-		padding-left: 15px;
-		padding-bottom: 15px;
-	}
-
+.side-bar{
 	.pr-highlights{
+		@extend %side-bar-widget;
+	}
+	
+}
+
+.main-body{
+	.pr-highlights{
+		@extend %main-body-widget;
+		@extend %vertical-list-widget;
 		.widget-header{
 			text-align: center;
 			color: black;
@@ -67,18 +121,25 @@
 			padding: .4em inherit;
 		}
 	}
+}
 
-	.financial-tools{
-		@extend .pr-highlights;
-		@include respondTo(smallScreen){
-			.description{
-				display: none;
-			}
-		}
-	}
 
+// ========================
+// service spotlight widget
+// ========================
+
+.side-bar{
 	.service_spotlight{
-		@extend .pr-highlights;
+		@extend %side-bar-widget;
+		@extend %horizontal-list-widget;
+	}
+}
+
+.main-body{
+	.service_spotlight{
+		@extend %main-body-widget;
+		@extend %horizontal-list-widget;
+		@extend .pr-highlights;  //////////// REFACTOR
 
 		.widget-body{
 			text-align: center;
@@ -95,21 +156,27 @@
 		}
 
 	}
+}
 
-	.features-widget{
-		@extend %widget;
 
-		@include respondTo(smallScreen){
-			.widget-body{
-				text-align: center;
-			}
-		}
-	}
+// ========================
+// article image right widget
+// ========================
 
-	.list-widget{
-		@extend %widget;
-		.list-widget-item{
-			margin-bottom: 17px;
-		}
+.side-bar{
+	.article-image-right{
+		@extend %side-bar-widget;
 	}
 }
+
+.main-body{
+	.article-image-right{
+		@extend %main-body-widget;
+		float: right;
+		padding-left: 15px;
+		padding-bottom: 15px;
+	}
+}
+
+//============ END
+

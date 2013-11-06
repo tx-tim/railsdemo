@@ -100,7 +100,10 @@
                             <!-- Custom Checkbox -->
                             <div class="">
                                 <% @services.each do |s| %>
-                                    <label for="checkbox1"><input type="checkbox" id="checkbox1" style="display: none;"><span class="custom checkbox"></span> <%= s %></label>
+                                    <label for="checkbox1">
+                                        <input type="checkbox" id="checkbox1" style="display: none;">
+                                        <span class="custom checkbox"></span> <%= s %>
+                                    </label>
                                 <% end %>
                             </div>
                         </fieldset> 
