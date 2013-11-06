@@ -9,13 +9,38 @@
           <li class="toggle-topbar"><a href="#"></a></li>
         </ul>
         <section>
-          <ul class="left">
+<!--           <ul class="left">
             <li><%= link_to "Home", cashams_path %></li>
-          </ul>
+          </ul> -->
 
           <ul class="right">
+            <li><%= link_to "Pawn Loans", cashams_path %></li>
+            <li><%= link_to "Auto Title Loans", cashams_path %></li>
+            <li><%= link_to "Cash Advances", cashams_path %></li>
             <li><%= link_to "Store Locator", casham_store_locator_path(:search_class => "active")%></li>
-          </ul>
+            <li class="your-store">
+              <div>
+              <span class="title">Your Store:</span>
+               <div class="org">Cash America</div>
+               <div class="adr">
+                <div class="street-address">1234 Whodunnitst
+                <span class="locality">Ft. Worth</span>
+              , 
+                <span class="region">TX</span>
+              , 
+                <span class="postal-code">12345</span>
+                </div>
+
+               </div>
+               </div>
+            </li>
+            <li class="change-store">
+              <span aria-hidden="true" data-icon="&#xe02c;" class="icon icon-arrow-down-2"></span></li>
+            <li>
+          </ul>          
+
+          
+
         </section>
       </nav>
 

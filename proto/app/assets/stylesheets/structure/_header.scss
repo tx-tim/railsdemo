@@ -20,6 +20,43 @@
 		background-color: transparent;
 	}
 
+	.your-store{
+		max-width: 251px;
+		overflow: hidden;
+		//refactor to whatever other header color is
+		color: $white;
+		//refactor with header variable and maths
+		padding-top: 1em;
+		padding-left: 24px;
+		margin-left: 18px;
+		border-left: 1px solid lightgray;
+		line-height: 1.4em;
+		//refactor with header variable and maths
+		height: 75px;
+		.title{
+			font-size: .875em;
+			line-height: .875em;
+		}
+		
+		.org, .adr{
+			line-height: 1.1em;
+			height: 1.1em;
+			overflow: hidden;
+		}
+		
+		span,div,a{
+			font-size: 13px;
+			font-weight: bold;
+		}
+	}
+	.change-store{
+		//refactor - move to skin
+		padding: 0 2px;
+		border-left: solid 1px white;
+		border-right: solid 1px white;
+		color: $white;
+	}
+
 	@include respondTo(smallScreen){
 		background-color: white;
 		
