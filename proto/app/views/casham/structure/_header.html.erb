@@ -8,7 +8,7 @@
           <li class="name"><h1><a href="#">Cash America</a></h1></li>
           <li class="toggle-topbar"><a href="#"></a></li>
         </ul>
-        <section>
+        <div>
 <!--           <ul class="left">
             <li><%= link_to "Home", cashams_path %></li>
           </ul> -->
@@ -20,28 +20,27 @@
             <li><%= link_to "Store Locator", casham_store_locator_path(:search_class => "active")%></li>
             <li class="your-store">
               <div>
-              <span class="title">Your Store:</span>
-               <div class="org">Cash America</div>
-               <div class="adr">
-                <div class="street-address">1234 Whodunnitst
-                <span class="locality">Ft. Worth</span>
-              , 
-                <span class="region">TX</span>
-              , 
-                <span class="postal-code">12345</span>
+                <div class="row">
+                  <div class="title six columns"><span aria-hidden="true" data-icon="&#xe02c;" class="icon icon-arrow-down-2 title"></span> Your Store:</div>
                 </div>
-
-               </div>
-               </div>
+                
+                <!-- <span aria-hidden="true" data-icon="&#xe02c;" class="icon icon-arrow-down-2 text-right"></span> -->
+                <div class="org">Cash America</div>
+                <div class="adr">
+                  <div class="street-address">1234 Whodunnitst
+                    <span class="locality">Ft. Worth, </span>
+                    <span class="region">TX, </span>
+                    <span class="postal-code">12345</span>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li class="change-store">
-              <span aria-hidden="true" data-icon="&#xe02c;" class="icon icon-arrow-down-2"></span></li>
-            <li>
+
           </ul>          
 
           
 
-        </section>
+        </div>
       </nav>
 
 <% 

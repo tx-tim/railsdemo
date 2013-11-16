@@ -4,13 +4,12 @@ body{
   background-color: $caSecondaryColor;
 }
 
-.header, .page-hero{
-    
+.semantic-only{
+  display: none;
 }
 
 .page-hero{
   background-color: $caPrimaryColor;
-
   @include background(image-url("dummy-hero.jpg") no-repeat center center);
   @include background-size(cover);
 }
@@ -26,33 +25,29 @@ ul.breadcrumbs{
   }
 }
 
-
 .page-headline{
   color: $white;
   font-weight: normal;
 }
 
+.side-bar{
+  h1, h2, h3{
+      color: $caAccentColor;
+  } 
+  h4, h5{
+      @extend h3
+  }         
+  h6, p{
+      color: $caBodyTxtColor;
+  } 
+  a{
+      color: $caAccentColor;
+  }
+  @include button-color($caAccentColor, $white);
+}
 
 .side-bar-container{
   background-color: $white;
-
-  .widget{
-    h3{
-        color: $caAccentColor;
-    } 
-    h4, h5{
-        @extend h3
-    }         
-    h6, p{
-        color: $caBodyTxtColor;
-    } 
-    a{
-        color: $caAccentColor;
-    }
-
-    @include button-color($caAccentColor, $white);
-
-  }
 }
   
 .main-body{
@@ -68,7 +63,6 @@ ul.breadcrumbs{
     a{
         color: $caPrimaryColor;
     }
-
     .toggle-widget{
       border: 1px dotted $caPrimaryColor;
     }
@@ -84,7 +78,6 @@ ul.breadcrumbs{
   h1, h2, h3{
     color:  shade($white, 20%);
   }
-
   p, a, label, ul, span{
     color: shade($caSecondaryColor, 40%);
   }

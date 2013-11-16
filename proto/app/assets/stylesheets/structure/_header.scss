@@ -35,7 +35,7 @@
 		height: 75px;
 		.title{
 			font-size: .875em;
-			line-height: .875em;
+			line-height: 1em;
 		}
 		
 		.org, .adr{
@@ -50,10 +50,7 @@
 		}
 	}
 	.change-store{
-		//refactor - move to skin
 		padding: 0 2px;
-		border-left: solid 1px white;
-		border-right: solid 1px white;
 		color: $white;
 	}
 

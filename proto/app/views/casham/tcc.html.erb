@@ -12,19 +12,7 @@
 
 <% content_for :main_content do %>
 
-	<!-- Sidebar -->
-	<aside class="four columns side-bar tcc-page">
-		<div class="side-bar-container">
-	    <%= render "casham/components/widget_store_locator" %>
-	    <%= render "casham/components/widget_pr_highlights" %>
-	    <%= render "casham/components/widget_content_article" %>
-	    <%= render "casham/components/widget_service_spotlight" %>
-	    <%= render "casham/components/widget_financial_planning" %>
-		</div>
-	</aside> <!-- End Sidebar -->
-	
-	
-	<section class="eight columns main-body tcc-page" role="content"> <!-- Main Content -->	
+	<div class="eight columns push-four main-body tcc-page" role="content"> <!-- Main Content -->	
 
 		<div class="widget row easy-as">
 			<div class="twelve columns">
@@ -37,14 +25,24 @@
 			<div class="four columns">three</div>
 		</div>
 
-
-
 	    <%= render "casham/components/widget_content_article" %>
 	    <%= render "casham/components/widget_service_spotlight" %>
 	    <%= render "casham/components/widget_store_locator" %>
 	    <%= render "casham/components/widget_pr_highlights" %>
 	    <%= render "casham/components/widget_financial_planning" %>
-	</section><!-- End Main Content -->
+	</div><!-- End Main Content -->
+
+	<!-- Sidebar -->
+	<aside class="four columns pull-eight side-bar tcc-page">
+		<h2 class="semantic-only">Related Content</h2>
+		<div class="side-bar-container">
+	    <%= render "casham/components/widget_store_locator" %>
+	    <%= render "casham/components/widget_pr_highlights" %>
+	    <%= render "casham/components/widget_content_article" %>
+	    <%= render "casham/components/widget_service_spotlight" %>
+	    <%= render "casham/components/widget_financial_planning" %>
+		</div>
+	</aside> <!-- End Sidebar -->
 
 <% end %>
 

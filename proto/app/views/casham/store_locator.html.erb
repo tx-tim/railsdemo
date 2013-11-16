@@ -13,7 +13,7 @@
 
 <% content_for :main_content do %>
     <section class="twelve columns main-body store-locator-page" role="content"> <!-- Main Content -->
-        <section class="row advanced-search-criteria">
+        <div class="row advanced-search-criteria">
             <%# @search_class determines the initial state of advanced search - active will open it %>
             <div class="widget toggle-widget prog-disclosure <%= @search_class %> row">
                 <div class="prog-disclosure-title text-right">
@@ -123,7 +123,7 @@
                     </form>
                 </div>
             </div>
-        </section>
+        </div>
 
 
         <article class="row collapse">
