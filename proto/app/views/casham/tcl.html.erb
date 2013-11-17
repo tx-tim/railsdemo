@@ -1,5 +1,5 @@
 <% content_for :head do %>
-	<%= render "casham/structure/head" %>
+	<%= render "casham/structure/head", page_css: ["components/header"] %>
 <% end %>
 
 <% content_for :header do %>
@@ -15,7 +15,7 @@
 	
 	<main class="eight columns main-body push-four tcl-page" role="content"> <!-- Main Content -->	    
 	    <p>main content</p>
-	    <%= render "casham/components/widget_service_spotlight" %>
+	    <%#= render "casham/components/widget_service_spotlight" %>
 
 	</main><!-- End Main Content -->
 
@@ -25,7 +25,7 @@
 	  <div class="side-bar-container">
 
 	    <%= render "casham/components/widget_store_locator" %>
-	    <%= render "casham/components/widget_pr_highlights" %>
+	    <%#= render "casham/components/widget_pr_highlights" %>
 
 	  </div>
 	</aside> <!-- End Sidebar -->

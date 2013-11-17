@@ -1,7 +1,25 @@
+@charset "UTF-8";
+// Foundation Features
+// =============
+
+@import "compass";
+
+@import "modular-scale";
+
+@import "foundation/functions/all";
+
+@import "foundation/settings";
+
+@import "foundation/mixins/all";
+
+// Media Queries Overrides
+//@import "foundation/components/modules/mqueries";
+@import "components/mixins";
 @import "../components/breadcrumbs";
-@import "header";
+//@import "header";
 @import "footer";
-@import "widgets";
+//@import "widgets";
+@import"foundation/components/modules/all";
 
 %two-column{
   //styles for the hero section

@@ -2,7 +2,29 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-@import "foundation";
+//@import "foundation";
+@charset "UTF-8";
+// Foundation Features
+// =============
+
+@import "compass/css3";
+
+@import "modular-scale";
+
+@import "foundation/functions/all";
+
+@import "foundation/settings";
+
+@import "foundation/mixins/all";
+
+@import "foundation/common/base";
+
+@import "foundation/components/grid";
+
+
+
+// Media Queries Overrides
+@import "foundation/components/modules/mqueries";
 @import "compass/layout/sticky-footer";
 @import "compass/typography/lists";
 @import "compass/layout/stretching";
@@ -10,7 +32,7 @@
 @import "components/mixins";
 
 
-@import "structure/structure"; //"components/header"; //"components/footer";
+//@import "structure/structure"; //"components/header"; //"components/footer";
 
 @include sticky-footer(350px, ".ca-root", ".ca-root-footer", ".footer");
 @include respondTo(smallScreen){
