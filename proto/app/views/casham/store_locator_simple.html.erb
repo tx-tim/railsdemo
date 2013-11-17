@@ -1,5 +1,5 @@
 <% content_for :head do %>
-    <%= render "casham/structure/head", page_css: ["pages/store_locator"] %>
+    <%= render "casham/structure/head", page_css: ["components/header", "pages/store_locator"] %>
 <% end %>
 
 <% content_for :header do %>
@@ -12,13 +12,13 @@
 
 
 <% content_for :main_content do %>
-    <div class="twelve columns main-body store-locator-page" role="content"> <!-- Main Content -->
-        <section class="row advanced-search-criteria">
-            <h1>Advanced Search </h1>
+
+    <section class="twelve columns main-body store-locator-page" role="content"> <!-- Main Content -->
+        <div class="row advanced-search-criteria">
             <%# @search_class determines the initial state of advanced search - active will open it %>
             <div class="widget toggle-widget prog-disclosure <%= @search_class %> row">
                 <div class="prog-disclosure-title text-right">
-                    <h1>Advanced Search </h1>
+                    <h5>Advanced Search </h5>
                 </div>
 
                 <div class="prog-disclosure-content row collapse">
@@ -26,11 +26,11 @@
                         <fieldset class="four columns geocriteria">
                             <legend>Search Within</legend>
                             
-                            <div class="row short-field"><!-- Custom Selects -->
+                            <div class="row collapse short-field"><!-- Custom Selects -->
                                 <div class="five columns">
                                     <!-- <label for="customDropdown">Miles:</label> -->
                                     
-                                    <select style="display:none;" id="customDropdown">
+                                    <select id="customDropdown">
                                         <option SELECTED>50</option>
                                         <option>75</option>
                                         <option>100</option>
@@ -42,7 +42,7 @@
                                 </div>
                             </div>
 
-                            <div class="row short-field">
+                            <div class="row collapse short-field">
                                 <div class="five columns">
                                     <input id="anchor-zip" type="text" class="zip-input">
                                 </div>
@@ -51,7 +51,7 @@
                                 </div>
                             </div>
 
-                            <div class="row horizontal-options-divider">
+                            <div class="row collapse horizontal-options-divider">
                               <div class="one column"><p>or</p></div>
                             <div class="eleven columns"><hr/></div>  
                             </div>
@@ -64,10 +64,10 @@
                             <label for="anchor-city">City</label>
                             <input id="anchor-streetAddress"type="text" class="street-input">
                         <!-- Custom Selects -->
-                            <div class="row ">
+                            <div class="row collapse">
                                 <div class="three columns">
-                                    <label for="customDropdown">State</label>
-                                    <select style="display:none;" id="customDropdown">
+                                    <label>State</label>
+                                    <select id="customDropdown">
                                         <option SELECTED>State</option>
                                         <option>Not gonna list</option>
                                         <option>All the states here</option>
@@ -133,7 +133,7 @@
                 <%= image_tag "StoreLocatorBingMap.jpg" %>
             </div>
         </article>
-    </div><!-- End Main Content -->
+    </section><!-- End Main Content -->
 <% end %>
 
 <% content_for :footer do %>

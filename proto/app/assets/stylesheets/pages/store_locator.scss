@@ -8,7 +8,7 @@
 
 @import "foundation/mixins/all";
 
-//@import "foundation/common/base";
+@import "foundation/common/forms";
 
 //@import "foundation/components/grid";
 
@@ -74,11 +74,11 @@
 	    	padding: 15px; 
 	    }
 
-	    .short-field{
-	    	.inline-label{
-	    		padding-top: 12px;
-	    	}
-	    }
+    	.inline-label{
+    		padding-top: 12px;
+    		padding-left: 12px
+    	}
+	    
 
 	    &.active { 
 	    	//border-top: 3px solid $mainColor;
