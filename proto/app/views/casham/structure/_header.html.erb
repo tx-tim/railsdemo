@@ -13,35 +13,54 @@
             <li><%= link_to "Home", cashams_path %></li>
           </ul> -->
 
-          <ul class="right">
+          <ul class="left">
             <li><%= link_to "Pawn Loans", cashams_path %></li>
             <li><%= link_to "Auto Title Loans", cashams_path %></li>
             <li><%= link_to "Cash Advances", cashams_path %></li>
             <li><%= link_to "Store Locator", casham_store_locator_path(:search_class => "active")%></li>
-            <li class="your-store">
-              <div>
-                <div class="row">
-                  <div class="title six columns"><span aria-hidden="true" data-icon="&#xe02c;" class="icon icon-arrow-down-2 title"></span> Your Store:</div>
-                </div>
-                
+          </ul>          
+
+          <ul class="your-store right">
+            <li>
+              <a><span aria-hidden="true" data-icon="&#xe02c;" class="icon icon-arrow-down-2 title"></span> </a>
+            </li>
+            <li>
+              <div>Your Store:</div>
+              <div>Cash America</div>
+              <div>address</div>
+            </li>
+<% 
+=begin %>  
+
+            <li class="">
+              <ul>
                 <!-- <span aria-hidden="true" data-icon="&#xe02c;" class="icon icon-arrow-down-2 text-right"></span> -->
-                <div class="org">Cash America</div>
-                <div class="adr">
-                  <div class="street-address">1234 Whodunnitst
+                <li class="org">Cash America</li>
+                <li class="adr">
+                  <a class="street-address">1234 Whodunnitst
                     <span class="locality">Ft. Worth, </span>
                     <span class="region">TX, </span>
                     <span class="postal-code">12345</span>
-                  </div>
-                </div>
-              </div>
+                  </a>
+                </li>
+              </ul>
             </li>
 
-          </ul>          
+<% 
+=end %>
 
+
+
+        </ul>
           
 
-        </div>
+        </div>      
+
+
       </nav>
+
+
+
 
 <% 
 =begin %>  

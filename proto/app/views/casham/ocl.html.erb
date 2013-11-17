@@ -1,5 +1,5 @@
 <% content_for :head do %>
-	<%= render "casham/structure/head" %>
+	<%= render "casham/structure/head", page_css: ["components/header"] %>
 <% end %>
 
 <% content_for :header do %>
@@ -12,7 +12,7 @@
 
 <% content_for :main_content do %>
 	<main class="twelve columns main-body tcc-page" role="content"> <!-- Main Content -->
-		<%= render "casham/components/widget_service_spotlight" %>
+		<%#= render "casham/components/widget_service_spotlight" %>
 	</main>
 <% end %>
 
