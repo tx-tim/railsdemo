@@ -16,15 +16,15 @@
 //@import "foundation/components/modules/mqueries";
 @import "components/mixins";
 
-@import"foundation/components/modules/topbar";
-@import"foundation/components/modules/navbar";
+//@import"foundation/components/modules/topbar";
+//@import"foundation/components/modules/navbar";
 
 .header{
 	position: absolute;
 	width: 100%;
 
 	.header-container{
-		min-height: 75px;
+		height: $topBarHeight;
 	}
 
 	.header-shade{
@@ -36,42 +36,6 @@
 		right: 0;
 		bottom: 0;
 	}
-
-/*
-	.your-store{
-		max-width: 251px;
-		overflow: hidden;
-		//refactor to whatever other header color is
-		color: $white;
-		//refactor with header variable and maths
-		//padding-top: 1em;
-		//padding-left: 24px;
-		margin-left: 18px;
-		border-left: 1px solid lightgray;
-		line-height: 1.4em;
-		//refactor with header variable and maths
-		height: 75px;
-		.title{
-			font-size: .875em;
-			line-height: 1em;
-		}
-		
-		.org, .adr{
-			line-height: 1.1em;
-			height: 1.1em;
-			overflow: hidden;
-		}
-		
-		span,div,a{
-			font-size: 13px;
-			font-weight: bold;
-		}
-	}
-	.change-store{
-		padding: 0 2px;
-		color: $white;
-	}
-*/
 
 	.ca-topbar{
 		background-color: transparent;
@@ -86,9 +50,11 @@
 			}
 
 			.nav-list-item>.k-link{
-				line-height: 75px;
+				line-height: $topBarHeight;
 				margin: 0;
-				padding: 0;
+				padding: 0 ($columnGutter / 2);
+				width: 100px;
+				text-align: center;
 			}
 			
 			&.k-header{
@@ -96,57 +62,110 @@
 				float: left;
 			}
 		}
+	}	
+}
 
-		.header-control{
-			width: 50%;
+.header-control{
+	width: 50%;
+	float: left;
+	padding: 0;
+	margin: 0;
+
+	.local-store{
+		display: block;
+		vertical-align: middle;
+
+		.control{
+			line-height: $topBarHeight;
 			float: left;
-			padding: 0;
-			margin: 0;
-			
-			.title{
-
-			}
-
-			.local-store{
-				display: block;
-				vertical-align: middle;
-
-				.control{
-					//display: list-item;
-					line-height: 75px;
-					float: left;
-				}
-				.address{
-					//display: list-item;
-					float: left;
-					height: 75px;
-					padding-left: 1em;
-					padding-top: 1em;
-
-					.label{
-						font-size: 80%;
-						line-height: 1.1em;
-					}
-					.brand, .street{
-						font-size: 14px;
-						line-height: 1.2em;
-					}
-				}
-			}
 		}
-	}
+		.address{
+			float: left;
+			height: $topBarHeight;
+			padding-left: 1em;
+			padding-top: 1em;
 
-	@include respondTo(smallScreen){
-		background-color: white;
-		
-		.header-container{
-			min-height: 45px;
-		}
-
-		.header-shade{
-			display: none;
+			.label{
+				font-size: 80%;
+				line-height: 1.1em;
+			}
+			.brand, .street{
+				font-size: 14px;
+				line-height: 1.2em;
+			}
 		}
 	}
 }
+	
+
+@include respondTo(smallScreen){
+	.header{
+		background-color: $secondaryColor;
+	}
+	
+	
+	.header-container{
+		min-height: $topBarHeightMobile;
+	}
+
+	.header-shade{
+		display: none;
+	}
+
+	.ca-topbar{
+		.nav-list, .k-group{
+			border: none;
+			width: 100%;
+			float: left;
+
+			.nav-list-item, .k-item{
+				border-right-style: none;
+			}
+
+			.nav-list-item>.k-link{
+				line-height: $topBarHeight;
+				margin: 0;
+				width: 100px;
+				text-align: center;
+			}
+			
+			&.k-header{
+				width: 100%;
+				float: left;
+			}
+		}
+	}	
+
+	.header-control{
+		width: 100%;
+
+		.local-store{
+			display: block;
+			vertical-align: middle;
+
+			.control{
+				line-height: $topBarHeight;
+				float: left;
+			}
+			.address{
+				float: left;
+				height: $topBarHeight;
+				padding-left: 1em;
+				padding-top: 1em;
+
+				.label{
+					font-size: 80%;
+					line-height: 1.1em;
+				}
+				.brand, .street{
+					font-size: 14px;
+					line-height: 1.2em;
+				}
+			}
+		}
+	}
+
+}
+
 
 
