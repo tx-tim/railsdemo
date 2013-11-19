@@ -37,10 +37,7 @@
 		bottom: 0;
 	}
 
-	.top-bar{
-		background-color: transparent;
-	}
-
+/*
 	.your-store{
 		max-width: 251px;
 		overflow: hidden;
@@ -74,6 +71,70 @@
 		padding: 0 2px;
 		color: $white;
 	}
+*/
+
+	.ca-topbar{
+		background-color: transparent;
+		color: #fff;
+		.nav-list, .k-group{
+			border: none;
+			width: 50%;
+			float: left;
+
+			.nav-list-item, .k-item{
+				border-right-style: none;
+			}
+
+			.nav-list-item>.k-link{
+				line-height: 75px;
+				margin: 0;
+				padding: 0;
+			}
+			
+			&.k-header{
+				width: 50%;
+				float: left;
+			}
+		}
+
+		.header-control{
+			width: 50%;
+			float: left;
+			padding: 0;
+			margin: 0;
+			
+			.title{
+
+			}
+
+			.local-store{
+				display: block;
+				vertical-align: middle;
+
+				.control{
+					//display: list-item;
+					line-height: 75px;
+					float: left;
+				}
+				.address{
+					//display: list-item;
+					float: left;
+					height: 75px;
+					padding-left: 1em;
+					padding-top: 1em;
+
+					.label{
+						font-size: 80%;
+						line-height: 1.1em;
+					}
+					.brand, .street{
+						font-size: 14px;
+						line-height: 1.2em;
+					}
+				}
+			}
+		}
+	}
 
 	@include respondTo(smallScreen){
 		background-color: white;
@@ -88,67 +149,4 @@
 	}
 }
 
-.header{
-	.ca-topbar{
-		.nav-list, .k-group{
-			border: none;
-			color: #fff;
-			width: 50%;
-			float: left;
-
-			.nav-list-item, .k-item{
-				border-right-style: none;
-			}
-
-			.nav-list-item>.k-link{
-				line-height: 75px;
-				margin: 0;
-				padding: 0;
-			}
-			&.k-header{
-				color: #fff;
-				width: 50%;
-				float: left;
-			}
-		}
-
-		.loc-store{
-			width: 50%;
-			float: left;
-			padding: 0;
-			margin: 0;
-			
-			.title{
-				color: white;
-			}
-
-			.loc-store-ul{
-				display: block;
-				vertical-align: middle;
-
-				.control{
-					display: list-item;
-					line-height: 75px;
-					float: left;
-				}
-				.list{
-					display: list-item;
-					float: left;
-					height: 75px;
-					padding-left: 1em;
-					padding-top: 1em;
-					color: white;
-					.i{
-						font-size: 12px;
-						line-height: 1.1em;
-					}
-					.x{
-						font-size: 14px;
-						line-height: 1.2em;
-					}
-				}
-			}
-		}
-	}
-}
 

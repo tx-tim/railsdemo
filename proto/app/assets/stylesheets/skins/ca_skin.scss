@@ -8,6 +8,13 @@ body{
   display: none;
 }
 
+.header{
+  color: $white;
+  .control-icon{
+    @extend .header;
+  }
+}
+
 .page-hero{
   background-color: $caPrimaryColor;
   @include background(image-url("dummy-hero.jpg") no-repeat center center);
