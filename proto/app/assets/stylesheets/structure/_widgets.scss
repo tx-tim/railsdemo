@@ -1,3 +1,18 @@
+@import "compass";
+
+@import "modular-scale";
+
+@import "foundation/functions/all";
+
+@import "foundation/settings";
+
+@import "foundation/mixins/all";
+
+// Media Queries Overrides
+//@import "foundation/components/modules/mqueries";
+@import "components/mixins";
+
+
 // ========================
 // abstract widget classes
 // ========================
@@ -9,6 +24,7 @@
 	.widget-header{
 		position: relative;
 	}
+
 	.widget-body{
 		padding-bottom: 1em;
 		border-bottom: 1px solid $secondaryColor;
@@ -52,7 +68,7 @@
 @import "widget_financial_tools";
 @import "widget_pr_highlights";
 @import "widget_service_spotlight";
-@import "widget_store_locator";
+//@import "widget_store_locator";
 
 /*
 // ========================

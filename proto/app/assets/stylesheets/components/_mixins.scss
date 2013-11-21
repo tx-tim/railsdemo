@@ -16,3 +16,49 @@
 	}
 }
 
+@mixin widget{
+	p{
+		font-style: normal;
+	}
+	.widget-header{
+		position: relative;
+	}
+
+	.widget-body{
+		padding-bottom: 1em;
+		border-bottom: 1px solid $secondaryColor;
+	}
+
+	@include button-structure;
+	
+	.button{
+		font-size: 13px;
+		padding: $btnBase ($btnBase + 2) ($btnBase + 2); 
+	}
+}
+
+@mixin main-body-widget{
+	@include widget;
+	h1, h2, h3, h4, h5, h6{
+	  font-size: ms(1);
+	}
+}
+
+@mixin side-bar-widget{
+	@include widget;
+}
+
+@mixin vertical-list-widget{
+	.list-widget-item{
+		margin-bottom: 17px;
+	}
+}
+
+@mixin horizontal-list-widget{
+	@include respondTo(smallScreen){
+		.widget-header,
+		.widget-body{
+			text-align: center;
+		}
+	}
+}

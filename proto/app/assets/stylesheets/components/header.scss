@@ -18,14 +18,13 @@
 
 //@import"foundation/components/modules/topbar";
 //@import"foundation/components/modules/navbar";
+$logo-width: 15%;
+$nav-width: 60%;
+$your-store-width: 25%;
 
 .header{
 	position: absolute;
 	width: 100%;
-
-	.header-container{
-		height: $topBarHeight;
-	}
 
 	.header-shade{
 		background-color: white;
@@ -40,10 +39,12 @@
 	.ca-topbar{
 		background-color: transparent;
 		color: #fff;
+		height: $topBarHeight;
+
 		.nav-list, .k-group{
 			border: none;
-			width: 50%;
-			float: left;
+			width: $nav-width;
+			float: right;
 
 			.nav-list-item, .k-item{
 				border-right-style: none;
@@ -53,31 +54,42 @@
 				line-height: $topBarHeight;
 				margin: 0;
 				padding: 0 ($columnGutter / 2);
-				width: 100px;
+				width: 60px;
 				text-align: center;
 			}
 			
 			&.k-header{
-				width: 50%;
-				float: left;
+				width: $nav-width;
+				float: right;
 			}
 		}
 	}	
 }
 
-.header-control{
-	width: 50%;
+.logo{
+	width: $logo-width;
 	float: left;
+	line-height: $topBarHeight;
+	padding-right: 1em;
+
+}
+
+.header-control{
+	width: $your-store-width;
+	float: right;
 	padding: 0;
 	margin: 0;
+	border-left: 1px solid #fff;
 
 	.local-store{
 		display: block;
 		vertical-align: middle;
+		
 
 		.control{
 			line-height: $topBarHeight;
 			float: left;
+			margin-left: .7em;
 		}
 		.address{
 			float: left;
@@ -125,7 +137,7 @@
 			.nav-list-item>.k-link{
 				line-height: $topBarHeight;
 				margin: 0;
-				width: 100px;
+				width: 75px;
 				text-align: center;
 			}
 			
@@ -166,6 +178,4 @@
 	}
 
 }
-
-
 

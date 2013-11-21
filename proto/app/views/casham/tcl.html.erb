@@ -1,5 +1,5 @@
 <% content_for :head do %>
-	<%= render "casham/structure/head", page_css: ["components/header", "kendo/kendo.common.min.css"] %>
+	<%= render "casham/structure/head", page_css: ["components/header", "structure/widget_store_locator", "kendo-responsive/kendo.common.min.css"] %>
 <% end %>
 
 <% content_for :header do %>
@@ -17,6 +17,12 @@
 	    <p>main content</p>
 	    <%#= render "casham/components/widget_service_spotlight" %>
 
+	    <%= render "casham/components/widget_content_article" %>
+	    <%= render "casham/components/widget_service_spotlight" %>
+	    <%= render "casham/components/widget_store_locator" %>
+	    <%= render "casham/components/widget_pr_highlights" %>
+	    <%= render "casham/components/widget_financial_planning" %>
+
 	</main><!-- End Main Content -->
 
 	<!-- Sidebar -->
@@ -26,6 +32,12 @@
 
 	    <%= render "casham/components/widget_store_locator" %>
 	    <%#= render "casham/components/widget_pr_highlights" %>
+
+	    	    <%= render "casham/components/widget_content_article" %>
+	    <%= render "casham/components/widget_service_spotlight" %>
+	    <%= render "casham/components/widget_store_locator" %>
+	    <%= render "casham/components/widget_pr_highlights" %>
+	    <%= render "casham/components/widget_financial_planning" %>
 
 	  </div>
 	</aside> <!-- End Sidebar -->
