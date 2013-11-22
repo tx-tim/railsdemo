@@ -14,5 +14,6 @@
 //= require modernizr.foundation
 //= require jquery_ujs
 //= require jquery.foundation.forms.js
+//= require jquery.foundation.topbar.js
 //= require kendo/kendo.all.min.js
 //= require_tree .
