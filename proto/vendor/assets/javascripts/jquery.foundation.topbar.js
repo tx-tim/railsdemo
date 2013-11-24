@@ -44,7 +44,7 @@
 
           $('.top-bar .toggle-topbar').off('click.fndtn').on('click.fndtn', function (e) {
             e.preventDefault();
-
+            
             if (methods.breakpoint()) {
               settings.$topbar.toggleClass('expanded');
               settings.$topbar.css('min-height', '');
@@ -103,6 +103,8 @@
               $movedLi.removeClass('moved');
             }, 300);
           });
+
+          console.log("x")
         });
       },
 
