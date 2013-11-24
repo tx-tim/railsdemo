@@ -141,7 +141,7 @@ $topBarSearchWidth: 200px !default;
 $topBarLoginWidth: 300px !default;
 $topBarLoginButtonWidth: 60px !default;
 $topBarLoginInputWidth: ($topBarLoginWidth - $topBarLoginButtonWidth) / 2 !default;
-$topBarBreakPoint: 940px !default; // Change to 9999px for always mobile layout
+$topBarBreakPoint: 768px !default; // Change to 9999px for always mobile layout
 $topBarNavToggleSize: 8px !default;
 $topBarNavToggleColor: #fff !default;
 

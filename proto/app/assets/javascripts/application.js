@@ -16,4 +16,9 @@
 //= require jquery.foundation.forms.js
 //= require jquery.foundation.topbar.js
 //= require kendo/kendo.all.min.js
+//= require jquery.foundation.forms.js
+//= require jquery.foundation.topbar.js
+//= require jquery.foundation.navigation.js
+//= require foundation.min.js
+//= require app.js
 //= require_tree .
