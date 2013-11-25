@@ -121,9 +121,9 @@ $navBarTouchFlyoutBorderColor: #666 !default;
 // Top Bar Settings
 
 //$topBarBgColor: #222 !default;
-$topBarBgColor: rgba(100,100,100,.3) !default;
+$topBarBgColor: rgba(100,100,100,0) !default;
 //$topBarHeight: 45px !default;
-$topBarHeight: 75px !default;
+$topBarHeight: 65px !default;
 $topBarHeightMobile: 45px !default;
 //$topBarBtmMargin: 30px !default;
 $topBarBtmMargin: 0 !default;
@@ -132,7 +132,7 @@ $topBarTitleSize: 17px !default;
 $topBarLinkColor: #fff !default;
 $topBarLinkWeight: bold !default;
 $topBarLinkSize: 13px !default;
-$topBarDropBgColor: #222 !default;
+$topBarDropBgColor: #1d2832 !default;
 $topBarDropLinkColor: #fff !default;
 $topBarDropToggleSize: 5px !default;
 $topBarDropToggleColor: #fff !default;
