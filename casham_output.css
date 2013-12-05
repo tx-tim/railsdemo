@@ -1,0 +1,4830 @@
+/* Global Reset & Standards ---------------------- */
+/* line 4, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_globals.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 5, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_globals.scss */
+html {
+  font-size: 62.5%;
+}
+
+/* line 6, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_globals.scss */
+body {
+  background: white;
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1;
+  color: #222222;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Links ---------------------- */
+/* line 10, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_globals.scss */
+a img {
+  border: none;
+}
+
+/* line 11, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_globals.scss */
+a {
+  color: #2ba6cb;
+  text-decoration: none;
+  line-height: inherit;
+}
+
+/* line 12, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_globals.scss */
+a:hover {
+  color: #2795b6;
+}
+
+/* line 13, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_globals.scss */
+a:focus {
+  color: #2795b6;
+}
+
+/* line 14, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_globals.scss */
+p a, p a:visited {
+  line-height: inherit;
+}
+
+/* Misc ---------------------- */
+/* line 18, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_globals.scss */
+.left {
+  float: left;
+}
+
+/* line 19, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_globals.scss */
+.right {
+  float: right;
+}
+
+/* line 20, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_globals.scss */
+.text-left {
+  text-align: left;
+}
+
+/* line 21, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_globals.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 22, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_globals.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 23, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_globals.scss */
+.text-justify {
+  text-align: justify;
+}
+
+/* line 24, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_globals.scss */
+.hide {
+  display: none;
+}
+
+/* line 25, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_globals.scss */
+.hide-override {
+  display: none !important;
+}
+
+/* line 26, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_globals.scss */
+.highlight {
+  background: #ffff99;
+}
+
+/* line 28, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_globals.scss */
+#googlemap img, object, embed {
+  max-width: none;
+}
+
+/* line 30, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_globals.scss */
+#map_canvas embed {
+  max-width: none;
+}
+
+/* line 31, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_globals.scss */
+#map_canvas img {
+  max-width: none;
+}
+
+/* line 32, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_globals.scss */
+#map_canvas object {
+  max-width: none;
+}
+
+/* Reset for strange margins by default on <figure> elements */
+/* line 35, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_globals.scss */
+figure {
+  margin: 0;
+}
+
+/* Base Type Styles Using Modular Scale ---------------------- */
+/* line 4, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  direction: ltr;
+}
+
+/* line 11, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+p {
+  font-family: inherit;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 17px;
+}
+/* line 12, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+p.lead {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 17px;
+}
+
+/* line 14, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+aside p {
+  font-size: 13px;
+  line-height: 1.35;
+  font-style: italic;
+}
+
+/* line 16, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: #222222;
+  text-rendering: optimizeLegibility;
+  line-height: 1.1;
+  margin-bottom: 14px;
+  margin-top: 14px;
+}
+/* line 25, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+  font-size: 60%;
+  color: #6f6f6f;
+  line-height: 0;
+}
+
+/* line 28, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+h1 {
+  font-size: 44px;
+}
+
+/* line 29, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+h2 {
+  font-size: 37px;
+}
+
+/* line 30, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+h3 {
+  font-size: 27px;
+}
+
+/* line 31, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+h4 {
+  font-size: 23px;
+}
+
+/* line 32, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+h5 {
+  font-size: 17px;
+}
+
+/* line 33, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+h6 {
+  font-size: 14px;
+}
+
+/* line 35, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+hr {
+  border: solid #ddd;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 22px 0 21px;
+  height: 0;
+}
+
+/* line 37, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+.subheader {
+  line-height: 1.3;
+  color: #6f6f6f;
+  font-weight: 300;
+  margin-bottom: 17px;
+}
+
+/* line 39, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+em, i {
+  font-style: italic;
+  line-height: inherit;
+}
+
+/* line 40, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+strong, b {
+  font-weight: bold;
+  line-height: inherit;
+}
+
+/* line 41, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+small {
+  font-size: 60%;
+  line-height: inherit;
+}
+
+/* line 42, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+code {
+  font-weight: bold;
+  background: #ffff99;
+}
+
+/* Lists ---------------------- */
+/* line 45, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+ul, ol, dl {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 17px;
+  list-style-position: outside;
+}
+
+/* line 48, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+ul li ul, ul li ol {
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+/* line 50, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+ul.square, ul.circle, ul.disc {
+  margin-left: 17px;
+}
+/* line 51, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+ul.square {
+  list-style-type: square;
+}
+/* line 52, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+ul.square li ul {
+  list-style: inherit;
+}
+/* line 54, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+ul.circle {
+  list-style-type: circle;
+}
+/* line 55, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+ul.circle li ul {
+  list-style: inherit;
+}
+/* line 57, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+ul.disc {
+  list-style-type: disc;
+}
+/* line 58, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+ul.disc li ul {
+  list-style: inherit;
+}
+/* line 60, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+ul.no-bullet {
+  list-style: none;
+}
+/* line 61, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+ul.large li {
+  line-height: 21px;
+}
+
+/* line 63, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+ol {
+  margin-left: 20px;
+}
+/* line 65, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+ol li ul, ol li ol {
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+
+/* line 69, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+dl dt {
+  font-weight: bold;
+}
+/* line 70, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+dl dd {
+  margin-bottom: 10px;
+}
+
+/* Blockquotes ---------------------- */
+/* line 74, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+blockquote, blockquote p {
+  line-height: 1.5;
+  color: #6f6f6f;
+}
+
+/* line 75, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+blockquote {
+  margin: 0 0 17px;
+  padding: 9px 20px 0 19px;
+  border-left: 1px solid #ddd;
+}
+/* line 76, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+blockquote cite {
+  display: block;
+  font-size: 13px;
+  color: #555555;
+}
+/* line 77, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+blockquote cite:before {
+  content: "\2014 \0020";
+}
+/* line 78, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+blockquote cite a, blockquote cite a:visited {
+  color: #555555;
+}
+
+/* line 82, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+abbr, acronym {
+  text-transform: uppercase;
+  font-size: 90%;
+  color: #222222;
+  border-bottom: 1px solid #ddd;
+  cursor: help;
+}
+
+/* line 83, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+abbr {
+  text-transform: none;
+}
+
+/*
+ * Print styles.
+ *
+ * Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
+ * Credit to Paul Irish and HTML5 Boilerplate (html5boilerplate.com)
+*/
+/* line 91, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+.print-only {
+  display: none !important;
+}
+
+@media print {
+  /* line 93, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    filter: none !important;
+    -ms-filter: none !important;
+  }
+
+  /* Black prints faster: h5bp.com/s */
+  /* line 94, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+  a, a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 95, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 96, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 97, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
+    content: "";
+  }
+
+  /* Don't show links for images, or javascript/internal links */
+  /* line 98, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /* line 99, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+  thead {
+    display: table-header-group;
+  }
+
+  /* h5bp.com/t */
+  /* line 100, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  /* line 101, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.5cm;
+}
+
+  /* line 103, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 104, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+  h2, h3 {
+    page-break-after: avoid;
+  }
+
+  /* line 105, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+  .hide-on-print {
+    display: none !important;
+  }
+
+  /* line 106, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+  .print-only {
+    display: block !important;
+  }
+
+  /* line 107, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+  .hide-for-print {
+    display: none !important;
+  }
+
+  /* line 108, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_typography.scss */
+  .show-for-print {
+    display: inherit !important;
+  }
+}
+/* Requires
+   globals.css */
+/* Standard Forms ---------------------- */
+/* line 7, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+form {
+  margin: 0 0 19.41641px;
+}
+
+/* line 9, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+.row form .row {
+  margin: 0 -6px;
+}
+/* line 11, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+.row form .row .column, .row form .row .columns {
+  padding: 0 6px;
+}
+/* line 13, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+.row form .row.collapse {
+  margin: 0;
+}
+/* line 14, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+.row form .row.collapse .column, .row form .row.collapse .columns {
+  padding: 0;
+}
+
+/* line 18, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+label {
+  font-size: 14px;
+  color: #4d4d4d;
+  cursor: pointer;
+  display: block;
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+/* line 20, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+label.right {
+  float: none;
+  text-align: right;
+}
+/* line 21, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+label.inline {
+  line-height: 32px;
+  margin: 0 0 12px 0;
+}
+
+/* line 24, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+input[type=button].inline-button, input[type=submit].inline-button, a.button.inline-button {
+  height: 32px;
+  line-height: 31px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-size: 12px;
+}
+
+/* line 28, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+.prefix, .postfix {
+  display: block;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 32px;
+  line-height: 31px;
+}
+
+/* line 29, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+a.button.prefix, a.button.postfix {
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+
+/* line 30, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+span.prefix, span.postfix {
+  background: #f2f2f2;
+  border: 1px solid #cccccc;
+}
+
+/* line 32, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+.prefix {
+  left: 2px;
+  -moz-border-radius-topleft: 2px;
+  -webkit-border-top-left-radius: 2px;
+  border-top-left-radius: 2px;
+  -moz-border-radius-bottomleft: 2px;
+  -webkit-border-bottom-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  overflow: hidden;
+}
+
+/* line 33, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+.postfix {
+  right: 2px;
+  -moz-border-radius-topright: 2px;
+  -webkit-border-top-right-radius: 2px;
+  border-top-right-radius: 2px;
+  -moz-border-radius-bottomright: 2px;
+  -webkit-border-bottom-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+/* line 35, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], textarea, select, div.custom.dropdown {
+  background-color: white;
+  font-family: inherit;
+  border: 1px solid #cccccc;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.75);
+  display: block;
+  font-size: 12px;
+  margin: 0 0 12px 0;
+  padding: 6px;
+  height: 32px;
+  width: 100%;
+  -webkit-transition: all 0.15s linear;
+  -moz-transition: all 0.15s linear;
+  -o-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+/* line 36, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+input[type="text"][multiple], input[type="password"][multiple], input[type="date"][multiple], input[type="datetime"][multiple], input[type="email"][multiple], input[type="number"][multiple], input[type="search"][multiple], input[type="tel"][multiple], input[type="time"][multiple], input[type="url"][multiple], textarea[multiple], select[multiple], div.custom.dropdown[multiple] {
+  min-height: 64px;
+}
+/* line 37, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+input[type="text"].oversize, input[type="password"].oversize, input[type="date"].oversize, input[type="datetime"].oversize, input[type="email"].oversize, input[type="number"].oversize, input[type="search"].oversize, input[type="tel"].oversize, input[type="time"].oversize, input[type="url"].oversize, textarea.oversize, select.oversize, div.custom.dropdown.oversize {
+  font-size: 17px;
+  padding: 4px 6px;
+}
+/* line 39, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+input[type="text"]:focus, input[type="password"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="time"]:focus, input[type="url"]:focus, textarea:focus, select:focus, div.custom.dropdown:focus {
+  background: #fafafa;
+  border-color: #b3b3b3;
+}
+/* line 40, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+input[type="text"][disabled], input[type="password"][disabled], input[type="date"][disabled], input[type="datetime"][disabled], input[type="email"][disabled], input[type="number"][disabled], input[type="search"][disabled], input[type="tel"][disabled], input[type="time"][disabled], input[type="url"][disabled], textarea[disabled], select[disabled], div.custom.dropdown[disabled] {
+  background-color: #ddd;
+}
+
+/* line 43, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+textarea {
+  height: auto;
+}
+
+/* line 45, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+select {
+  width: 100%;
+  line-height: 26px;
+}
+
+/* Fieldsets */
+/* line 48, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+fieldset {
+  border: solid 1px #ddd;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  padding: 12px;
+  margin: 18px 0;
+}
+/* line 50, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+fieldset legend {
+  font-weight: bold;
+  background: white;
+  padding: 0 3px;
+  margin: 0;
+  margin-left: -3px;
+}
+
+/* Errors */
+/* line 54, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+.error input, input.error, .error textarea, textarea.error, .error input:focus, input.error:focus, .error textarea:focus, textarea.error:focus {
+  border-color: #c60f13;
+  background-color: rgba(198, 15, 19, 0.1);
+}
+
+/* line 55, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+.error input:focus, input.error:focus, .error textarea:focus, textarea.error:focus {
+  outline-color: #f5797c;
+}
+
+/* line 56, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+.error label, label.error {
+  color: #c60f13;
+}
+
+/* line 57, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+.error small, small.error {
+  display: block;
+  padding: 6px 4px;
+  margin-top: -13px;
+  margin-bottom: 12px;
+  background: #c60f13;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  -moz-border-radius-bottomleft: 2px;
+  -webkit-border-bottom-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  -moz-border-radius-bottomright: 2px;
+  -webkit-border-bottom-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+/* Custom Forms ---------------------- */
+/* line 60, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+form.custom {
+  /* Custom input, disabled */
+}
+/* line 62, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+form.custom span.custom {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: 2px;
+  border: solid 1px #cccccc;
+  background: white;
+}
+/* line 64, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+form.custom span.custom.radio {
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
+}
+/* line 66, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+form.custom span.custom.checkbox:before {
+  content: "";
+  display: block;
+  line-height: 0.8;
+  height: 14px;
+  width: 14px;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 14px;
+  color: #fff;
+}
+/* line 69, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+form.custom span.custom.radio.checked:before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -o-border-radius: 100px;
+  border-radius: 100px;
+  background: #222222;
+  position: relative;
+  top: 3px;
+  left: 3px;
+}
+/* line 72, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+form.custom span.custom.checkbox.checked:before {
+  content: "\00d7";
+  color: #222222;
+}
+/* line 75, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+form.custom div.custom.dropdown {
+  display: block;
+  position: relative;
+  height: 32px;
+  margin-bottom: 12px;
+  margin-top: 0px;
+  padding: 0px;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #f3f3f3));
+  background-image: -webkit-linear-gradient(#ffffff, #f3f3f3);
+  background-image: -moz-linear-gradient(#ffffff, #f3f3f3);
+  background-image: -o-linear-gradient(#ffffff, #f3f3f3);
+  background-image: linear-gradient(#ffffff, #f3f3f3);
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+/* line 78, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+form.custom div.custom.dropdown ul {
+  overflow-y: auto;
+  max-height: 200px;
+}
+/* line 79, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+form.custom div.custom.dropdown a.current {
+  cursor: default;
+  white-space: nowrap;
+  height: 100%;
+  line-height: 30px;
+  color: rgba(0, 0, 0, 0.75);
+  text-decoration: none;
+  overflow: hidden;
+  display: block;
+  margin-left: 6px;
+  margin-right: 21px;
+}
+/* line 80, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+form.custom div.custom.dropdown a.selector {
+  cursor: default;
+  position: absolute;
+  width: 21px;
+  height: 30px;
+  display: block;
+  right: 0;
+  top: 0;
+}
+/* line 81, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+form.custom div.custom.dropdown a.selector:after {
+  content: "";
+  display: block;
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: solid 5px;
+  border-color: #aaaaaa transparent transparent transparent;
+  position: absolute;
+  left: 3px;
+  top: 50%;
+  margin-top: -2px;
+}
+/* line 84, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+form.custom div.custom.dropdown:hover a.selector:after, form.custom div.custom.dropdown.open a.selector:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: solid 5px;
+  border-color: #222222 transparent transparent transparent;
+}
+/* line 87, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+form.custom div.custom.dropdown .disabled {
+  color: #888;
+}
+/* line 89, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+form.custom div.custom.dropdown .disabled:hover {
+  background: transparent;
+  color: #888;
+}
+/* line 92, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+form.custom div.custom.dropdown .disabled:hover:after {
+  display: none;
+}
+/* line 95, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+form.custom div.custom.dropdown.open ul {
+  display: block;
+  z-index: 10;
+  min-width: 100%;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+/* line 97, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+form.custom div.custom.dropdown.small {
+  width: 134px !important;
+}
+/* line 98, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+form.custom div.custom.dropdown.medium {
+  width: 254px !important;
+}
+/* line 99, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+form.custom div.custom.dropdown.large {
+  width: 434px !important;
+}
+/* line 100, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+form.custom div.custom.dropdown.expand {
+  width: 100% !important;
+}
+/* line 102, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+form.custom div.custom.dropdown.open.small ul {
+  min-width: 134px !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 103, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+form.custom div.custom.dropdown.open.medium ul {
+  min-width: 254px !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 104, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+form.custom div.custom.dropdown.open.large ul {
+  min-width: 434px !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 107, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+form.custom div.custom.dropdown ul {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 2px 0px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 2px 0px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 2px 2px 0px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  position: absolute;
+  width: auto;
+  display: none;
+  margin: 0;
+  left: -1px;
+  top: 30px;
+  margin: 0;
+  padding: 0;
+  background: white;
+  background: rgba(255, 255, 255, 0.95);
+  border: solid 1px #cccccc;
+}
+/* line 109, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+form.custom div.custom.dropdown ul li {
+  color: #555555;
+  font-size: 13px;
+  cursor: default;
+  padding: 3px;
+  padding-left: 6px;
+  padding-right: 38px;
+  min-height: 18px;
+  line-height: 18px;
+  margin: 0;
+  white-space: nowrap;
+  list-style: none;
+}
+/* line 110, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+form.custom div.custom.dropdown ul li.selected {
+  background: #eeeeee;
+  color: black;
+}
+/* line 112, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+form.custom div.custom.dropdown ul li:hover {
+  background-color: #e4e4e4;
+  color: black;
+}
+/* line 114, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+form.custom div.custom.dropdown ul li.selected:hover {
+  background: #eeeeee;
+  cursor: default;
+  color: black;
+}
+/* line 116, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+form.custom div.custom.dropdown ul.show {
+  display: block;
+}
+/* line 120, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+form.custom .custom.disabled {
+  background-color: #dddddd;
+}
+
+/* Correct FF custom dropdown height */
+@-moz-document url-prefix() {
+  /* line 125, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+  form.custom div.custom.dropdown a.selector {
+    height: 28px;
+  }
+}
+
+/* line 127, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/common/_forms.scss */
+.lt-ie9 form.custom div.custom.dropdown a.selector {
+  height: 28px;
+}
+
+/* The Grid ---------------------- */
+/* line 4, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.row {
+  width: 1000px;
+  max-width: 100%;
+  min-width: 768px;
+  margin: 0 auto;
+}
+/* line 5, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.row .row {
+  width: auto;
+  max-width: none;
+  min-width: 0;
+  margin: 0 -15px;
+}
+/* line 8, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.row.collapse .column, .row.collapse .columns {
+  padding: 0;
+}
+/* line 10, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.row .row {
+  width: auto;
+  max-width: none;
+  min-width: 0;
+  margin: 0 -15px;
+}
+/* line 11, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.row .row.collapse {
+  margin: 0;
+}
+
+/* line 15, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.column, .columns {
+  float: left;
+  min-height: 1px;
+  padding: 0 15px;
+  position: relative;
+}
+/* line 16, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.column.centered, .columns.centered {
+  float: none;
+  margin: 0 auto;
+}
+
+/* line 19, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+[class*="column"] + [class*="column"]:last-child {
+  float: right;
+}
+
+/* line 20, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+[class*="column"] + [class*="column"].end {
+  float: left;
+}
+
+/* line 24, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.one, .row .one {
+  width: 8.33333%;
+}
+
+/* line 24, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.two, .row .two {
+  width: 16.66667%;
+}
+
+/* line 24, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.three, .row .three {
+  width: 25%;
+}
+
+/* line 24, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.four, .row .four {
+  width: 33.33333%;
+}
+
+/* line 24, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.five, .row .five {
+  width: 41.66667%;
+}
+
+/* line 24, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.six, .row .six {
+  width: 50%;
+}
+
+/* line 24, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.seven, .row .seven {
+  width: 58.33333%;
+}
+
+/* line 24, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.eight, .row .eight {
+  width: 66.66667%;
+}
+
+/* line 24, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.nine, .row .nine {
+  width: 75%;
+}
+
+/* line 24, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.ten, .row .ten {
+  width: 83.33333%;
+}
+
+/* line 24, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.eleven, .row .eleven {
+  width: 91.66667%;
+}
+
+/* line 24, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.twelve, .row .twelve {
+  width: 100%;
+}
+
+/* line 37, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.row .offset-by-one {
+  margin-left: 8.33333%;
+}
+
+/* line 37, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.row .offset-by-two {
+  margin-left: 16.66667%;
+}
+
+/* line 37, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.row .offset-by-three {
+  margin-left: 25%;
+}
+
+/* line 37, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.row .offset-by-four {
+  margin-left: 33.33333%;
+}
+
+/* line 37, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.row .offset-by-five {
+  margin-left: 41.66667%;
+}
+
+/* line 37, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.row .offset-by-six {
+  margin-left: 50%;
+}
+
+/* line 37, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.row .offset-by-seven {
+  margin-left: 58.33333%;
+}
+
+/* line 37, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.row .offset-by-eight {
+  margin-left: 66.66667%;
+}
+
+/* line 37, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.row .offset-by-nine {
+  margin-left: 75%;
+}
+
+/* line 37, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.row .offset-by-ten {
+  margin-left: 83.33333%;
+}
+
+/* line 43, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.push-two {
+  left: 16.66667%;
+}
+
+/* line 44, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.pull-two {
+  right: 16.66667%;
+}
+
+/* line 43, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.push-three {
+  left: 25%;
+}
+
+/* line 44, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.pull-three {
+  right: 25%;
+}
+
+/* line 43, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.push-four {
+  left: 33.33333%;
+}
+
+/* line 44, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.pull-four {
+  right: 33.33333%;
+}
+
+/* line 43, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.push-five {
+  left: 41.66667%;
+}
+
+/* line 44, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.pull-five {
+  right: 41.66667%;
+}
+
+/* line 43, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.push-six {
+  left: 50%;
+}
+
+/* line 44, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.pull-six {
+  right: 50%;
+}
+
+/* line 43, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.push-seven {
+  left: 58.33333%;
+}
+
+/* line 44, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.pull-seven {
+  right: 58.33333%;
+}
+
+/* line 43, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.push-eight {
+  left: 66.66667%;
+}
+
+/* line 44, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.pull-eight {
+  right: 66.66667%;
+}
+
+/* line 43, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.push-nine {
+  left: 75%;
+}
+
+/* line 44, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.pull-nine {
+  right: 75%;
+}
+
+/* line 43, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.push-ten {
+  left: 83.33333%;
+}
+
+/* line 44, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.pull-ten {
+  right: 83.33333%;
+}
+
+/* line 47, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+img {
+  height: auto;
+}
+
+/* line 48, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+img, object, embed {
+  max-width: 100%;
+}
+
+/* line 49, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 50, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+#map_canvas img, .map_canvas img {
+  max-width: none !important;
+}
+
+/* Nicolas Gallagher's micro clearfix */
+/* line 53, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.row {
+  *zoom: 1;
+}
+/* line 4, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/mixins/_clearfix.scss */
+.row:before, .row:after {
+  content: " ";
+  display: table;
+}
+/* line 5, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/mixins/_clearfix.scss */
+.row:after {
+  clear: both;
+}
+
+/* Block Grids ---------------------- */
+/* These are 2-up, 3-up, 4-up and 5-up ULs, suited
+for repeating blocks of content. Add 'mobile' to
+them to switch them just like the layout grid
+(one item per line) on phones
+
+For IE7/8 compatibility block-grid items need to be
+the same height. You can optionally uncomment the
+lines below to support arbitrary height, but know
+that IE7/8 do not support :nth-of-type.
+-------------------------------------------------- */
+/* line 68, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.block-grid {
+  display: block;
+  overflow: hidden;
+  padding: 0;
+}
+/* line 70, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.block-grid > li {
+  display: block;
+  height: auto;
+  float: left;
+}
+/* line 73, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.block-grid.one-up {
+  margin: 0;
+}
+/* line 79, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.block-grid.one-up > li {
+  width: 100%;
+  padding: 0 0 15px;
+}
+/* line 73, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.block-grid.two-up {
+  margin: 0 -15px;
+}
+/* line 79, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.block-grid.two-up > li {
+  width: 50%;
+  padding: 0 15px 15px;
+}
+/* line 86, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.block-grid.two-up > li:nth-of-type(2n+1) {
+  clear: both;
+}
+/* line 73, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.block-grid.three-up {
+  margin: 0 -12px;
+}
+/* line 79, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.block-grid.three-up > li {
+  width: 33.33333%;
+  padding: 0 12px 12px;
+}
+/* line 86, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.block-grid.three-up > li:nth-of-type(3n+1) {
+  clear: both;
+}
+/* line 73, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.block-grid.four-up {
+  margin: 0 -10px;
+}
+/* line 79, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.block-grid.four-up > li {
+  width: 25%;
+  padding: 0 10px 10px;
+}
+/* line 86, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.block-grid.four-up > li:nth-of-type(4n+1) {
+  clear: both;
+}
+/* line 73, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.block-grid.five-up {
+  margin: 0 -8px;
+}
+/* line 79, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.block-grid.five-up > li {
+  width: 20%;
+  padding: 0 8px 8px;
+}
+/* line 86, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.block-grid.five-up > li:nth-of-type(5n+1) {
+  clear: both;
+}
+/* line 73, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.block-grid.six-up {
+  margin: 0 -8px;
+}
+/* line 79, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.block-grid.six-up > li {
+  width: 16.66667%;
+  padding: 0 8px 8px;
+}
+/* line 86, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.block-grid.six-up > li:nth-of-type(6n+1) {
+  clear: both;
+}
+/* line 73, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.block-grid.seven-up {
+  margin: 0 -8px;
+}
+/* line 79, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.block-grid.seven-up > li {
+  width: 14.28571%;
+  padding: 0 8px 8px;
+}
+/* line 86, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.block-grid.seven-up > li:nth-of-type(7n+1) {
+  clear: both;
+}
+/* line 73, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.block-grid.eight-up {
+  margin: 0 -8px;
+}
+/* line 79, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.block-grid.eight-up > li {
+  width: 12.5%;
+  padding: 0 8px 8px;
+}
+/* line 86, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.block-grid.eight-up > li:nth-of-type(8n+1) {
+  clear: both;
+}
+/* line 73, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.block-grid.nine-up {
+  margin: 0 -8px;
+}
+/* line 79, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.block-grid.nine-up > li {
+  width: 11.11111%;
+  padding: 0 8px 8px;
+}
+/* line 86, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.block-grid.nine-up > li:nth-of-type(9n+1) {
+  clear: both;
+}
+/* line 73, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.block-grid.ten-up {
+  margin: 0 -8px;
+}
+/* line 79, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.block-grid.ten-up > li {
+  width: 10%;
+  padding: 0 8px 8px;
+}
+/* line 86, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.block-grid.ten-up > li:nth-of-type(10n+1) {
+  clear: both;
+}
+/* line 73, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.block-grid.eleven-up {
+  margin: 0 -8px;
+}
+/* line 79, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.block-grid.eleven-up > li {
+  width: 9.09091%;
+  padding: 0 8px 8px;
+}
+/* line 86, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.block-grid.eleven-up > li:nth-of-type(11n+1) {
+  clear: both;
+}
+/* line 73, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.block-grid.twelve-up {
+  margin: 0 -8px;
+}
+/* line 79, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.block-grid.twelve-up > li {
+  width: 8.33333%;
+  padding: 0 8px 8px;
+}
+/* line 86, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/_grid.scss */
+.block-grid.twelve-up > li:nth-of-type(12n+1) {
+  clear: both;
+}
+
+/* Normal Buttons ---------------------- */
+/* line 4, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button {
+  width: auto;
+  background: #2ba6cb;
+  border: 1px solid #1e728c;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0;
+  padding: 10px 20px 11px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: background-color 0.15s ease-in-out;
+  -moz-transition: background-color 0.15s ease-in-out;
+  -o-transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
+  /* Hovers */
+  /* Sizes */
+  /* Colors */
+  /* Radii */
+  /* Layout */
+  /* Disabled ---------- */
+}
+/* line 7, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button:hover, .button:focus {
+  color: white;
+  background-color: #2284a1;
+}
+/* line 8, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button:active {
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2) inset;
+}
+/* line 11, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.large {
+  font-size: 17px;
+  padding: 15px 30px 16px;
+}
+/* line 12, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.medium {
+  font-size: 14px;
+}
+/* line 13, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.small {
+  font-size: 11px;
+  padding: 7px 14px 8px;
+}
+/* line 14, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.tiny {
+  font-size: 10px;
+  padding: 5px 10px 6px;
+}
+/* line 15, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.expand {
+  width: 100%;
+  text-align: center;
+}
+/* line 18, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.primary {
+  background-color: #2ba6cb;
+  border: 1px solid #1e728c;
+}
+/* line 19, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.primary:hover, .button.primary:focus {
+  background-color: #2284a1;
+}
+/* line 21, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.success {
+  background-color: #5da423;
+  border: 1px solid #396516;
+}
+/* line 22, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.success:hover, .button.success:focus {
+  background-color: #457a1a;
+}
+/* line 24, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.alert {
+  background-color: #c60f13;
+  border: 1px solid #7f0a0c;
+}
+/* line 25, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.alert:hover, .button.alert:focus {
+  background-color: #970b0e;
+}
+/* line 27, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.secondary {
+  background-color: #e9e9e9;
+  color: #1d1d1d;
+  border: 1px solid #c3c3c3;
+}
+/* line 28, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.secondary:hover, .button.secondary:focus {
+  background-color: #d0d0d0;
+}
+/* line 32, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.radius {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 33, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.round {
+  -webkit-border-radius: 1000px;
+  -moz-border-radius: 1000px;
+  -ms-border-radius: 1000px;
+  -o-border-radius: 1000px;
+  border-radius: 1000px;
+}
+/* line 36, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.full-width {
+  width: 100%;
+  text-align: center;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+/* line 37, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.left-align {
+  text-align: left;
+  text-indent: 12px;
+}
+/* line 40, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.disabled, .button[disabled] {
+  opacity: 0.6;
+  cursor: default;
+  background: #2ba6cb;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+/* line 41, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.disabled:hover, .button[disabled]:hover {
+  background: #2ba6cb;
+}
+/* line 43, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.disabled.success, .button[disabled].success {
+  background-color: #5da423;
+}
+/* line 44, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.disabled.success:hover, .button.disabled.success:focus, .button[disabled].success:hover, .button[disabled].success:focus {
+  background-color: #5da423;
+  outline: none;
+}
+/* line 46, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.disabled.alert, .button[disabled].alert {
+  background-color: #c60f13;
+}
+/* line 47, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.disabled.alert:hover, .button.disabled.alert:focus, .button[disabled].alert:hover, .button[disabled].alert:focus {
+  background-color: #c60f13;
+  outline: none;
+}
+/* line 49, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.disabled.secondary, .button[disabled].secondary {
+  background-color: #e9e9e9;
+}
+/* line 50, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.disabled.secondary:hover, .button.disabled.secondary:focus, .button[disabled].secondary:hover, .button[disabled].secondary:focus {
+  background-color: #e9e9e9;
+  outline: none;
+}
+
+/* Don't use native buttons on iOS */
+/* line 56, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+input[type=submit].button, button.button {
+  -webkit-appearance: none;
+}
+
+/* Correct FF button padding */
+@-moz-document url-prefix() {
+  /* line 60, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+  button::-moz-focus-inner, input[type="reset"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, input[type="submit"]::-moz-focus-inner, input[type="file"] > input[type="button"]::-moz-focus-inner {
+    border: none;
+    padding: 0;
+  }
+
+  /* line 61, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+  input[type="submit"].tiny.button {
+    padding: 3px 10px 4px;
+  }
+
+  /* line 62, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+  input[type="submit"].small.button {
+    padding: 5px 14px 6px;
+  }
+
+  /* line 63, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+  input[type="submit"].button, input[type=submit].medium.button {
+    padding: 8px 20px 9px;
+  }
+
+  /* line 64, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+  input[type="submit"].large.button {
+    padding: 13px 30px 14px;
+  }
+}
+
+/* Buttons with Dropdowns ---------------------- */
+/* line 69, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown {
+  position: relative;
+  padding-right: 44px;
+  /* Sizes */
+  /* Triangles */
+  /* Flyout List */
+  /* Split Dropdown Buttons */
+}
+/* line 72, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown.large {
+  padding-right: 60px;
+}
+/* line 73, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown.small {
+  padding-right: 28px;
+}
+/* line 74, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown.tiny {
+  padding-right: 20px;
+}
+/* line 77, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: solid 6px;
+  border-color: white transparent transparent transparent;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  margin-top: -2px;
+}
+/* line 78, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown.large:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: solid 7px;
+  border-color: white transparent transparent transparent;
+  margin-top: -3px;
+  right: 30px;
+}
+/* line 79, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown.small:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: solid 5px;
+  border-color: white transparent transparent transparent;
+  margin-top: -2px;
+  right: 14px;
+}
+/* line 80, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown.tiny:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: solid 4px;
+  border-color: white transparent transparent transparent;
+  margin-top: -1px;
+  right: 10px;
+}
+/* line 81, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown.secondary:after {
+  border-color: #000 transparent transparent transparent;
+}
+/* line 84, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown > ul {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  display: none;
+  position: absolute;
+  left: -1px;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.95);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #cccccc;
+  border-top: none;
+  min-width: 100%;
+  z-index: 40;
+}
+/* line 86, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown > ul li {
+  width: 100%;
+  cursor: pointer;
+  padding: 0;
+  min-height: 18px;
+  line-height: 18px;
+  margin: 0;
+  white-space: nowrap;
+  list-style: none;
+}
+/* line 87, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown > ul li a, .button.dropdown > ul li button {
+  display: block;
+  color: #555;
+  font-size: 13px;
+  font-weight: normal;
+  padding: 6px 14px;
+  text-align: left;
+}
+/* line 88, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown > ul li button {
+  width: 100%;
+  border: inherit;
+  background: inherit;
+  font-family: inherit;
+  margin: inherit;
+  -webkit-font-smoothing: antialiased;
+}
+/* line 89, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown > ul li:hover, .button.dropdown > ul li:focus {
+  background-color: #e3f4f9;
+  color: #222;
+}
+/* line 90, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown > ul li.divider {
+  min-height: 0;
+  padding: 0;
+  height: 1px;
+  margin: 4px 0;
+  background: #ededed;
+}
+/* line 94, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown.up > ul {
+  border-top: 1px solid #cccccc;
+  border-bottom: none;
+}
+/* line 96, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown ul.no-hover.show-dropdown {
+  display: block !important;
+}
+/* line 98, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown:hover > ul.no-hover {
+  display: none;
+}
+/* line 104, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown.split {
+  padding: 0;
+  position: relative;
+  /* Sizes */
+  /* Triangle Spans */
+  /* Colors */
+}
+/* line 106, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown.split:after {
+  display: none;
+}
+/* line 107, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown.split:hover, .button.dropdown.split:focus {
+  background-color: #2ba6cb;
+}
+/* line 108, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown.split.alert:hover, .button.dropdown.split.alert:focus {
+  background-color: #c60f13;
+}
+/* line 109, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown.split.success:hover, .button.dropdown.split.success:focus {
+  background-color: #5da423;
+}
+/* line 110, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown.split.secondary:hover, .button.dropdown.split.secondary:focus {
+  background-color: #e9e9e9;
+}
+/* line 113, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown.split > a {
+  color: white;
+  display: block;
+  padding: 10px 50px 11px 20px;
+  padding-left: 20px;
+  padding-right: 50px;
+  -webkit-transition: background-color 0.15s ease-in-out;
+  -moz-transition: background-color 0.15s ease-in-out;
+  -o-transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
+}
+/* line 114, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown.split > a:hover, .button.dropdown.split > a:focus {
+  background-color: #2284a1;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+}
+/* line 116, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown.split.large > a {
+  padding: 15px 75px 16px 30px;
+  padding-left: 30px;
+  padding-right: 75px;
+}
+/* line 117, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown.split.small > a {
+  padding: 7px 35px 8px 14px;
+  padding-left: 14px;
+  padding-right: 35px;
+}
+/* line 118, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown.split.tiny > a {
+  padding: 5px 25px 6px 10px;
+  padding-left: 10px;
+  padding-right: 25px;
+}
+/* line 121, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown.split > span {
+  background-color: #2ba6cb;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 30px;
+  border-left: 1px solid #1e728c;
+  -webkit-box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5) inset;
+  -moz-box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5) inset;
+  box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5) inset;
+  -webkit-transition: background-color 0.15s ease-in-out;
+  -moz-transition: background-color 0.15s ease-in-out;
+  -o-transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
+}
+/* line 122, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown.split > span:hover, .button.dropdown.split > span:focus {
+  background-color: #2284a1;
+}
+/* line 123, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown.split > span:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: solid 6px;
+  border-color: white transparent transparent transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -6px;
+  margin-top: -2px;
+}
+/* line 125, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown.split.secondary > span:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: solid 6px;
+  border-color: #1d1d1d transparent transparent transparent;
+}
+/* line 127, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown.split.large span {
+  width: 45px;
+}
+/* line 128, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown.split.small span {
+  width: 21px;
+}
+/* line 129, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown.split.tiny span {
+  width: 15px;
+}
+/* line 131, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown.split.large span:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: solid 7px;
+  border-color: white transparent transparent transparent;
+  margin-top: -3px;
+  margin-left: -7px;
+}
+/* line 132, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown.split.small span:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: solid 4px;
+  border-color: white transparent transparent transparent;
+  margin-top: -1px;
+  margin-left: -4px;
+}
+/* line 133, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown.split.tiny span:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: solid 3px;
+  border-color: white transparent transparent transparent;
+  margin-top: -1px;
+  margin-left: -3px;
+}
+/* line 136, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown.split.alert > span {
+  background-color: #c60f13;
+  border-left-color: #7f0a0c;
+}
+/* line 137, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown.split.success > span {
+  background-color: #5da423;
+  border-left-color: #396516;
+}
+/* line 138, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown.split.secondary > span {
+  background-color: #e9e9e9;
+  border-left-color: #c3c3c3;
+}
+/* line 139, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown.split.secondary > a {
+  color: #1d1d1d;
+}
+/* line 141, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown.split.alert > a:hover, .button.dropdown.split.alert > span:hover, .button.dropdown.split.alert > a:focus, .button.dropdown.split.alert > span:focus {
+  background-color: #970b0e;
+}
+/* line 142, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown.split.success > a:hover, .button.dropdown.split.success > span:hover, .button.dropdown.split.success > a:focus, .button.dropdown.split.success > span:focus {
+  background-color: #457a1a;
+}
+/* line 143, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+.button.dropdown.split.secondary > a:hover, .button.dropdown.split.secondary > span:hover, .button.dropdown.split.secondary > a:focus, .button.dropdown.split.secondary > span:focus {
+  background-color: #d0d0d0;
+}
+
+/* Button Groups ---------------------- */
+/* line 149, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+ul.button-group {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px;
+  *zoom: 1;
+}
+/* line 4, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/mixins/_clearfix.scss */
+ul.button-group:before, ul.button-group:after {
+  content: " ";
+  display: table;
+}
+/* line 5, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/mixins/_clearfix.scss */
+ul.button-group:after {
+  clear: both;
+}
+/* line 151, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+ul.button-group li {
+  padding: 0;
+  margin: 0 0 0 -1px;
+  float: left;
+}
+/* line 152, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+ul.button-group li:first-child {
+  margin-left: 0;
+}
+/* line 156, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+ul.button-group.radius li .button, ul.button-group.radius li .button.radius, ul.button-group.radius li .button-rounded {
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  -o-border-radius: 0px;
+  border-radius: 0px;
+}
+/* line 158, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+ul.button-group.radius li:first-child .button, ul.button-group.radius li:first-child .button.radius {
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+/* line 159, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+ul.button-group.radius li:first-child .button.rounded {
+  -moz-border-radius-topleft: 1000px;
+  -webkit-border-top-left-radius: 1000px;
+  border-top-left-radius: 1000px;
+  -moz-border-radius-bottomleft: 1000px;
+  -webkit-border-bottom-left-radius: 1000px;
+  border-bottom-left-radius: 1000px;
+}
+/* line 162, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+ul.button-group.radius li:last-child .button, ul.button-group.radius li:last-child .button.radius {
+  -moz-border-radius-topright: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+/* line 163, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+ul.button-group.radius li:last-child .button.rounded {
+  -moz-border-radius-topright: 1000px;
+  -webkit-border-top-right-radius: 1000px;
+  border-top-right-radius: 1000px;
+  -moz-border-radius-bottomright: 1000px;
+  -webkit-border-bottom-right-radius: 1000px;
+  border-bottom-right-radius: 1000px;
+}
+/* line 168, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+ul.button-group.even .button {
+  width: 100%;
+}
+/* line 169, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+ul.button-group.even.two-up li {
+  width: 50%;
+}
+/* line 170, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+ul.button-group.even.three-up li {
+  width: 33.3%;
+}
+/* line 171, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+ul.button-group.even.three-up li:first-child {
+  width: 33.4%;
+}
+/* line 172, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+ul.button-group.even.four-up li {
+  width: 25%;
+}
+/* line 173, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+ul.button-group.even.five-up li {
+  width: 20%;
+}
+
+/* line 177, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+div.button-bar {
+  overflow: hidden;
+}
+/* line 178, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+div.button-bar ul.button-group {
+  float: left;
+  margin-right: 8px;
+}
+/* line 179, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_buttons.scss */
+div.button-bar ul.button-group:last-child {
+  margin-left: 0;
+}
+
+/*
+  Foundation Top Bar
+
+  Requires:
+    -jquery.foundation.topbar.js
+
+  Notes:
+    - <nav class="top-bar"> can have .fixed added to make it stick to the top of viewport. Can add .contain-to-grid to top-bar to make it full width but content on grid.
+    - <li class="name"> creates a branding area that can be linked to homepage
+      - Can include text, image or both inside this <li>.
+    - <li class="divider"> creates a divider between nav items, add margins for space
+    - <li class="search"> Needs to hold a <form> which can use .row.collapse and pre/postfix buttons or default type="search"
+*/
+/* Element that controls breakpoint, no need to change this ever */
+/* line 17, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar-js-breakpoint {
+  width: 940px !important;
+  visibility: hidden;
+}
+
+/* Wrapped around .top-bar to contain to grid width */
+/* line 20, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.contain-to-grid {
+  width: 100%;
+  background: rgba(100, 100, 100, 0.3);
+}
+
+/* Wrapped around .top-bar to make it fixed at the top */
+/* line 23, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.fixed {
+  width: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+}
+
+/* <nav> */
+/* line 26, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar {
+  background: rgba(100, 100, 100, 0.3);
+  min-height: 75px;
+  line-height: 75px;
+  margin: 0 0 0 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+  /* Contain width to .row width */
+  /* First <ul> for branding, title, name, etc */
+  /* topbar global <ul> styles */
+}
+/* line 29, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.contain-to-grid .top-bar {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+/* line 34, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar > ul .name h1 {
+  line-height: 75px;
+  margin: 0;
+}
+/* line 35, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar > ul .name h1 a {
+  font-weight: bold;
+  padding: 0 37.5px;
+  font-size: 17px !important;
+}
+/* line 37, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar > ul .name img {
+  margin-top: -5px;
+  vertical-align: middle;
+}
+/* line 39, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar > ul img {
+  margin-top: -5px;
+  vertical-align: middle;
+}
+/* line 41, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar.expanded {
+  height: inherit;
+}
+/* line 44, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul {
+  margin-left: 0;
+  display: inline;
+  height: 75px;
+  line-height: 75px;
+  list-style: none;
+  /* Main Navigation links style */
+  /* Left Side <ul> */
+  /* Right Side <ul> */
+}
+/* line 47, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul > li {
+  float: left;
+  /* Dividers between navigation */
+  /* Put a button in an <li> but give is a class */
+  /* Put a search bar or text input in the bar */
+  /* Put login bar in the top bar */
+  /* Hide the triangle for breakpoint menu */
+  /* li.has-dropdown */
+}
+/* line 48, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul > li a:not(.button) {
+  color: white;
+  display: block;
+  font-size: 13px;
+  font-weight: bold;
+  height: 75px;
+  line-height: 75px;
+  padding: 0 25px;
+}
+/* line 50, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul > li:not(.name):hover, .top-bar ul > li:not(.name).active, .top-bar ul > li:not(.name):focus {
+  background: rgba(62, 62, 62, 0.3);
+}
+/* line 51, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul > li:not(.name):hover a, .top-bar ul > li:not(.name).active a, .top-bar ul > li:not(.name):focus a {
+  color: #d9d9d9;
+}
+/* line 56, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul > li.divider {
+  background: rgba(62, 62, 62, 0.3);
+  -webkit-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.1);
+  -moz-box-shadow: 1px 0 0 rgba(255, 255, 255, 0.1);
+  box-shadow: 1px 0 0 rgba(255, 255, 255, 0.1);
+  height: 100%;
+  margin-right: 1px;
+  width: 1px;
+}
+/* line 60, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul > li.has-button a.button {
+  margin: 0 18.75px;
+}
+/* line 61, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul > li.has-button:hover, .top-bar ul > li.has-button:focus {
+  background: rgba(100, 100, 100, 0.3);
+}
+/* line 62, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul > li.has-button:hover a, .top-bar ul > li.has-button:focus a {
+  color: #fff;
+}
+/* line 68, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul > li.search {
+  padding: 0 25px;
+}
+/* line 69, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul > li.search form {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+  width: 200px;
+}
+/* line 70, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul > li.search form input[type=text] {
+  -moz-border-radius-topright: 0;
+  -webkit-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+  float: left;
+  font-size: 13px;
+  margin-top: -1px;
+  height: 37.5px;
+  margin-bottom: 0;
+  width: 130px;
+}
+/* line 72, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul > li.search form input[type=text] + .button {
+  border-left: none;
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+  -webkit-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+  float: left;
+  font-size: 12px;
+  margin-top: -1px;
+  padding: 5px 12px 4px;
+}
+/* line 74, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul > li.search form input[type=search] {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+/* line 76, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul > li.search input[type=search] {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+/* line 78, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul > li:hover, .top-bar ul > li:focus {
+  background: rgba(100, 100, 100, 0.3);
+}
+/* line 81, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul > li.login {
+  padding: 0 25px;
+}
+/* line 82, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul > li.login form {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+  width: 300px;
+}
+/* line 83, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul > li.login form input {
+  float: left;
+  width: auto;
+  font-size: 13px;
+  margin-top: -1px;
+  height: 37.5px;
+  margin-bottom: 0;
+}
+/* line 84, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul > li.login form input[type=text] {
+  -moz-border-radius-topright: 0;
+  -webkit-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+  -moz-border-radius-bottomright: 0;
+  -webkit-border-bottom-right-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 120px;
+}
+/* line 85, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul > li.login form input[type=password] {
+  margin-bottom: 0;
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+  -webkit-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+  width: 120px;
+}
+/* line 86, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul > li.login form input[type=password] + .button {
+  border-left: none;
+  -moz-border-radius-topleft: 0;
+  -webkit-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  -moz-border-radius-bottomleft: 0;
+  -webkit-border-bottom-left-radius: 0;
+  border-bottom-left-radius: 0;
+  -moz-border-radius-topright: 2px;
+  -webkit-border-top-right-radius: 2px;
+  border-top-right-radius: 2px;
+  -moz-border-radius-bottomright: 2px;
+  -webkit-border-bottom-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  float: left;
+  font-size: 12px;
+  margin-top: -1px;
+  padding: 5px 12px 4px;
+  width: 60px;
+}
+/* line 89, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul > li.login:hover, .top-bar ul > li.login:focus {
+  background: rgba(100, 100, 100, 0.3);
+}
+/* line 93, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul > li.toggle-topbar {
+  display: none;
+}
+/* line 96, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul > li.has-dropdown {
+  position: relative;
+  /* Dropdown Level 2+ */
+}
+/* line 97, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul > li.has-dropdown:hover > .dropdown, .top-bar ul > li.has-dropdown:focus > .dropdown {
+  display: block;
+  visibility: visible;
+}
+/* line 98, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul > li.has-dropdown a {
+  padding-right: 56.25px;
+}
+/* line 99, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul > li.has-dropdown a:after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border: solid 5px;
+  border-color: white transparent transparent transparent;
+  margin-right: 25px;
+  margin-top: -2.5px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+/* line 101, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul > li.has-dropdown .dropdown {
+  min-width: 100%;
+  background: #222222;
+  left: 0;
+  margin: 0;
+  padding: 15px 0 0 0;
+  position: absolute;
+  visibility: hidden;
+  z-index: 99;
+}
+/* line 102, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul > li.has-dropdown .dropdown li {
+  background: #222222;
+  line-height: 1;
+  min-width: 100%;
+  padding-bottom: 5px;
+}
+/* line 103, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul > li.has-dropdown .dropdown li a {
+  color: white;
+  font-weight: normal;
+  height: 100%;
+  line-height: 1;
+  padding: 5px 27px 5px 25px;
+  white-space: nowrap;
+}
+/* line 104, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul > li.has-dropdown .dropdown li a:after {
+  border: none;
+}
+/* line 105, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul > li.has-dropdown .dropdown li a:hover, .top-bar ul > li.has-dropdown .dropdown li a:focus {
+  background: #3c3c3c;
+}
+/* line 107, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul > li.has-dropdown .dropdown li label {
+  color: #6f6f6f;
+  font-size: 10px;
+  font-weight: bold;
+  margin: 0;
+  padding-left: 25px;
+  text-transform: uppercase;
+}
+/* line 108, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul > li.has-dropdown .dropdown li.divider {
+  border-top: solid 1px black;
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1) inset;
+  height: 10px;
+  padding: 0;
+  width: 100%;
+}
+/* line 109, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul > li.has-dropdown .dropdown li:last-child {
+  padding-bottom: 10px;
+}
+/* line 110, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul > li.has-dropdown .dropdown li.active a {
+  background: rgba(62, 62, 62, 0.3);
+}
+/* line 116, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul > li.has-dropdown .dropdown li.has-dropdown > a {
+  padding-right: 30px;
+}
+/* line 117, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul > li.has-dropdown .dropdown li.has-dropdown > a:after {
+  border: none;
+  content: "\00bb";
+  right: 5px;
+  top: 6px;
+}
+/* line 119, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul > li.has-dropdown .dropdown li.has-dropdown .dropdown {
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+/* line 121, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul > li.has-dropdown .dropdown li.has-dropdown:hover > .dropdown, .top-bar ul > li.has-dropdown .dropdown li.has-dropdown:focus > .dropdown {
+  display: block;
+}
+/* line 128, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul.left {
+  float: left;
+  width: auto;
+  margin-bottom: 0;
+}
+/* line 131, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul.right {
+  float: right;
+  width: auto;
+  margin-bottom: 0;
+  /* Dropdown Right Side Alignment */
+}
+/* line 133, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul.right .has-dropdown .dropdown {
+  left: auto;
+  right: 0px;
+}
+/* line 134, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar ul.right .has-dropdown .dropdown li.has-dropdown > .dropdown {
+  right: 100%;
+  left: auto;
+  width: 100%;
+}
+/* line 139, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.top-bar .js-generated {
+  display: none;
+}
+
+/* Firefox Fixes */
+@-moz-document url-prefix() {
+  /* line 145, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+  .top-bar ul li .button.small {
+    padding-bottom: 6px;
+  }
+
+  /* line 146, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+  .top-bar ul li.search form input[type=search] {
+    font-size: 14px;
+    height: 22px;
+    padding: 3px;
+  }
+}
+
+/* IE8 Fixes */
+/* line 150, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.lt-ie9 .top-bar ul li a {
+  color: white;
+  display: block;
+  font-weight: bold;
+  font-size: 13px;
+  height: 75px;
+  line-height: 75px;
+  padding: 0 25px;
+}
+/* line 151, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.lt-ie9 .top-bar ul li a.button {
+  height: auto;
+  line-height: 30px;
+  margin-top: 7px;
+}
+/* line 152, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.lt-ie9 .top-bar ul li a img {
+  margin-top: -5px;
+  vertical-align: middle;
+}
+
+/* line 158, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.lt-ie9 .top-bar section > ul > li a:hover, .lt-ie9 .top-bar section > ul > li a:focus {
+  color: #cccccc;
+}
+/* line 160, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.lt-ie9 .top-bar section > ul > li:hover, .lt-ie9 .top-bar section > ul > li:focus {
+  background: rgba(62, 62, 62, 0.3);
+}
+/* line 161, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.lt-ie9 .top-bar section > ul > li.search:hover, .lt-ie9 .top-bar section > ul > li.search:focus, .lt-ie9 .top-bar section > ul > li.has-button:hover, .lt-ie9 .top-bar section > ul > li.has-button:focus {
+  background: none;
+}
+/* line 162, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.lt-ie9 .top-bar section > ul > li.active {
+  background: rgba(62, 62, 62, 0.3);
+  color: #d9d9d9;
+}
+
+/* line 164, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.lt-ie9 .top-bar ul li.has-dropdown {
+  padding-right: 56.25px;
+}
+/* line 166, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_topbar.scss */
+.lt-ie9 .top-bar ul li.has-dropdown > ul li {
+  padding-right: 0;
+}
+
+/* Visibility Classes ---------------------- */
+/*                                           */
+/* Standard (large) display targeting */
+/* line 11, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+.show-for-small,
+.show-for-medium,
+.show-for-medium-down,
+.hide-for-large,
+.hide-for-large-up,
+.show-for-xlarge,
+.show-for-print {
+  display: none !important;
+}
+
+/* line 19, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+.hide-for-small,
+.hide-for-medium,
+.hide-for-medium-down,
+.show-for-large,
+.show-for-large-up,
+.hide-for-xlarge,
+.hide-for-print {
+  display: inherit !important;
+}
+
+/* Very large display targeting */
+@media only screen and (min-width: 1441px) {
+  /* line 28, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .hide-for-small,
+  .hide-for-medium,
+  .hide-for-medium-down,
+  .hide-for-large,
+  .show-for-large-up,
+  .show-for-xlarge {
+    display: inherit !important;
+  }
+
+  /* line 35, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .show-for-small,
+  .show-for-medium,
+  .show-for-medium-down,
+  .show-for-large,
+  .hide-for-large-up,
+  .hide-for-xlarge {
+    display: none !important;
+  }
+}
+/* Medium display targeting */
+@media only screen and (max-width: 1279px) and (min-width: 768px) {
+  /* line 45, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .hide-for-small,
+  .show-for-medium,
+  .show-for-medium-down,
+  .hide-for-large,
+  .hide-for-large-up,
+  .hide-for-xlarge {
+    display: inherit !important;
+  }
+
+  /* line 52, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .show-for-small,
+  .hide-for-medium,
+  .hide-for-medium-down,
+  .show-for-large,
+  .show-for-large-up,
+  .show-for-xlarge {
+    display: none !important;
+  }
+}
+/* Small display targeting */
+@media only screen and (max-width: 767px) {
+  /* line 62, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .show-for-small,
+  .hide-for-medium,
+  .show-for-medium-down,
+  .hide-for-large,
+  .hide-for-large-up,
+  .hide-for-xlarge {
+    display: inherit !important;
+  }
+
+  /* line 69, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .hide-for-small,
+  .show-for-medium,
+  .hide-for-medium-down,
+  .show-for-large,
+  .show-for-large-up,
+  .show-for-xlarge {
+    display: none !important;
+  }
+}
+/* Orientation targeting */
+/* line 74, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+.show-for-landscape,
+.hide-for-portrait {
+  display: inherit !important;
+}
+
+/* line 76, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+.hide-for-landscape,
+.show-for-portrait {
+  display: none !important;
+}
+
+@media screen and (orientation: landscape) {
+  /* line 80, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .show-for-landscape,
+  .hide-for-portrait {
+    display: inherit !important;
+  }
+
+  /* line 82, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .hide-for-landscape,
+  .show-for-portrait {
+    display: none !important;
+  }
+}
+@media screen and (orientation: portrait) {
+  /* line 87, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .show-for-portrait,
+  .hide-for-landscape {
+    display: inherit !important;
+  }
+
+  /* line 89, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .hide-for-portrait,
+  .show-for-landscape {
+    display: none !important;
+  }
+}
+/* Touch-enabled device targeting */
+/* line 93, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+.show-for-touch {
+  display: none !important;
+}
+
+/* line 94, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+.hide-for-touch {
+  display: inherit !important;
+}
+
+/* line 95, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+.touch .show-for-touch {
+  display: inherit !important;
+}
+
+/* line 96, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+.touch .hide-for-touch {
+  display: none !important;
+}
+
+/* line 98, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+.show-on-hover {
+  display: none;
+}
+/* line 100, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+.show-on-hover:hover {
+  display: inline !important;
+}
+
+/* line 105, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+.touch .show-on-hover {
+  display: inline !important;
+}
+
+/* Specific overrides for elements that require something other than display: block */
+/* line 114, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+table.show-for-xlarge,
+table.show-for-large,
+table.hide-for-small,
+table.hide-for-medium {
+  display: table !important;
+}
+
+@media only screen and (max-width: 1279px) and (min-width: 768px) {
+  /* line 120, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .touch table.hide-for-xlarge,
+  .touch table.hide-for-large,
+  .touch table.hide-for-small,
+  .touch table.show-for-medium {
+    display: table !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 127, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  table.hide-for-xlarge,
+  table.hide-for-large,
+  table.hide-for-medium,
+  table.show-for-small {
+    display: table !important;
+  }
+}
+/* 1280 tablet ------------ */
+@media only screen and (max-device-width: 1280px) {
+  /* NavBar --- */
+  /*            */
+  /* line 136, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .touch .nav-bar li.has-flyout > a {
+    padding-right: 36px !important;
+  }
+}
+/* Covering almost all ----- */
+@media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
+  /* line 142, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .flex-video {
+    padding-top: 0;
+  }
+}
+/* Between Medium and Small */
+@media only screen and (max-width: 1279px) and (min-width: 768px) {
+  /* NavBar --- */
+  /*            */
+  /* line 151, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .touch .nav-bar li a {
+    font-size: 13px;
+  }
+  /* line 153, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .touch .nav-bar li.has-flyout > a.flyout-toggle {
+    padding: 20px !important;
+  }
+  /* line 154, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .touch .nav-bar li.has-flyout > a {
+    padding-right: 36px !important;
+  }
+
+  /* Clearing --- */
+  /*              */
+  /* line 160, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .clearing-main-right, .clearing-main-left {
+    height: 100%;
+    width: 40px;
+    top: 0;
+    border: none;
+  }
+  /* line 165, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .clearing-main-right:before, .clearing-main-left:before {
+    position: absolute;
+    top: 50%;
+  }
+
+  /* line 167, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .clearing-main-left {
+    left: 0;
+  }
+  /* line 169, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .clearing-main-left:before {
+    left: 5px;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: solid 16px;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* line 171, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .clearing-main-right {
+    height: 100%;
+    right: 0;
+  }
+  /* line 174, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .clearing-main-right:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: solid 16px;
+    border-color: transparent transparent transparent white;
+  }
+}
+/* Small Devices ------------ */
+@media only screen and (max-width: 767px) {
+  /* Global Misc --- */
+  /*                 */
+  /* line 184, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .left, .right {
+    float: none;
+  }
+
+  /* line 185, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  body {
+    -webkit-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+    width: 100%;
+    min-width: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* The Grid --- */
+  /*              */
+  /* line 189, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .row {
+    width: auto;
+    min-width: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* line 190, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .column, .columns {
+    width: auto !important;
+    float: none;
+  }
+
+  /* line 191, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .column:last-child, .columns:last-child {
+    float: none;
+  }
+
+  /* line 192, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  [class*="column"] + [class*="column"]:last-child {
+    float: none;
+  }
+
+  /* line 193, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .column:before, .columns:before, .column:after, .columns:after {
+    content: "";
+    display: table;
+  }
+
+  /* line 194, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .column:after, .columns:after {
+    clear: both;
+  }
+
+  /* line 197, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .offset-by-one, .offset-by-two, .offset-by-three, .offset-by-four, .offset-by-five, .offset-by-six, .offset-by-seven, .offset-by-eight, .offset-by-nine, .offset-by-ten {
+    margin-left: 0 !important;
+  }
+
+  /* line 198, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .push-two, .push-three, .push-four, .push-five, .push-six, .push-seven, .push-eight, .push-nine, .push-ten {
+    left: auto;
+  }
+
+  /* line 199, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .pull-two, .pull-three, .pull-four, .pull-five, .pull-six, .pull-seven, .pull-eight, .pull-nine, .pull-ten {
+    right: auto;
+  }
+
+  /* Mobile 4-column Grid */
+  /* line 212, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .row .mobile-one {
+    width: 25% !important;
+    float: left;
+    padding: 0 15px;
+  }
+  /* line 213, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .row .mobile-one:last-child {
+    float: right;
+  }
+  /* line 214, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .row .mobile-one.end {
+    float: left;
+  }
+  /* line 217, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .row.collapse .mobile-one {
+    padding: 0;
+  }
+
+  /* line 212, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .row .mobile-two {
+    width: 50% !important;
+    float: left;
+    padding: 0 15px;
+  }
+  /* line 213, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .row .mobile-two:last-child {
+    float: right;
+  }
+  /* line 214, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .row .mobile-two.end {
+    float: left;
+  }
+  /* line 217, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .row.collapse .mobile-two {
+    padding: 0;
+  }
+
+  /* line 212, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .row .mobile-three {
+    width: 75% !important;
+    float: left;
+    padding: 0 15px;
+  }
+  /* line 213, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .row .mobile-three:last-child {
+    float: right;
+  }
+  /* line 214, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .row .mobile-three.end {
+    float: left;
+  }
+  /* line 217, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .row.collapse .mobile-three {
+    padding: 0;
+  }
+
+  /* line 212, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .row .mobile-four {
+    width: 100% !important;
+    float: left;
+    padding: 0 15px;
+  }
+  /* line 213, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .row .mobile-four:last-child {
+    float: right;
+  }
+  /* line 214, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .row .mobile-four.end {
+    float: left;
+  }
+  /* line 217, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .row.collapse .mobile-four {
+    padding: 0;
+  }
+
+  /* line 222, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .push-one-mobile {
+    left: 25%;
+  }
+
+  /* line 223, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .pull-one-mobile {
+    right: 25%;
+  }
+
+  /* line 222, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .push-two-mobile {
+    left: 50%;
+  }
+
+  /* line 223, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .pull-two-mobile {
+    right: 50%;
+  }
+
+  /* line 222, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .push-three-mobile {
+    left: 75%;
+  }
+
+  /* line 223, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .pull-three-mobile {
+    right: 75%;
+  }
+
+  /* Block Grids --- */
+  /*                 */
+  /* line 229, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .block-grid.mobile > li {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  /* line 233, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .block-grid > li {
+    clear: none;
+  }
+  /* line 235, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .block-grid.mobile-one-up > li {
+    width: 100%;
+  }
+  /* line 235, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .block-grid.mobile-two-up > li {
+    width: 50%;
+  }
+  /* line 237, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .block-grid.mobile-two-up > li:nth-of-type(2n+1) {
+    clear: both;
+  }
+  /* line 235, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .block-grid.mobile-three-up > li {
+    width: 33.33333%;
+  }
+  /* line 237, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .block-grid.mobile-three-up > li:nth-of-type(3n+1) {
+    clear: both;
+  }
+  /* line 235, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .block-grid.mobile-four-up > li {
+    width: 25%;
+  }
+  /* line 237, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .block-grid.mobile-four-up > li:nth-of-type(4n+1) {
+    clear: both;
+  }
+  /* line 235, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .block-grid.mobile-five-up > li {
+    width: 20%;
+  }
+  /* line 237, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .block-grid.mobile-five-up > li:nth-of-type(5n+1) {
+    clear: both;
+  }
+  /* line 235, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .block-grid.mobile-six-up > li {
+    width: 16.66667%;
+  }
+  /* line 237, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .block-grid.mobile-six-up > li:nth-of-type(6n+1) {
+    clear: both;
+  }
+  /* line 235, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .block-grid.mobile-seven-up > li {
+    width: 14.28571%;
+  }
+  /* line 237, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .block-grid.mobile-seven-up > li:nth-of-type(7n+1) {
+    clear: both;
+  }
+  /* line 235, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .block-grid.mobile-eight-up > li {
+    width: 12.5%;
+  }
+  /* line 237, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .block-grid.mobile-eight-up > li:nth-of-type(8n+1) {
+    clear: both;
+  }
+  /* line 235, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .block-grid.mobile-nine-up > li {
+    width: 11.11111%;
+  }
+  /* line 237, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .block-grid.mobile-nine-up > li:nth-of-type(9n+1) {
+    clear: both;
+  }
+  /* line 235, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .block-grid.mobile-ten-up > li {
+    width: 10%;
+  }
+  /* line 237, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .block-grid.mobile-ten-up > li:nth-of-type(10n+1) {
+    clear: both;
+  }
+  /* line 235, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .block-grid.mobile-eleven-up > li {
+    width: 9.09091%;
+  }
+  /* line 237, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .block-grid.mobile-eleven-up > li:nth-of-type(11n+1) {
+    clear: both;
+  }
+  /* line 235, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .block-grid.mobile-twelve-up > li {
+    width: 8.33333%;
+  }
+  /* line 237, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .block-grid.mobile-twelve-up > li:nth-of-type(12n+1) {
+    clear: both;
+  }
+
+  /* line 242, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .block-grid[class$='-up'][class*='mobile-'] li {
+    clear: none;
+  }
+
+  /* Forms --- */
+  /*           */
+  /* Label alignment */
+  /* line 248, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  label.right {
+    text-align: left;
+  }
+
+  /* Extend width of all inputs */
+  /* line 261, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  input[type="text"].one,
+  input[type="password"].one,
+  input[type="date"].one,
+  input[type="datetime"].one,
+  input[type="email"].one,
+  input[type="number"].one,
+  input[type="search"].one,
+  input[type="tel"].one,
+  input[type="time"].one,
+  input[type="url"].one,
+  textarea.one,
+  .row textarea.one {
+    width: 100% !important;
+  }
+
+  /* line 261, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  input[type="text"].two,
+  input[type="password"].two,
+  input[type="date"].two,
+  input[type="datetime"].two,
+  input[type="email"].two,
+  input[type="number"].two,
+  input[type="search"].two,
+  input[type="tel"].two,
+  input[type="time"].two,
+  input[type="url"].two,
+  textarea.two,
+  .row textarea.two {
+    width: 100% !important;
+  }
+
+  /* line 261, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  input[type="text"].three,
+  input[type="password"].three,
+  input[type="date"].three,
+  input[type="datetime"].three,
+  input[type="email"].three,
+  input[type="number"].three,
+  input[type="search"].three,
+  input[type="tel"].three,
+  input[type="time"].three,
+  input[type="url"].three,
+  textarea.three,
+  .row textarea.three {
+    width: 100% !important;
+  }
+
+  /* line 261, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  input[type="text"].four,
+  input[type="password"].four,
+  input[type="date"].four,
+  input[type="datetime"].four,
+  input[type="email"].four,
+  input[type="number"].four,
+  input[type="search"].four,
+  input[type="tel"].four,
+  input[type="time"].four,
+  input[type="url"].four,
+  textarea.four,
+  .row textarea.four {
+    width: 100% !important;
+  }
+
+  /* line 261, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  input[type="text"].five,
+  input[type="password"].five,
+  input[type="date"].five,
+  input[type="datetime"].five,
+  input[type="email"].five,
+  input[type="number"].five,
+  input[type="search"].five,
+  input[type="tel"].five,
+  input[type="time"].five,
+  input[type="url"].five,
+  textarea.five,
+  .row textarea.five {
+    width: 100% !important;
+  }
+
+  /* line 261, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  input[type="text"].six,
+  input[type="password"].six,
+  input[type="date"].six,
+  input[type="datetime"].six,
+  input[type="email"].six,
+  input[type="number"].six,
+  input[type="search"].six,
+  input[type="tel"].six,
+  input[type="time"].six,
+  input[type="url"].six,
+  textarea.six,
+  .row textarea.six {
+    width: 100% !important;
+  }
+
+  /* line 261, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  input[type="text"].seven,
+  input[type="password"].seven,
+  input[type="date"].seven,
+  input[type="datetime"].seven,
+  input[type="email"].seven,
+  input[type="number"].seven,
+  input[type="search"].seven,
+  input[type="tel"].seven,
+  input[type="time"].seven,
+  input[type="url"].seven,
+  textarea.seven,
+  .row textarea.seven {
+    width: 100% !important;
+  }
+
+  /* line 261, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  input[type="text"].eight,
+  input[type="password"].eight,
+  input[type="date"].eight,
+  input[type="datetime"].eight,
+  input[type="email"].eight,
+  input[type="number"].eight,
+  input[type="search"].eight,
+  input[type="tel"].eight,
+  input[type="time"].eight,
+  input[type="url"].eight,
+  textarea.eight,
+  .row textarea.eight {
+    width: 100% !important;
+  }
+
+  /* line 261, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  input[type="text"].nine,
+  input[type="password"].nine,
+  input[type="date"].nine,
+  input[type="datetime"].nine,
+  input[type="email"].nine,
+  input[type="number"].nine,
+  input[type="search"].nine,
+  input[type="tel"].nine,
+  input[type="time"].nine,
+  input[type="url"].nine,
+  textarea.nine,
+  .row textarea.nine {
+    width: 100% !important;
+  }
+
+  /* line 261, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  input[type="text"].ten,
+  input[type="password"].ten,
+  input[type="date"].ten,
+  input[type="datetime"].ten,
+  input[type="email"].ten,
+  input[type="number"].ten,
+  input[type="search"].ten,
+  input[type="tel"].ten,
+  input[type="time"].ten,
+  input[type="url"].ten,
+  textarea.ten,
+  .row textarea.ten {
+    width: 100% !important;
+  }
+
+  /* line 261, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  input[type="text"].eleven,
+  input[type="password"].eleven,
+  input[type="date"].eleven,
+  input[type="datetime"].eleven,
+  input[type="email"].eleven,
+  input[type="number"].eleven,
+  input[type="search"].eleven,
+  input[type="tel"].eleven,
+  input[type="time"].eleven,
+  input[type="url"].eleven,
+  textarea.eleven,
+  .row textarea.eleven {
+    width: 100% !important;
+  }
+
+  /* line 261, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  input[type="text"].twelve,
+  input[type="password"].twelve,
+  input[type="date"].twelve,
+  input[type="datetime"].twelve,
+  input[type="email"].twelve,
+  input[type="number"].twelve,
+  input[type="search"].twelve,
+  input[type="tel"].twelve,
+  input[type="time"].twelve,
+  input[type="url"].twelve,
+  textarea.twelve,
+  .row textarea.twelve {
+    width: 100% !important;
+  }
+
+  /* Buttons --- */
+  /*             */
+  /* Basic overrides */
+  /* line 275, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .button {
+    display: block;
+  }
+
+  /* line 276, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  button.button, input[type="submit"].button, input[type="reset"].button {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Button Groups */
+  /* line 279, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .button-group button.button, .button-group input[type="submit"].button {
+    width: auto;
+    padding: 10px 20px 11px;
+  }
+  /* line 280, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .button-group button.button.large, .button-group input[type="submit"].button.large {
+    padding: 15px 30px 16px;
+  }
+  /* line 281, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .button-group button.button.medium, .button-group input[type="submit"].button.medium {
+    padding: 10px 20px 11px;
+  }
+  /* line 282, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .button-group button.button.small, .button-group input[type="submit"].button.small {
+    padding: 7px 14px 8px;
+  }
+  /* line 283, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .button-group button.button.tiny, .button-group input[type="submit"].button.tiny {
+    padding: 5px 10px 6px;
+  }
+  /* line 285, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .button-group.even button.button, .button-group.even input[type="submit"].button {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Navbar --- */
+  /*            */
+  /* line 290, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .nav-bar {
+    height: auto;
+  }
+  /* line 291, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .nav-bar > li {
+    float: none;
+    display: block;
+    border-right: none;
+  }
+  /* line 292, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .nav-bar > li > a.main {
+    text-align: left;
+    border-top: 1px solid #ddd;
+    border-right: none;
+  }
+  /* line 293, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .nav-bar > li:first-child > a.main {
+    border-top: none;
+  }
+  /* line 294, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .nav-bar > li.has-flyout > a.flyout-toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 22px;
+    z-index: 2;
+    display: block;
+  }
+  /* line 295, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .nav-bar > li.has-flyout.is-touch > a.flyout-toggle span {
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+  }
+  /* line 296, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .nav-bar > li.has-flyout > a.flyout-toggle:hover span {
+    border-top-color: #141414;
+  }
+  /* line 297, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .nav-bar.vertical > li.has-flyout > .flyout {
+    left: 0;
+  }
+
+  /* line 299, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .flyout {
+    position: relative;
+    width: 100% !important;
+    top: auto;
+    margin-right: -2px;
+    border-width: 1px 1px 0 1px;
+  }
+  /* line 300, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .flyout.right {
+    float: none;
+    right: auto;
+    left: -1px;
+  }
+  /* line 301, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .flyout.small, .flyout.large {
+    width: 100% !important;
+  }
+  /* line 302, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .flyout p:last-child {
+    margin-bottom: 18px;
+  }
+
+  /* Reveal --- */
+  /*            */
+  /* line 307, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .reveal-modal-bg {
+    position: absolute;
+  }
+
+  /* line 312, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .reveal-modal,
+  .reveal-modal.small,
+  .reveal-modal.medium,
+  .reveal-modal.large,
+  .reveal-modal.xlarge {
+    width: 80%;
+    top: 15px;
+    left: 50%;
+    margin-left: -40%;
+    padding: 20px;
+    height: auto;
+  }
+
+  /* Clearing --- */
+  /*              */
+  /* line 316, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .clearing-container {
+    margin: 0;
+  }
+
+  /* line 317, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .clearing-close {
+    z-index: 99;
+    font-size: 37px;
+    top: 0px;
+    right: 5px;
+  }
+
+  /* line 318, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .clearing-caption {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 10px !important;
+    line-height: 1.3;
+  }
+
+  /* line 319, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .clearing-main-right, .clearing-main-left {
+    display: none;
+  }
+
+  /* line 321, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .clearing-blackout.clearing-assembled .visible-img, .clearing-blackout.clearing-assembled .clearing-container {
+    height: 100%;
+  }
+  /* line 322, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .clearing-blackout.clearing-assembled ul[data-clearing] {
+    display: none;
+  }
+
+  /* Joyride --- */
+  /*             */
+  /* line 327, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .joyride-tip-guide {
+    width: 95% !important;
+    left: 2.5% !important;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+  }
+
+  /* line 328, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .joyride-tip-guide-wrapper {
+    width: 100%;
+  }
+
+  /* Tabs --- */
+  /*          */
+  /* line 332, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .tabs.mobile {
+    width: auto;
+    margin: 20px -20px 40px;
+    border-bottom: solid 1px #ccc;
+    height: auto;
+    margin: 20px -15px 0px -15px;
+  }
+  /* line 333, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .tabs.mobile dt, .tabs.mobile li, .tabs.mobile dd {
+    float: none;
+    height: auto;
+  }
+  /* line 334, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .tabs.mobile dd a, .tabs.mobile li a {
+    font-size: 15px;
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 18px 20px;
+    margin: 0;
+    color: #555;
+    line-height: 1;
+    border: none;
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid #ccc;
+    background: #fff;
+  }
+  /* line 335, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .tabs.mobile dd a.active, .tabs.mobile li a.active {
+    border: none;
+    background: #2ba6cb;
+    color: #fff;
+    margin: 0;
+    position: static;
+    top: 0;
+    height: auto;
+  }
+  /* line 336, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .tabs.mobile dd:first-child a.active, .tabs.mobile li:first-child a.active {
+    margin: 0;
+  }
+  /* line 337, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .tabs.mobile + .tabs-content.contained {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  /* line 338, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .tabs.mobile .section-title {
+    padding-left: 20px !important;
+  }
+
+  /* line 341, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .contained.mobile {
+    margin-bottom: 0;
+  }
+
+  /* line 342, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .contained.tabs.mobile dd a, .contained.tabs.mobile li a {
+    padding: 18px 20px;
+  }
+
+  /* line 343, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .tabs.mobile + ul.contained {
+    margin-left: -20px;
+    margin-right: -20px;
+    border-width: 0 0 1px 0;
+  }
+
+  /* UI Elements --- */
+  /*                 */
+  /* Tooltips */
+  /* line 348, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .tooltip {
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 7px 10px 9px 10px;
+    left: 50% !important;
+    max-width: 80% !important;
+    margin-left: -40%;
+    font-size: 110%;
+  }
+
+  /* line 357, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .tooltip > .nub, .tooltip.top > .nub, .tooltip.left > .nub, .tooltip.right > .nub {
+    border-color: transparent transparent black transparent;
+    border-color: transparent transparent rgba(0, 0, 0, 0.85) transparent;
+    top: -12px;
+    left: 10px;
+  }
+}
+/* Topbar Specific Breakpoint that you can customize */
+@media only screen and (max-width: 940px) {
+  /* line 368, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar {
+    background: #222222;
+    margin-bottom: 0;
+    height: 45px;
+    min-height: 45px;
+    overflow: hidden;
+    /* Override contain to grid stuff for breakpoint */
+    /* Setting up the sliding area */
+    /* When the Small Nav is Showing */
+  }
+  /* line 369, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar .js-generated {
+    display: block;
+  }
+  /* line 372, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .contain-to-grid .top-bar {
+    width: auto;
+  }
+  /* line 375, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar section {
+    left: 0;
+    position: relative;
+    width: auto;
+    -webkit-transition: left 300ms 0;
+    -moz-transition: left 300ms 0;
+    -o-transition: left 300ms 0;
+    transition: left 300ms 0;
+  }
+  /* line 376, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+    display: block;
+  }
+  /* line 377, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li {
+    float: none;
+    /* Branding and name */
+    /* Dropdown Toggle */
+    /* Divider for breakpoint */
+    /* Search Overrides for breakpoint size */
+    /* Dropdown Level 1 */
+    /* Dropdown Level 2 */
+  }
+  /* line 378, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li.active, .top-bar ul > li:hover {
+    background: #151515;
+  }
+  /* line 380, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li.name {
+    height: 45px;
+  }
+  /* line 381, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li.name h1 {
+    line-height: 1;
+  }
+  /* line 382, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li.name h1 a {
+    color: white;
+    display: block;
+    line-height: 45px !important;
+    padding-left: 15px;
+    height: 45px;
+  }
+  /* line 385, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li:hover a, .top-bar ul > li.active a {
+    color: white;
+  }
+  /* line 386, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li a:not(.button) {
+    color: white;
+  }
+  /* line 389, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li.toggle-topbar {
+    cursor: pointer;
+    display: block;
+    height: 45px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+  }
+  /* line 390, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li.toggle-topbar a {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: solid 8px;
+    border-color: white transparent transparent transparent;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    right: 22.5px;
+    margin-top: -4px;
+  }
+  /* line 392, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li.toggle-topbar:hover {
+    background: inherit;
+  }
+  /* line 394, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li.toggle-topbar a {
+    padding: 0 !important;
+  }
+  /* line 397, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li.divider {
+    border-bottom: solid 1px #3c3c3c;
+    border-top: solid 1px black;
+    clear: both;
+    height: 1px !important;
+    margin: 8px 0 !important;
+    width: 100%;
+  }
+  /* line 400, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li.search {
+    padding: 0 37.5px;
+  }
+  /* line 401, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li.search form {
+    width: 100%;
+  }
+  /* line 402, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li.search form input[type=text] {
+    width: 75%;
+  }
+  /* line 403, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li.search form .button {
+    top: -1px;
+    width: 25%;
+  }
+  /* line 409, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li.has-dropdown a {
+    padding-right: 56.25px;
+  }
+  /* line 410, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li.has-dropdown a:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: solid 5px;
+    border-color: transparent transparent transparent rgba(255, 255, 255, 0.5);
+    margin-right: 25px;
+    margin-top: -4.5px;
+    position: absolute;
+    top: 50%;
+  }
+  /* line 412, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li.has-dropdown:hover > .dropdown {
+    display: block;
+    visibility: hidden;
+  }
+  /* line 413, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li.has-dropdown .dropdown {
+    visibility: hidden;
+    z-index: 0 !important;
+  }
+  /* line 414, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li.has-dropdown.moved {
+    position: static;
+  }
+  /* line 415, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li.has-dropdown.moved > .dropdown {
+    top: 0;
+    visibility: visible;
+  }
+  /* line 417, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li.has-dropdown.moved > .dropdown li label {
+    margin-bottom: 6px;
+    padding-top: 6px !important;
+    font-size: 11px;
+  }
+  /* line 418, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li.has-dropdown.moved > .dropdown li:not(.title) {
+    padding-bottom: 0;
+  }
+  /* line 419, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li.has-dropdown.moved > .dropdown li:not(.title) a {
+    padding: 8px 22.5px;
+    font-size: 14px;
+  }
+  /* line 421, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li.has-dropdown.moved > .dropdown li a, .top-bar ul > li.has-dropdown.moved > .dropdown li label {
+    padding: 0 37.5px;
+  }
+  /* line 422, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li.has-dropdown.moved > .dropdown li a:hover {
+    background: rgba(126, 126, 126, 0.3);
+    display: block;
+  }
+  /* line 423, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li.has-dropdown.moved > .dropdown li.divider {
+    border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+    margin-top: 8px !important;
+    margin-bottom: 8px !important;
+  }
+  /* line 426, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li.has-dropdown.moved .back.title {
+    padding-bottom: 0;
+  }
+  /* line 427, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li.has-dropdown.moved .back.title a:before {
+    position: absolute;
+    top: 50%;
+    left: 32.5px;
+    margin-top: -5px;
+    width: 0;
+    height: 0;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: solid 5px;
+    border-color: transparent white transparent transparent;
+  }
+  /* line 428, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li.has-dropdown.moved .back.title h5 {
+    margin: 0;
+    padding-left: 15px;
+    position: relative;
+  }
+  /* line 429, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li.has-dropdown.moved .back.title h5 a {
+    background: transparent;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 23px;
+    font-weight: bold;
+  }
+  /* line 436, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li.has-dropdown .dropdown li {
+    background: transparent;
+  }
+  /* line 438, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li.has-dropdown .dropdown li.has-dropdown .dropdown {
+    left: 100% !important;
+    top: 0;
+    right: auto !important;
+  }
+  /* line 439, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li.has-dropdown .dropdown li.has-dropdown > a {
+    padding-right: 56.25px;
+  }
+  /* line 440, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li.has-dropdown .dropdown li.has-dropdown > a:after {
+    content: "";
+    margin-right: 15px;
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: solid 5px;
+    border-color: transparent transparent transparent rgba(255, 255, 255, 0.5);
+    position: absolute;
+    top: 50%;
+    margin-top: -4.5px;
+  }
+  /* line 442, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li.has-dropdown .dropdown li.has-dropdown > a li a:hover {
+    background: rgba(126, 126, 126, 0.3);
+  }
+  /* line 445, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li.has-dropdown .dropdown li.has-dropdown.moved {
+    position: static;
+  }
+  /* line 446, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li.has-dropdown .dropdown li.has-dropdown.moved .dropdown {
+    top: 0;
+    visibility: visible;
+  }
+  /* line 448, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li.has-dropdown .dropdown li.has-dropdown:hover {
+    display: block;
+  }
+  /* line 452, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul.left, .top-bar ul.right {
+    float: none;
+    width: 100%;
+  }
+  /* line 453, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul.left > li, .top-bar ul.right > li {
+    display: block;
+    float: none;
+    margin: 0 !important;
+  }
+  /* line 455, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul.left > li.has-dropdown .dropdown, .top-bar ul.right > li.has-dropdown .dropdown {
+    left: 100% !important;
+    top: 0;
+    right: auto !important;
+  }
+  /* line 460, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar section > ul li a:not(.button) {
+    height: 45px;
+    line-height: 45px;
+    padding-left: 22.5px !important;
+  }
+  /* line 463, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar.expanded {
+    height: 100%;
+  }
+  /* line 464, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar.expanded ul li.toggle-topbar a {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: solid 8px;
+    border-color: transparent transparent #cccccc transparent;
+    top: auto;
+    bottom: 50%;
+    margin-bottom: -4px;
+  }
+
+  /* line 467, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul li.has-button {
+    padding: 5px 15px;
+  }
+
+  /* line 468, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul li .button.small {
+    margin: 0 !important;
+    display: inline-block;
+    width: 100%;
+  }
+
+  /* line 470, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/vendor/assets/stylesheets/foundation/components/modules/_mqueries.scss */
+  .top-bar ul > li.has-button a.button {
+    margin: 0;
+  }
+}
+@font-face {
+  font-family: 'cafont';
+  src: url("cafont.eot");
+  src: url("cafont.eot?#iefix") format("embedded-opentype"), url("cafont.woff") format("woff"), url("cafont.ttf") format("truetype"), url("cafont.svg#cafont") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+/* line 15, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+[data-icon]:before {
+  font-family: 'cafont';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"] {
+*/
+/* line 33, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-location-17-icon, .icon-youtube, .icon-twitter, .icon-pinterest, .icon-google-plus, .icon-facebook, .icon-hamburger, .icon-hamburger2, .icon-diamonds, .icon-music, .icon-camera, .icon-headphones, .icon-credit, .icon-coin, .icon-cart, .icon-bookmark, .icon-heart, .icon-home, .icon-close, .icon-checkbox-checked, .icon-checkbox-unchecked, .icon-checkbox-partial, .icon-undo, .icon-redo, .icon-forward, .icon-reply, .icon-box-add, .icon-location, .icon-location-2, .icon-alarm, .icon-bell, .icon-spinner, .icon-user, .icon-users, .icon-key, .icon-pie, .icon-bars, .icon-home-2, .icon-spinner-2, .icon-print, .icon-phone, .icon-plus, .icon-radio-checked, .icon-radio-unchecked, .icon-arrow-right, .icon-arrow-down, .icon-checkmark, .icon-rocket, .icon-hamburger-2, .icon-hamburger2-2, .icon-arrow-down-2, .icon-arrow-right-2, .icon-tv, .icon-warning, .icon-rss-alt, .icon-moon-stroke, .icon-brush, .icon-target, .icon-bars-2, .icon-book-alt2, .icon-chat-alt-stroke, .icon-chat-alt-fill, .icon-bubbles, .icon-bubble, .icon-bubbles-2, .icon-bubbles-3, .icon-target-2, .icon-globe {
+  font-family: 'cafont';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 43, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-location-17-icon:before {
+  content: "\e02f";
+}
+
+/* line 46, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-youtube:before {
+  content: "\e000";
+}
+
+/* line 49, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-twitter:before {
+  content: "\e001";
+}
+
+/* line 52, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-pinterest:before {
+  content: "\e002";
+}
+
+/* line 55, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-google-plus:before {
+  content: "\e003";
+}
+
+/* line 58, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-facebook:before {
+  content: "\e004";
+}
+
+/* line 61, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-hamburger:before {
+  content: "\e005";
+}
+
+/* line 64, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-hamburger2:before {
+  content: "\e006";
+}
+
+/* line 67, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-diamonds:before {
+  content: "\e007";
+}
+
+/* line 70, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-music:before {
+  content: "\e008";
+}
+
+/* line 73, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-camera:before {
+  content: "\e009";
+}
+
+/* line 76, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-headphones:before {
+  content: "\e00a";
+}
+
+/* line 79, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-credit:before {
+  content: "\e00b";
+}
+
+/* line 82, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-coin:before {
+  content: "\e00c";
+}
+
+/* line 85, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-cart:before {
+  content: "\e00d";
+}
+
+/* line 88, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-bookmark:before {
+  content: "\e00f";
+}
+
+/* line 91, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-heart:before {
+  content: "\e00e";
+}
+
+/* line 94, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-home:before {
+  content: "\e010";
+}
+
+/* line 97, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-close:before {
+  content: "\e011";
+}
+
+/* line 100, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-checkbox-checked:before {
+  content: "\e012";
+}
+
+/* line 103, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-checkbox-unchecked:before {
+  content: "\e013";
+}
+
+/* line 106, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-checkbox-partial:before {
+  content: "\e014";
+}
+
+/* line 109, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-undo:before {
+  content: "\e015";
+}
+
+/* line 112, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-redo:before {
+  content: "\e016";
+}
+
+/* line 115, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-forward:before {
+  content: "\e017";
+}
+
+/* line 118, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-reply:before {
+  content: "\e018";
+}
+
+/* line 121, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-box-add:before {
+  content: "\e01a";
+}
+
+/* line 124, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-location:before {
+  content: "\e019";
+}
+
+/* line 127, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-location-2:before {
+  content: "\e01b";
+}
+
+/* line 130, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-alarm:before {
+  content: "\e01c";
+}
+
+/* line 133, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-bell:before {
+  content: "\e01d";
+}
+
+/* line 136, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-spinner:before {
+  content: "\e01e";
+}
+
+/* line 139, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-user:before {
+  content: "\e01f";
+}
+
+/* line 142, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-users:before {
+  content: "\e020";
+}
+
+/* line 145, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-key:before {
+  content: "\e021";
+}
+
+/* line 148, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-pie:before {
+  content: "\e022";
+}
+
+/* line 151, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-bars:before {
+  content: "\e023";
+}
+
+/* line 154, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-home-2:before {
+  content: "\e024";
+}
+
+/* line 157, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-spinner-2:before {
+  content: "\e025";
+}
+
+/* line 160, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-print:before {
+  content: "\e026";
+}
+
+/* line 163, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-phone:before {
+  content: "\e027";
+}
+
+/* line 166, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-plus:before {
+  content: "\e028";
+}
+
+/* line 169, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-radio-checked:before {
+  content: "\e029";
+}
+
+/* line 172, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-radio-unchecked:before {
+  content: "\e02a";
+}
+
+/* line 175, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-arrow-right:before {
+  content: "\e02b";
+}
+
+/* line 178, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-arrow-down:before {
+  content: "\e02c";
+}
+
+/* line 181, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-checkmark:before {
+  content: "\e02d";
+}
+
+/* line 184, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-rocket:before {
+  content: "\e02e";
+}
+
+/* line 187, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-hamburger-2:before {
+  content: "\e030";
+}
+
+/* line 190, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-hamburger2-2:before {
+  content: "\e031";
+}
+
+/* line 193, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-arrow-down-2:before {
+  content: "\e032";
+}
+
+/* line 196, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-arrow-right-2:before {
+  content: "\e033";
+}
+
+/* line 199, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-tv:before {
+  content: "\e034";
+}
+
+/* line 202, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-warning:before {
+  content: "\e035";
+}
+
+/* line 205, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-rss-alt:before {
+  content: "\e036";
+}
+
+/* line 208, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-moon-stroke:before {
+  content: "\e037";
+}
+
+/* line 211, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-brush:before {
+  content: "\e038";
+}
+
+/* line 214, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-target:before {
+  content: "\e039";
+}
+
+/* line 217, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-bars-2:before {
+  content: "\e03a";
+}
+
+/* line 220, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-book-alt2:before {
+  content: "\e03b";
+}
+
+/* line 223, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-chat-alt-stroke:before {
+  content: "\e03c";
+}
+
+/* line 226, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-chat-alt-fill:before {
+  content: "\e03d";
+}
+
+/* line 229, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-bubbles:before {
+  content: "\e03e";
+}
+
+/* line 232, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-bubble:before {
+  content: "\e03f";
+}
+
+/* line 235, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-bubbles-2:before {
+  content: "\e040";
+}
+
+/* line 238, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-bubbles-3:before {
+  content: "\e041";
+}
+
+/* line 241, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-target-2:before {
+  content: "\e042";
+}
+
+/* line 244, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_cafont.scss */
+.icon-globe:before {
+  content: "\e043";
+}
+
+/* line 1, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_header.scss */
+.header {
+  position: absolute;
+  width: 100%;
+}
+/* line 5, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_header.scss */
+.header .header-container {
+  min-height: 75px;
+}
+/* line 8, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_header.scss */
+.header .header-shade {
+  background-color: white;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+/* line 17, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_header.scss */
+.header .top-bar {
+  background-color: transparent;
+}
+@media only screen and (max-width: 767px) {
+  /* line 1, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_header.scss */
+  .header {
+    background-color: white;
+  }
+  /* line 23, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_header.scss */
+  .header .header-container {
+    min-height: 45px;
+  }
+  /* line 26, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_header.scss */
+  .header .header-shade {
+    display: hidden;
+  }
+}
+
+/* line 2, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_footer.scss */
+.footer {
+  padding-top: 1.4em;
+  position: relative;
+}
+/* line 2, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_mixins.scss */
+.footer .button {
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0;
+  padding: 10px 20px 12px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 7, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_footer.scss */
+.footer .button {
+  font-size: 13px;
+  padding: 10px 12px 12px;
+}
+/* line 12, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_footer.scss */
+.footer .icon {
+  font-size: 36px;
+}
+/* line 17, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_footer.scss */
+.footer ul.link-list h2, .footer ul.compliance-list h2 {
+  font-size: 1em;
+  margin-top: 0;
+  padding-bottom: .4em;
+}
+/* line 23, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_footer.scss */
+.footer ul.link-list h3, .footer ul.compliance-list h3 {
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: .4em;
+}
+/* line 31, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_footer.scss */
+.footer ul.link-list {
+  list-style: none;
+}
+/* line 11, /Users/Tim/.rvm/gems/ruby-1.9.3-p327@rails4/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_bullets.scss */
+.footer ul.link-list li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+/* line 36, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_footer.scss */
+.footer section.brand-list-container {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-align: center;
+}
+/* line 42, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_footer.scss */
+.footer ul.brand-list {
+  list-style-type: none;
+}
+/* line 5, /Users/Tim/.rvm/gems/ruby-1.9.3-p327@rails4/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_inline-list.scss */
+.footer ul.brand-list, .footer ul.brand-list li {
+  margin: 0px;
+  padding: 0px;
+  display: inline;
+}
+/* line 45, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_footer.scss */
+.footer ul.brand-list li {
+  padding-right: 1.4em;
+}
+/* line 50, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_footer.scss */
+.footer section.compliance {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+/* line 57, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_footer.scss */
+.footer ul.compliance-list {
+  list-style-type: none;
+}
+/* line 5, /Users/Tim/.rvm/gems/ruby-1.9.3-p327@rails4/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_inline-list.scss */
+.footer ul.compliance-list, .footer ul.compliance-list li {
+  margin: 0px;
+  padding: 0px;
+  display: inline;
+}
+/* line 29, /Users/Tim/.rvm/gems/ruby-1.9.3-p327@rails4/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_inline-list.scss */
+.footer ul.compliance-list li:after {
+  content: "|";
+}
+/* line 31, /Users/Tim/.rvm/gems/ruby-1.9.3-p327@rails4/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_inline-list.scss */
+.footer ul.compliance-list li:last-child:after {
+  content: "";
+}
+/* line 34, /Users/Tim/.rvm/gems/ruby-1.9.3-p327@rails4/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_inline-list.scss */
+.footer ul.compliance-list li.last:after {
+  content: "";
+}
+/* line 63, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_footer.scss */
+.footer .social-links {
+  padding-bottom: 1em;
+}
+/* line 65, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_footer.scss */
+.footer .social-links .link-list {
+  list-style-type: none;
+}
+/* line 5, /Users/Tim/.rvm/gems/ruby-1.9.3-p327@rails4/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/typography/lists/_inline-list.scss */
+.footer .social-links .link-list, .footer .social-links .link-list li {
+  margin: 0px;
+  padding: 0px;
+  display: inline;
+}
+/* line 71, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_footer.scss */
+.footer form.email-signup .panel {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  padding: 1em;
+  border: none;
+}
+/* line 76, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_footer.scss */
+.footer form.email-signup .panel label {
+  padding-bottom: 1em;
+}
+
+/* line 2, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_widgets.scss */
+.main-body .store-locator p, .main-body .financial-tools p, .main-body .pr-highlights p, .main-body .service_spotlight p, .main-body .article-image-right p, .side-bar .store-locator p, .side-bar .financial-tools p, .side-bar .pr-highlights p, .side-bar .service_spotlight p, .side-bar .article-image-right p {
+  font-style: normal;
+}
+/* line 5, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_widgets.scss */
+.main-body .store-locator .widget-header, .main-body .financial-tools .widget-header, .main-body .pr-highlights .widget-header, .main-body .service_spotlight .widget-header, .main-body .article-image-right .widget-header, .side-bar .store-locator .widget-header, .side-bar .financial-tools .widget-header, .side-bar .pr-highlights .widget-header, .side-bar .service_spotlight .widget-header, .side-bar .article-image-right .widget-header {
+  position: relative;
+}
+/* line 8, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_widgets.scss */
+.main-body .store-locator .widget-body, .main-body .financial-tools .widget-body, .main-body .pr-highlights .widget-body, .main-body .service_spotlight .widget-body, .main-body .article-image-right .widget-body, .side-bar .store-locator .widget-body, .side-bar .financial-tools .widget-body, .side-bar .pr-highlights .widget-body, .side-bar .service_spotlight .widget-body, .side-bar .article-image-right .widget-body {
+  padding-bottom: 1em;
+  border-bottom: 1px solid #e9e9e9;
+}
+/* line 2, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/components/_mixins.scss */
+.main-body .store-locator .button, .main-body .financial-tools .button, .main-body .pr-highlights .button, .main-body .service_spotlight .button, .main-body .article-image-right .button, .side-bar .store-locator .button, .side-bar .financial-tools .button, .side-bar .pr-highlights .button, .side-bar .service_spotlight .button, .side-bar .article-image-right .button {
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1;
+  margin: 0;
+  padding: 10px 20px 12px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all 0.15s ease-in-out;
+  -moz-transition: all 0.15s ease-in-out;
+  -o-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 15, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_widgets.scss */
+.main-body .store-locator .button, .main-body .financial-tools .button, .main-body .pr-highlights .button, .main-body .service_spotlight .button, .main-body .article-image-right .button, .side-bar .store-locator .button, .side-bar .financial-tools .button, .side-bar .pr-highlights .button, .side-bar .service_spotlight .button, .side-bar .article-image-right .button {
+  font-size: 13px;
+  padding: 10px 12px 12px;
+}
+
+/* line 23, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_widgets.scss */
+.main-body .store-locator h1, .main-body .financial-tools h1, .main-body .pr-highlights h1, .main-body .service_spotlight h1, .main-body .article-image-right h1, .main-body .store-locator h2, .main-body .financial-tools h2, .main-body .pr-highlights h2, .main-body .service_spotlight h2, .main-body .article-image-right h2, .main-body .store-locator h3, .main-body .financial-tools h3, .main-body .pr-highlights h3, .main-body .service_spotlight h3, .main-body .article-image-right h3, .main-body .store-locator h4, .main-body .financial-tools h4, .main-body .pr-highlights h4, .main-body .service_spotlight h4, .main-body .article-image-right h4, .main-body .store-locator h5, .main-body .financial-tools h5, .main-body .pr-highlights h5, .main-body .service_spotlight h5, .main-body .article-image-right h5, .main-body .store-locator h6, .main-body .financial-tools h6, .main-body .pr-highlights h6, .main-body .service_spotlight h6, .main-body .article-image-right h6 {
+  font-size: 17px;
+}
+
+/* line 33, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_widgets.scss */
+.main-body .pr-highlights .list-widget-item, .main-body .financial-tools .list-widget-item, .main-body .service_spotlight .list-widget-item {
+  margin-bottom: 17px;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 41, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_widgets.scss */
+  .side-bar .service_spotlight .widget-header, .main-body .service_spotlight .widget-header,
+  .side-bar .service_spotlight .widget-body,
+  .main-body .service_spotlight .widget-body {
+    text-align: center;
+  }
+}
+
+/* line 53, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_widgets.scss */
+.side-bar .store-locator .icon {
+  position: absolute;
+  top: -8px;
+  font-size: 32px;
+}
+/* line 58, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_widgets.scss */
+.side-bar .store-locator .text {
+  padding-left: 2.4em;
+}
+
+/* line 78, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_widgets.scss */
+.side-bar .financial-tools .description {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 89, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_widgets.scss */
+  .main-body .financial-tools .description {
+    display: none;
+  }
+}
+
+/* line 112, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_widgets.scss */
+.main-body .pr-highlights .widget-header, .main-body .financial-tools .widget-header, .main-body .service_spotlight .widget-header {
+  text-align: center;
+  color: black;
+  border: 1px solid #e9e9e9;
+  padding: .4em inherit;
+}
+
+/* line 138, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_widgets.scss */
+.main-body .service_spotlight .widget-body {
+  text-align: center;
+}
+/* line 142, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_widgets.scss */
+.main-body .service_spotlight .caption {
+  text-align: center;
+  font-size: .9em;
+  margin-bottom: 0;
+}
+/* line 148, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_widgets.scss */
+.main-body .service_spotlight .service-item a {
+  color: #222222;
+}
+
+/* line 166, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_widgets.scss */
+.main-body .article-image-right {
+  float: right;
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
+
+/*
+.side-bar {
+	.widget{
+		@extend %widget;
+	}
+
+	.store-locator{
+		@extend %widget;
+		.icon{
+			position: absolute;
+			top: -8px;
+			font-size: 32px;
+		}
+		.text{
+			padding-left: 2.4em;
+		}
+	}
+
+	.financial-tools{
+		.description{
+			display: none;
+		}
+	}
+}
+
+
+.main-body{
+	.widget{
+		@extend %widget;
+		h1, h2, h3, h4, h5, h6{
+		  font-size: ms(1);
+		}
+	}
+
+	.article-image-right{
+		float: right;
+		padding-left: 15px;
+		padding-bottom: 15px;
+	}
+
+	.pr-highlights{
+		.widget-header{
+			text-align: center;
+			color: black;
+			border: 1px solid $secondaryColor;
+			padding: .4em inherit;
+		}
+	}
+
+	.financial-tools{
+		@extend .pr-highlights;
+		@include respondTo(smallScreen){
+			.description{
+				display: none;
+			}
+		}
+	}
+
+	.service_spotlight{
+		@extend .pr-highlights;
+
+		.widget-body{
+			text-align: center;
+		}
+
+		.caption{
+			text-align: center;
+			font-size: .9em;
+			margin-bottom: 0;
+		}
+
+		.service-item a{
+			color: $txtColor;
+		}
+
+	}
+
+	.features-widget{
+		@extend %widget;
+
+		@include respondTo(smallScreen){
+			.widget-body{
+				text-align: center;
+			}
+		}
+	}
+
+	.list-widget{
+		@extend %widget;
+		.list-widget-item{
+			margin-bottom: 17px;
+		}
+	}
+}
+*/
+/* line 9, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_structure.scss */
+.tcl .page-headline, .ocl .page-headline, .tcc .page-headline, .occ .page-headline {
+  font-weight: normal;
+}
+/* line 13, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_structure.scss */
+.tcl section.page-container, .ocl section.page-container, .tcc section.page-container, .occ section.page-container {
+  padding-bottom: 2em;
+}
+/* line 2, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/../components/_breadcrumbs.scss */
+.tcl ul.breadcrumbs, .ocl ul.breadcrumbs, .tcc ul.breadcrumbs, .occ ul.breadcrumbs {
+  display: block;
+  background: transparent;
+  margin-bottom: 0;
+  overflow: auto;
+}
+/* line 10, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/../components/_breadcrumbs.scss */
+.tcl ul.breadcrumbs li, .ocl ul.breadcrumbs li, .tcc ul.breadcrumbs li, .occ ul.breadcrumbs li {
+  margin: 0;
+  padding: 0 12px 1em 0;
+  float: left;
+  list-style: none;
+}
+/* line 16, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/../components/_breadcrumbs.scss */
+.tcl ul.breadcrumbs li a, .ocl ul.breadcrumbs li a, .tcc ul.breadcrumbs li a, .occ ul.breadcrumbs li a, .tcl ul.breadcrumbs li span, .ocl ul.breadcrumbs li span, .tcc ul.breadcrumbs li span, .occ ul.breadcrumbs li span {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-size: 1.1rem;
+  padding-left: 12px;
+}
+/* line 23, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/../components/_breadcrumbs.scss */
+.tcl ul.breadcrumbs li:first-child a, .ocl ul.breadcrumbs li:first-child a, .tcc ul.breadcrumbs li:first-child a, .occ ul.breadcrumbs li:first-child a, .tcl ul.breadcrumbs li:first-child span, .ocl ul.breadcrumbs li:first-child span, .tcc ul.breadcrumbs li:first-child span, .occ ul.breadcrumbs li:first-child span {
+  padding-left: 0;
+}
+/* line 28, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/../components/_breadcrumbs.scss */
+.tcl ul.breadcrumbs li:before, .ocl ul.breadcrumbs li:before, .tcc ul.breadcrumbs li:before, .occ ul.breadcrumbs li:before {
+  content: "/";
+  color: #aaa;
+}
+/* line 34, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/../components/_breadcrumbs.scss */
+.tcl ul.breadcrumbs li:first-child:before, .ocl ul.breadcrumbs li:first-child:before, .tcc ul.breadcrumbs li:first-child:before, .occ ul.breadcrumbs li:first-child:before {
+  content: " ";
+}
+/* line 39, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/../components/_breadcrumbs.scss */
+.tcl ul.breadcrumbs li.current a, .ocl ul.breadcrumbs li.current a, .tcc ul.breadcrumbs li.current a, .occ ul.breadcrumbs li.current a {
+  cursor: default;
+  color: white;
+}
+/* line 45, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/../components/_breadcrumbs.scss */
+.tcl ul.breadcrumbs li:hover a, .ocl ul.breadcrumbs li:hover a, .tcc ul.breadcrumbs li:hover a, .occ ul.breadcrumbs li:hover a, .tcl ul.breadcrumbs li a:focus, .ocl ul.breadcrumbs li a:focus, .tcc ul.breadcrumbs li a:focus, .occ ul.breadcrumbs li a:focus {
+  text-decoration: underline;
+}
+/* line 50, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/../components/_breadcrumbs.scss */
+.tcl ul.breadcrumbs li.current:hover a, .ocl ul.breadcrumbs li.current:hover a, .tcc ul.breadcrumbs li.current:hover a, .occ ul.breadcrumbs li.current:hover a, .tcl ul.breadcrumbs li.current a:focus, .ocl ul.breadcrumbs li.current a:focus, .tcc ul.breadcrumbs li.current a:focus, .occ ul.breadcrumbs li.current a:focus {
+  text-decoration: none;
+}
+/* line 56, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/../components/_breadcrumbs.scss */
+.tcl ul.breadcrumbs li.unavailable a, .ocl ul.breadcrumbs li.unavailable a, .tcc ul.breadcrumbs li.unavailable a, .occ ul.breadcrumbs li.unavailable a {
+  color: #999;
+}
+/* line 59, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/../components/_breadcrumbs.scss */
+.tcl ul.breadcrumbs li.unavailable:hover a, .ocl ul.breadcrumbs li.unavailable:hover a, .tcc ul.breadcrumbs li.unavailable:hover a, .occ ul.breadcrumbs li.unavailable:hover a, .tcl ul.breadcrumbs li.unavailable a:focus, .ocl ul.breadcrumbs li.unavailable a:focus, .tcc ul.breadcrumbs li.unavailable a:focus, .occ ul.breadcrumbs li.unavailable a:focus {
+  text-decoration: none;
+  color: #999;
+  cursor: default;
+}
+/* line 20, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_structure.scss */
+.tcl .side-bar, .ocl .side-bar, .tcc .side-bar, .occ .side-bar {
+  margin-top: -112px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  min-height: 500px;
+  background-color: #fff;
+}
+/* line 26, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_structure.scss */
+.tcl .side-bar .side-bar-container, .ocl .side-bar .side-bar-container, .tcc .side-bar .side-bar-container, .occ .side-bar .side-bar-container {
+  margin-top: 1em;
+}
+/* line 30, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_structure.scss */
+.tcl .side-bar h1, .ocl .side-bar h1, .tcc .side-bar h1, .occ .side-bar h1, .tcl .side-bar h2, .ocl .side-bar h2, .tcc .side-bar h2, .occ .side-bar h2, .tcl .side-bar h3, .ocl .side-bar h3, .tcc .side-bar h3, .occ .side-bar h3, .tcl .side-bar h4, .ocl .side-bar h4, .tcc .side-bar h4, .occ .side-bar h4, .tcl .side-bar h5, .ocl .side-bar h5, .tcc .side-bar h5, .occ .side-bar h5, .tcl .side-bar h6, .ocl .side-bar h6, .tcc .side-bar h6, .occ .side-bar h6 {
+  font-size: 17px;
+}
+/* line 34, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_structure.scss */
+.tcl .side-bar .lead, .ocl .side-bar .lead, .tcc .side-bar .lead, .occ .side-bar .lead {
+  line-height: 1.3;
+}
+@media only screen and (max-width: 767px) {
+  /* line 42, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_structure.scss */
+  .tcl .page-headline-container, .ocl .page-headline-container, .tcc .page-headline-container, .occ .page-headline-container {
+    margin-top: 30px;
+  }
+  /* line 46, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_structure.scss */
+  .tcl .side-bar, .ocl .side-bar, .tcc .side-bar, .occ .side-bar {
+    margin-top: 0;
+  }
+  /* line 49, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_structure.scss */
+  .tcl .side-bar .side-bar-container, .ocl .side-bar .side-bar-container, .tcc .side-bar .side-bar-container, .occ .side-bar .side-bar-container {
+    min-height: 100px;
+  }
+}
+
+/* line 60, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_structure.scss */
+.tcl .page-headline-container, .ocl .page-headline-container {
+  margin-top: 212px;
+}
+
+/* line 68, /Users/Tim/Projects/AWSDevBox/railsdemo/proto/app/assets/stylesheets/structure/_structure.scss */
+.tcc .page-headline-container, .occ .page-headline-container {
+  margin-top: 140px;
+}
+
+/* line 10, /Users/Tim/.rvm/gems/ruby-1.9.3-p327@rails4/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 12, /Users/Tim/.rvm/gems/ruby-1.9.3-p327@rails4/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+.ca-root {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -350px;
+}
+/* line 18, /Users/Tim/.rvm/gems/ruby-1.9.3-p327@rails4/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+.ca-root .ca-root-footer {
+  height: 350px;
+}
+
+/* line 20, /Users/Tim/.rvm/gems/ruby-1.9.3-p327@rails4/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+.footer {
+  clear: both;
+  position: relative;
+  height: 350px;
+}
+
+@media only screen and (max-width: 767px) {
+  /* line 10, /Users/Tim/.rvm/gems/ruby-1.9.3-p327@rails4/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+  html, body {
+    height: 100%;
+  }
+
+  /* line 12, /Users/Tim/.rvm/gems/ruby-1.9.3-p327@rails4/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+  .ca-root {
+    clear: both;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin-bottom: -750px;
+  }
+  /* line 18, /Users/Tim/.rvm/gems/ruby-1.9.3-p327@rails4/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+  .ca-root .ca-root-footer {
+    height: 750px;
+  }
+
+  /* line 20, /Users/Tim/.rvm/gems/ruby-1.9.3-p327@rails4/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/layout/_sticky-footer.scss */
+  .footer {
+    clear: both;
+    position: relative;
+    height: 750px;
+  }
+}
