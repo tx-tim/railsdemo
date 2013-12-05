@@ -56,8 +56,6 @@ $your-store-width: 20%;
 }
 
 .your-store{
-	//width: $your-store-width;
-	//float: right;
 	min-width: 200px;
 	padding: 0;
 	margin: 0;
@@ -93,6 +91,12 @@ $your-store-width: 20%;
 				font-size: 14px;
 				line-height: 1.2em;
 			}
+		}
+
+		.full-address{
+			@extend .address;
+			height: auto;
+			float: none;
 		}
 	}
 }
