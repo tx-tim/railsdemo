@@ -13,7 +13,19 @@ body{
   .control-icon{
     @extend .header;
   }
+  a{
+    color: $caPrimaryColor;
+  }
 }
+
+
+.your-store-dropdown{
+    background-color: tint($caFooterColor, 5%);
+    a{
+      color: lighten($caFooterColor, 45%);
+    }
+}
+
 
 .page-hero{
   background-color: $caPrimaryColor;

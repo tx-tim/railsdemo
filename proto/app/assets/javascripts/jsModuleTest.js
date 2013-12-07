@@ -22,8 +22,11 @@ var YourStore = function(){
 	this.isActive = false;
 
 	return {
+		init: function(){
+			$('.your-store-dropdown').appendTo('.top-bar-container');
+		},
+
 		getIsActive: function(){
-			//console.log(self.isActive)
 			return self.isActive;
 		},
 
@@ -53,8 +56,18 @@ var YourStore = function(){
 
 		showDetails: function(){
 			if(self.isActive == true){
-				$('.your-store-dropdown').addClass("active");
+				var dropdownPosition = this.determinePosition();
+				$('.your-store-dropdown')
+					.css({
+							'top': dropdownPosition.top, 
+							'left': dropdownPosition.left
+						})
+					.addClass("active");
 			}
+		},
+
+		determinePosition: function(){
+			return $('.local-store').position();
 		}
 	}
 }
@@ -62,6 +75,7 @@ var YourStore = function(){
 $(function(){
 	moduleTest.moduleTest2();
 	window.yourStore = new YourStore();
+	yourStore.init();
 
 	$('.page-headline').on('click',function(e){
 		e.preventDefault();
@@ -69,6 +83,10 @@ $(function(){
 	);
 
 	$('.your-store').on('click', function(){
+		yourStore.toggleDetails();
+	})	
+
+	$('.your-store-dropdown').on('click', function(){
 		yourStore.toggleDetails();
 	})
 
